@@ -4,16 +4,58 @@
 
 
   <header class="col-lg-12 col-sm-12 col-md-12 col-xs-12 header-inicio">
-		<a href="">Close</a>
+		<a href="index.php">
+			<p>
+			Close
+		</p>
+	</a>
 
   </header>
 
 	<div class="col-lg-12 col-sm-12 col-md-12 col-xs-12 container-inicio">
 
 		<ul class="col-lg-12 col-sm-12 col-md-12 col-xs-12 nav-inicio">
-			<a href="#"><li id="div1" class="col-lg-4 col-sm-4 col-md-4 col-xs-12">Inicio</li></a>
-			<a href="#"><li id="div2" class="col-lg-4 col-sm-4 col-md-4 col-xs-12">Potfolio</li></a>
-			<a href="#"><li class="col-lg-4 col-sm-4 col-md-4 col-xs-12">Contacto</li></a>
+
+			<li  class="col-lg-4 col-sm-4 col-md-4 col-xs-12">
+				<a href="index.php">
+					<div class="div1" style="height:80px; width:150px;">
+					<div class="div2"  style="height:82px; width:152px;">
+						<p class="center-to-parent">
+							Inicio
+						</p>
+
+					</div>
+				</div>
+				</a>
+			</li>
+
+			<li  class="col-lg-4 col-sm-4 col-md-4 col-xs-12">
+				<a href="portfolio.php">
+				<div class="div1" style="height:80px; width:200px;">
+					<div class="div2"  style="height:82px; width:202px;">
+						<p class="center-to-parent">
+							Portfolio
+						</p>
+					</div>
+				</div>
+				</a>
+			</li>
+
+
+				<li  class="col-lg-4 col-sm-4 col-md-4 col-xs-12">
+					<a href="contacto.php">
+					<div class="div1" style="height:80px; width:200px;">
+						<div class="div2"  style="height:82px; width:202px;">
+							<p class="center-to-parent">
+								Contacto
+							</p>
+						</div>
+					</div>
+					</a>
+				</li>
+
+
+
 		</ul>
 
 

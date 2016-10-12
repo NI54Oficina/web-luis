@@ -4,11 +4,20 @@
 
 
 <header class="col-lg-12 col-sm-12 col-md-12 col-xs-12 header-home">
-  <a href="">Menu</a>
+
+  <a href="home.php">
+    <div class="div1" style="height:50px; width:70px;">
+      <div class="div2 "  style="height:52px; width:72px;">
+      <p class="center-to-parent">
+        Menu
+      </p>
+      </div>
+    </div>
+  </a>
 
 </header>
 
-<div class="col-lg-12 col-sm-12 col-md-12 col-xs-12 container-inicio">
+<div class="col-lg-12 col-sm-12 col-md-12 col-xs-12 container-home">
       <h1><span>K</span>imena<span>S</span>td</h1>
 </div>
 
