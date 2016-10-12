@@ -224,24 +224,54 @@ padding-left: 10%;
 
 
 /*********************** PORTFOLIO ********************/
+
+
+.portfolio-2{
+  background: white;
+}
+
+ .portfolio-2 h2{
+   color: gray;
+ }
+.portfolio-box h2 {
+  color: white;
+}
+
+.nav-porfolio li{
+  display: inline;
+  padding: 20px;
+}
+.nav-porfolio {
+  text-align: center;
+}
+
+.container-portfolio div img{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.container-portfolio div {
+padding:2px;
+}
 /*********************** CONTACTO ********************/
 
-.contacto{
+.contacto, .portfolio{
   background: url('../img/header.jpg');
   background-repeat: no-repeat;
   background-size: 100% 100%;
 
 }
 
-.contact-header{
+.contact-header, .portfolio-header{
   padding:0px 50px 50px 50px;
 }
 
-.contact-header h1{
+.contact-header h1, .portfolio-header h1{
   font-size: 2.5em;
 }
 
-.contact-header a{
+.contact-header a, .portfolio-header a{
   position: absolute;
   right: 0;
   color:#ffb60a;
@@ -294,22 +324,22 @@ padding-left: 10%;
 }
 
 
-.contact-box{
+.contact-box, .portfolio-box{
   border: 1px solid white;
   color: white
 
 }
 
-.contact-box h2 {
+.contact-box h2 , .portfolio-box h2{
   border-bottom: 1px solid white;
   font-size: 3em;
 }
 
-.contact-box h2 span:first-child{
+.contact-box h2 span:first-child, .portfolio-2 h2 span:nth-child(2){
   color:#68d3a9;#ffb60a
 }
 
-.contact-box h2 span:nth-child(2){
+.contact-box h2 span:nth-child(2), .portfolio-2 h2 span:first-child{
   color:#ffb60a;
 }
 
