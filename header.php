@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 
-    <link type="text/css" href="img/favicon.ico" rel="shortcut icon" />
+  <!--  <link type="text/css" href="img/favicon.ico" rel="shortcut icon" /> -->
 
 
       <!--CSS-->
