@@ -14,21 +14,23 @@
 
 <h1><span>K</span>imena<span>S</span>td</h1>
 
-<div class="hola">
+<div class="col-lg-4 col-sm-10 col-md-4 col-xs-10 contact-box" >
 
-  <p>
+  <h2>
     <span>C</span>ontacta tu <span>K</span>i
-  </p>
-  <p>
+  </h2>
+  <div>
     <img src="" alt="" />
     <img src="" alt="" />
     <img src="" alt="" />
-  </p>
+  </div>
 </div>
 
 
 </div>
+</section>
 
+<section>
 <div class="col-lg-6 col-sm-12 col-md-6 col-xs-12 left-box-contact">
   <form class="" action="index.html" method="post">
     <input type="text" name="name" value="" placeholder="Nombre"> <br>
