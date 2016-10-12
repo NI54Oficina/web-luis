@@ -4,10 +4,17 @@
 
 
 <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12 contact-header">
-    <a href="#">Menu</a>
+
+  <a href="home.php">
+
+      <p class="center-to-parent border">
+        Menu
+      </p>
+  </a>
+
 <h1><span>K</span>imena<span>S</span>td</h1>
 
-<div class="">
+<div class="hola">
 
   <p>
     <span>C</span>ontacta tu <span>K</span>i
@@ -30,7 +37,7 @@
   </form>
 </div>
 
-<div class"=col-lg-6 col-sm-12 col-md-6 col-xs-12 right-box-contact">
+<div class="col-lg-6 col-sm-12 col-md-6 col-xs-12 right-box-contact">
   <p>
     Mensaje
   </p>

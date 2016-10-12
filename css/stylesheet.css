@@ -129,12 +129,28 @@ p{
   background-color:#498d66;
   border-radius: 15px;
 }
+
+.border{
+  border: 15px solid #000000;
+  border-image: url('../img/border.png') 34% repeat;
+  box-sizing: border-box;
+}
+
+
+ h1 {
+  font-size: 80px;
+  color: #ffb60a;
+}
+
+h1 span {
+  color: #68d3a9;
+}
 /*********************** HOME ********************/
 
 section{
   padding: 50px !important;
 }
-.header-home a div{
+.header-home a {
   text-align: center;
   position: absolute;
   right: 0;
@@ -174,13 +190,14 @@ section{
 
 /*********************** INICIO ********************/
 
-.nav-inicio li a div p{
+.nav-inicio li a{
   text-align: center;
   color: white;
   font-size: 30px;
 }
-.nav-inicio li a div {
-  text-align: center;
+
+.nav-inicio li {
+padding-left: 10%;
 }
 
 
@@ -198,12 +215,36 @@ section{
   color: white;
   position: absolute;
   right: 0;
-  
+
+}
+
+
+/*********************** PORTFOLIO ********************/
+/*********************** CONTACTO ********************/
+
+.contacto{
+  background: url('../img/header.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 50%;
+}
+
+.contacto .right-box-contact{
+  background-color: white;
+}
+
+.contacto .left-box-contact{
+  background-color:#498d66;
+}
+
+
+
+.contact-header a{
+  position: absolute;
+  right: 0;
+  color: white;
 }
 
 
 
 
-/*********************** PORTFOLIO ********************/
-/*********************** CONTACTO ********************/
 /*********************** IMAGEN GALERIA ********************/

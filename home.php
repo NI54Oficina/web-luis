@@ -18,39 +18,28 @@
 
 			<li  class="col-lg-4 col-sm-4 col-md-4 col-xs-12">
 				<a href="index.php">
-					<div class="div1" style="height:80px; width:150px;">
-					<div class="div2"  style="height:82px; width:152px;">
-						<p class="center-to-parent">
+						<p class="center-to-parent border">
 							Inicio
 						</p>
 
-					</div>
-				</div>
 				</a>
 			</li>
 
 			<li  class="col-lg-4 col-sm-4 col-md-4 col-xs-12">
 				<a href="portfolio.php">
-				<div class="div1" style="height:80px; width:200px;">
-					<div class="div2"  style="height:82px; width:202px;">
-						<p class="center-to-parent">
+						<p class="center-to-parent border">
 							Portfolio
 						</p>
-					</div>
-				</div>
 				</a>
 			</li>
 
 
 				<li  class="col-lg-4 col-sm-4 col-md-4 col-xs-12">
 					<a href="contacto.php">
-					<div class="div1" style="height:80px; width:200px;">
-						<div class="div2"  style="height:82px; width:202px;">
-							<p class="center-to-parent">
+
+							<p class="center-to-parent border">
 								Contacto
 							</p>
-						</div>
-					</div>
 					</a>
 				</li>
 
