@@ -383,6 +383,9 @@ padding-left: 10%;
 /*********************** IMAGEN GALERIA ********************/
   .image{
     background: white;
+    display: none;
+
+
   }
 
   .image .img-screen img{

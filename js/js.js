@@ -2,6 +2,7 @@ var hidden=true;
 
 $(document).on("ready",function(){
 	CenterToParent();
+	toShow();
 
 });
 
@@ -65,10 +66,19 @@ function CenterToParent(){
 
 function toShow(){
 
+	$('.to-show').on('click', function(){
+			$('.portfolio').hide(300);
+			$('.portfolio-2').hide(300);
+			$('.image').show(500);
+
+		})
+	console.log("entra to show");
 }
 
 function closeGallery(){
-
+	$('.image').hide(500);
+	$('.portfolio').show(500);
+	$('.portfolio-2').show(500);
 }
 
 function hideDisplay() {
