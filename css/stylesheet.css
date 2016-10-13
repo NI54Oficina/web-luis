@@ -432,5 +432,10 @@ padding-left: 10%;
     position: absolute;
     top:0;
     right: 0;
+    border:none;
+    font-size:3em;
+    background: none;
+    color:white;
+    font-weight: lighter;
 
   }

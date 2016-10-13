@@ -67,26 +67,24 @@ function toShow(){
 
 }
 
+function closeGallery(){
+
+}
+
 function hideDisplay() {
 	var height= $('.img-remain').height();
-	console.log(height);
-
-
-
 
 	if(hidden){
-
-
 			$(".img-remain").animate({marginTop:(height/3)+'px'}, 1000);
+			$('#button-display').text('-')
 			hidden=false;
 	}else{
 
 
 			$(".img-remain").animate({marginTop: -height+'px'}, 1000);
+			$('#button-display').text('+')
 			hidden=true;
 	}
-
-
 
 
 	}
