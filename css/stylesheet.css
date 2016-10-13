@@ -162,6 +162,10 @@ h1 span {
 section{
   padding: 50px !important;
 }
+
+.home{
+  height: 100%;
+}
 .header-home a {
   text-align: center;
   position: absolute;
@@ -190,9 +194,9 @@ section{
 }
 
 .footer-home{
-  /*position: absolute;
-  bottom: 0 ;
-  text-align: left;*/
+  position: absolute;
+  bottom: 50;
+  width: auto;
 }
 
 .footer-home a img{
@@ -206,6 +210,7 @@ section{
   background-image:url('../img/linea-textura-home.svg'),url('../img/simulacion-video.jpg');
   background-repeat:repeat,no-repeat;
   background-size:10%  , cover;
+  background-color: white;
 }
 
 
@@ -258,7 +263,7 @@ padding-left: 10%;
 /*********************** PORTFOLIO ********************/
 
 .portfolio-header .img-logo,.contact-header .img-logo {
-  width: 15em;
+  width: 10em;
   margin-bottom:100px;
 }
 
@@ -271,6 +276,7 @@ padding-left: 10%;
  }
 .portfolio-box h2 {
   color: white;
+  text-align: left !important;
 }
 
 .nav-porfolio li{
@@ -380,7 +386,7 @@ padding-left: 10%;
 .contact-box h2 , .portfolio-box h2{
   border-bottom: 1px solid white;
   font-size: 3em;
-  text-align: center;
+  text-align: left;
   padding:10px;
   margin: 0;
 }

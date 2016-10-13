@@ -18,7 +18,7 @@
 
 
 
-<div class="col-lg-4 col-sm-10 col-md-4 col-xs-10 contact-box" >
+<div class="col-lg-5 col-sm-10 col-md-5 col-xs-10 contact-box" >
 
   <h2>
     <span>C</span>ontacta tu <span>K</span>i
