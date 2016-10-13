@@ -19,10 +19,10 @@
   <h2>
     <span>C</span>ontacta tu <span>K</span>i
   </h2>
-  <div>
-    <img src="" alt="" />
-    <img src="" alt="" />
-    <img src="" alt="" />
+  <div class="links">
+    <img src="img/fb.png" alt="" />
+    <img src="img/ytube.png" alt="" />
+    <img src="img/linkedin.svg" alt="" />
   </div>
 </div>
 
@@ -30,7 +30,7 @@
 </div>
 </section>
 
-<section>
+<section class="col-lg-12 col-sm-12 col-md-12 col-xs-12 contacto-2">
 <div class="col-lg-6 col-sm-12 col-md-6 col-xs-12 left-box-contact">
   <form class="" action="index.html" method="post">
     <input type="text" name="name" value="" placeholder="Nombre"> <br>
@@ -43,7 +43,7 @@
   <p>
     Mensaje
   </p>
-  <textarea name="name" rows="8" cols="40"></textarea>
+  <textarea name="name" rows="8" cols="40"></textarea> <br>
 
   <button type="button" name="button">Enviar</button>
 

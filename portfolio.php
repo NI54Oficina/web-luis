@@ -18,10 +18,10 @@
     <h2>
       Portfolio
     </h2>
-    <div>
-      <img src="" alt="" />
-      <img src="" alt="" />
-      <img src="" alt="" />
+    <div class="links">
+      <img src="img/fb.png" alt="" />
+      <img src="img/ytube.png" alt="" />
+      <img src="img/linkedin.svg" alt="" />
     </div>
   </div>
 
@@ -47,29 +47,29 @@
   <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12  container-portfolio">
 
         <div class="col-lg-4 col-sm-12 col-md-4 col-xs-12 ">
-          <img src="img/test.png" alt="" />
+          <img class="to-show"src="img/test.png" alt="" />
+        </div>
+        <div class="col-lg-4 col-sm-12 col-md-4 col-xs-12 ">
+          <img class="to-show" src="img/test.png" alt="" />
         </div>
         <div class="col-lg-4 col-sm-12 col-md-4 col-xs-12 ">
           <img src="img/test.png" alt="" />
         </div>
         <div class="col-lg-4 col-sm-12 col-md-4 col-xs-12 ">
-          <img src="img/test.png" alt="" />
+          <img class="to-show" src="img/test.png" alt="" />
         </div>
         <div class="col-lg-4 col-sm-12 col-md-4 col-xs-12 ">
-          <img src="img/test.png" alt="" />
+          <img  class="to-show"src="img/test.png" alt="" />
         </div>
         <div class="col-lg-4 col-sm-12 col-md-4 col-xs-12 ">
-          <img src="img/test.png" alt="" />
-        </div>
-        <div class="col-lg-4 col-sm-12 col-md-4 col-xs-12 ">
-          <img src="img/test.png" alt="" />
+          <img class="to-show" src="img/test.png" alt="" />
         </div>
 
         <div class="col-lg-6 col-sm-12 col-md-6 col-xs-12 ">
-          <img src="img/test.png" alt="" />
+          <img class="to-show" src="img/test.png" alt="" />
         </div>
         <div class="col-lg-6 col-sm-12 col-md-6 col-xs-12 ">
-          <img src="img/test.png" alt="" />
+          <img class="to-show" src="img/test.png" alt="" />
         </div>
 
     </div>
