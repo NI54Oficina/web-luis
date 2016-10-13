@@ -57,7 +57,7 @@ html{
 }
 
 body{
-	background-color: #498d66;
+	background-color:#6bcea3;
 	font-family:'arialregular';
   margin:0;
    padding:0;
@@ -151,8 +151,8 @@ h1 span {
 }
 
 .links img{
-  width: 50px ;
-  height: 50px;
+  width: 25px ;
+  height: 25px;
 }
 .links{
   padding: 5px 10px;
@@ -192,15 +192,32 @@ section{
 }
 
 .footer-home a img{
-  width: 50px;
-  height: 50px;
+  width: 25px;
+  height: 25px;
+  margin-right:20px;
+}
+
+
+#home{
+  background-image:url('../img/linea-textura-home.svg'),url('../img/simulacion-video.jpg');
+  background-repeat:repeat,no-repeat;
+  background-size:10%  , cover;
 }
 
 
 
 
-
 /*********************** INICIO ********************/
+
+#inicio{
+
+  background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,0.27) 0%, rgba(0,0,0,0.62) 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(255,255,255,0.27)), color-stop(100%, rgba(0,0,0,0.62)));
+  background: -webkit-radial-gradient(center, ellipse cover, rgba(#6bcea3,255,255,0.27) 0%, rgba(0,0,0,0.62) 100%);
+  background: -o-radial-gradient(center, ellipse cover, rgba(255,255,255,0.27) 0%, rgba(0,0,0,0.62) 100%);
+  background: -ms-radial-gradient(center, ellipse cover, rgba(255,255,255,0.27) 0%, rgba(0,0,0,0.62) 100%);
+  background: radial-gradient(ellipse at center, rgba(255,255,255,0.27) 0%, rgba(0,0,0,0.62) 100%);
+}
 
 .nav-inicio li a{
   text-align: center;
@@ -266,6 +283,9 @@ padding-left: 10%;
 }
 /*********************** CONTACTO ********************/
 
+#contacto{
+  height: 100vh;
+}
 .contacto, .portfolio{
   background: url('../img/header.jpg');
   background-repeat: no-repeat;
@@ -300,6 +320,7 @@ padding-left: 10%;
 
 .right-box-contact,.left-box-contact{
   padding: 50px 80px;
+  height: 60%;
 }
 
 .left-box-contact input{
@@ -363,7 +384,6 @@ padding-left: 10%;
 
 .contacto-2{
   padding: 0 !important;
-  height: 100%;
 }
 
 .left-box-contact form input{

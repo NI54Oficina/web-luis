@@ -44,4 +44,3 @@
 
     <title></title>
   </head>
-  <body>

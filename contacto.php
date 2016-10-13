@@ -1,3 +1,4 @@
+  <body id="contacto">
 <?php include_once("header.php") ?>
 <section class="col-lg-12 col-sm-12 col-md-12 col-xs-12 contacto">
 
@@ -20,8 +21,8 @@
     <span>C</span>ontacta tu <span>K</span>i
   </h2>
   <div class="links">
-    <img src="img/fb.png" alt="" />
-    <img src="img/ytube.png" alt="" />
+    <img src="img/fb.svg" alt="" />
+    <img src="img/ytube.svg" alt="" />
     <img src="img/linkedin.svg" alt="" />
   </div>
 </div>
