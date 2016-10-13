@@ -157,6 +157,10 @@ h1 span {
 .links{
   padding: 10px 10px;
 }
+
+.selected{
+  border-bottom: 2px solid #68d3a9;
+}
 /*********************** HOME ********************/
 
 section{
@@ -281,7 +285,8 @@ padding-left: 10%;
 
 .nav-porfolio li{
   display: inline;
-  padding: 20px;
+  margin: 10px 20px;
+  padding-bottom: 5px;
 }
 .nav-porfolio {
   text-align: center;

@@ -40,10 +40,10 @@
 
 
   <ul class="col-lg-12 col-sm-12 col-md-12 col-xs-12 nav-porfolio">
-    <li>Todos</li>
-    <li>Motion</li>
-    <li>Arquitectura</li>
-    <li>Render</li>
+    <li id="todos" class="selected">Todos</li>
+    <li id="motion">Motion</li>
+    <li id="arquitectura">Arquitectura</li>
+    <li id="render">Render</li>
   </ul>
 
   <h2><span>A</span>nima tu <span>K</span>i</h2>
