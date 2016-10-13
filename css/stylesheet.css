@@ -36,11 +36,10 @@ html{
 
 /*FONTS*/
 @font-face {
-    font-family: 'arialregular';
+    font-family: 'AbelRegular';
     src:
-        url('DaxlinePro-Regular_13131.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+        url('font/Abel-Regular.ttf');
+
 
 }
 
@@ -58,11 +57,11 @@ html{
 
 body{
 	background-color:#6bcea3;
-	font-family:'arialregular';
+	font-family:'AbelRegular';
   margin:0;
    padding:0;
    height:100%;
-   font-size: 15px;
+   font-size:20px;
 }
 
 
@@ -82,7 +81,7 @@ a:hover{
 }
 
 p{
-	font-family:'arialregular';
+	font-family:'AbelRegular';
 }
 
 .center-to-parent{
@@ -153,9 +152,10 @@ h1 span {
 .links img{
   width: 25px ;
   height: 25px;
+  margin-right: 10px;
 }
 .links{
-  padding: 5px 10px;
+  padding: 10px 10px;
 }
 /*********************** HOME ********************/
 
@@ -179,6 +179,10 @@ section{
 .container-home h1 {
   font-size: 4em;
   color: #ffb60a;
+}
+
+.container-home img{
+  width: 25em;
 }
 
 .container-home h1 span {
@@ -211,12 +215,15 @@ section{
 
 #inicio{
 
-  background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,0.27) 0%, rgba(0,0,0,0.62) 100%);
+  /*background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,0.27) 0%, rgba(0,0,0,0.62) 100%);
   background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(255,255,255,0.27)), color-stop(100%, rgba(0,0,0,0.62)));
-  background: -webkit-radial-gradient(center, ellipse cover, rgba(#6bcea3,255,255,0.27) 0%, rgba(0,0,0,0.62) 100%);
-  background: -o-radial-gradient(center, ellipse cover, rgba(255,255,255,0.27) 0%, rgba(0,0,0,0.62) 100%);
-  background: -ms-radial-gradient(center, ellipse cover, rgba(255,255,255,0.27) 0%, rgba(0,0,0,0.62) 100%);
-  background: radial-gradient(ellipse at center, rgba(255,255,255,0.27) 0%, rgba(0,0,0,0.62) 100%);
+  background: -webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,0.27) 0%, rgba(0,0,0,0.62) 100%);
+  background: -o-radial-gradient(center, ellipse cover, rgba(255,255,255,0.27) 0%, rgba(0,0,0,0.62) 100%);*/
+  /*background: -ms-radial-gradient(center, ellipse cover, rgba(255,255,255,0.27) 0%, rgba(0,0,0,0.62) 100%);*/
+  background: radial-gradient(ellipse at center, rgba(94,176,130,1) 25%, rgba(0,50,0,0.50) 90%),url('../img/rombo-textura-menu-portfolio.svg');
+  background-repeat: repeat;
+
+
 }
 
 .nav-inicio li a{
@@ -250,6 +257,10 @@ padding-left: 10%;
 
 /*********************** PORTFOLIO ********************/
 
+.portfolio-header .img-logo,.contact-header .img-logo {
+  width: 15em;
+  margin-bottom:100px;
+}
 
 .portfolio-2{
   background: white;
@@ -273,7 +284,6 @@ padding-left: 10%;
 
 .container-portfolio div img{
   width: 100%;
-  height: 100%;
   position: relative;
 }
 
@@ -371,7 +381,8 @@ padding-left: 10%;
   border-bottom: 1px solid white;
   font-size: 3em;
   text-align: center;
-  padding-bottom: 10px;
+  padding:10px;
+  margin: 0;
 }
 
 .contact-box h2 span:first-child, .portfolio-2 h2 span:nth-child(2){

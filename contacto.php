@@ -13,7 +13,10 @@
       </p>
   </a>
 
-<h1><span>K</span>imena<span>S</span>td</h1>
+    <img class="img-logo" src="img/logo-interno.svg" alt="" /> <br>
+
+
+
 
 <div class="col-lg-4 col-sm-10 col-md-4 col-xs-10 contact-box" >
 

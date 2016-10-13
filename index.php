@@ -16,7 +16,7 @@
 </header>
 
 <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12 container-home">
-      <h1><span>K</span>imena<span>S</span>td</h1>
+      <img src="img/logo-blanco-home.svg" alt="" />
 </div>
 
 <!-- <div id="div1" />

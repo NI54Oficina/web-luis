@@ -4,7 +4,6 @@
 <section class="col-lg-12 col-sm-12 col-md-12 col-xs-12 portfolio">
 
   <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12 portfolio-header">
-
     <a href="home.php">
 
         <p class="center-to-parent border">
@@ -12,7 +11,11 @@
         </p>
     </a>
 
-  <h1><span>K</span>imena<span>S</span>td</h1>
+      <img class="img-logo" src="img/logo-interno.svg" alt="" /> <br>
+
+
+
+
 
   <div class="col-lg-4 col-sm-10 col-md-4 col-xs-10 portfolio-box" >
 
