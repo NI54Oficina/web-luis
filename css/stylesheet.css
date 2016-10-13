@@ -354,7 +354,7 @@ padding-left: 10%;
 }
 
 .contact-box h2 span:first-child, .portfolio-2 h2 span:nth-child(2){
-  color:#68d3a9;#ffb60a
+  color:#68d3a9;
 }
 
 .contact-box h2 span:nth-child(2), .portfolio-2 h2 span:first-child{
@@ -393,6 +393,7 @@ padding-left: 10%;
 
   .img-description{
     background-color: #7daba1;
+    z-index: 2;
   }
   .img-description p:first-child{
     color: white;
@@ -406,4 +407,30 @@ padding-left: 10%;
 
   .img-remain img{
     padding: 10px 5px;;
+  }
+
+  .img-remain{
+    margin-top: -70px;
+    z-index: 0;
+  }
+
+  .img-screen button{
+    background: none;
+    border-image: url('../img/border-b.png') 34% repeat;
+    font-size: 2em;
+    color:#ffb60a;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    z-index:2;
+    right: 0;
+    margin: 10px;
+
+  }
+
+  .img-description button{
+    position: absolute;
+    top:0;
+    right: 0;
+
   }

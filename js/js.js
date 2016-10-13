@@ -1,3 +1,5 @@
+var hidden=true;
+
 $(document).on("ready",function(){
 	CenterToParent();
 
@@ -59,3 +61,32 @@ function CenterToParent(){
 		$(this).css("top",paddingTop+"px");
 	});
 }
+
+
+function toShow(){
+
+}
+
+function hideDisplay() {
+	var height= $('.img-remain').height();
+	console.log(height);
+
+
+
+
+	if(hidden){
+
+
+			$(".img-remain").animate({marginTop:(height/3)+'px'}, 1000);
+			hidden=false;
+	}else{
+
+
+			$(".img-remain").animate({marginTop: -height+'px'}, 1000);
+			hidden=true;
+	}
+
+
+
+
+	}
