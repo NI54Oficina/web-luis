@@ -57,7 +57,7 @@
           <img class="to-show" src="img/test.png" alt="" />
         </div>
         <div class="col-lg-4 col-sm-12 col-md-4 col-xs-12 ">
-          <img class="to-show" src="img/test.png" alt="" />
+          <img class="to-show" src="img/test2.png" alt="" />
         </div>
         <div class="col-lg-4 col-sm-12 col-md-4 col-xs-12 ">
           <img class="to-show" src="img/test.png" alt="" />
@@ -73,7 +73,7 @@
           <img class="to-show" src="img/test.png" alt="" />
         </div>
         <div class="col-lg-6 col-sm-12 col-md-6 col-xs-12 ">
-          <img class="to-show" src="img/test.png" alt="" />
+          <img class="to-show" src="img/header.jpg" alt="" />
         </div>
 
     </div>
@@ -87,7 +87,7 @@
 
 <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12 img-screen">
   <button class="border" type="button" name="button" onclick="closeGallery()">X</button>
-  <img src="img/test.png" alt="" />
+  <img id="img-to-display"src="" alt="" />
 </div>
 
 <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12 img-description">

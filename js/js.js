@@ -68,12 +68,15 @@ function CenterToParent(){
 function toShow(){
 
 	$('.to-show').on('click', function(){
+			var src = $(this).attr('src');
 			$('.portfolio').hide(300);
 			$('.portfolio-2').hide(300);
+			$("#img-to-display").attr("src", src);
 			$('.image').show(500);
 
+
 		})
-	console.log("entra to show");
+
 }
 
 function closeGallery(){
