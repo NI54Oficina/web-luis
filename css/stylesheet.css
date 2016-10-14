@@ -179,7 +179,7 @@ section{
 
 
 .container-home{
-  padding: 300px 0px;
+  padding: 30% 0px;
   text-align: center;
   vertical-align: middle;
 }
@@ -190,7 +190,7 @@ section{
 }
 
 .container-home img{
-  width: 25em;
+  width: 20em;
 }
 
 .container-home h1 span {
@@ -204,8 +204,8 @@ section{
 }
 
 .footer-home a img{
-  width: 25px;
-  height: 25px;
+  width: 15px;
+  height: 15px;
   margin-right:20px;
 }
 
@@ -213,8 +213,9 @@ section{
 #home{
   background-image:url('../img/linea-textura-home.svg'),url('../img/simulacion-video.jpg');
   background-repeat:repeat,no-repeat;
-  background-size:10%  , cover;
+  background-size:10%  , 100% 100%;
   background-color: white;
+  height: 100vh;
 }
 
 
@@ -231,6 +232,7 @@ section{
   /*background: -ms-radial-gradient(center, ellipse cover, rgba(255,255,255,0.27) 0%, rgba(0,0,0,0.62) 100%);*/
   background: radial-gradient(ellipse at center, rgba(94,176,130,1) 25%, rgba(0,50,0,0.50) 90%),url('../img/rombo-textura-menu-portfolio.svg');
   background-repeat: repeat;
+  height: 100vh;
 
 
 }
@@ -238,10 +240,10 @@ section{
 .nav-inicio li a{
   text-align: center;
   color: white;
-  font-size: 2em;
+  font-size: 2.6em;
 }
 
-.nav-inicio li {
+.nav-inicio{
 padding-left: 10%;
 }
 
@@ -251,9 +253,9 @@ padding-left: 10%;
 }
 
 .container-inicio p{
-  padding: 20px 0px;
-  text-align: left;
+  text-align: justify;
   color: white;
+  font-size: 0.9em;
 }
 
 .header-inicio p{
@@ -263,12 +265,20 @@ padding-left: 10%;
 
 }
 
+.second-p, .first-p{
+  padding: 20px 10%;
+}
+
+.second-p{
+  opacity: .9;
+}
+
 
 /*********************** PORTFOLIO ********************/
 
 .portfolio-header .img-logo,.contact-header .img-logo {
   width: 10em;
-  margin-bottom:100px;
+  margin-bottom:150px;
 }
 
 .portfolio-2{
@@ -411,6 +421,7 @@ padding-left: 10%;
 .left-box-contact form input{
   width: 100%;
   padding-top: 3em;
+  font-size: .9em;
 }
 
 .right-box-contact p{

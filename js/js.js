@@ -3,6 +3,7 @@ var hidden=true;
 $(document).on("ready",function(){
 	CenterToParent();
 	toShow();
+	backButton();
 
 });
 
@@ -95,6 +96,17 @@ function hideDisplay() {
 			$('#button-display').text('+')
 			hidden=true;
 	}
+
+
+	}
+
+
+
+	function backButton(){
+
+			$('#backButton').click(function(){
+				history.back();
+			});
 
 
 	}
