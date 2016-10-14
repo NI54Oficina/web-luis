@@ -9,8 +9,7 @@
   <a >
 
       <p class="center-to-parent border button-menu ">
-        <!-- <span class="show-menu-text ">MENU</span> -->
-        <span class="hide-menu-text">CLOSE</span>
+        <span class="show-menu-text icon-hide">MENU</span>
 
       </p>
   </a>
