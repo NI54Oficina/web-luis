@@ -5,6 +5,7 @@ $(document).on("ready",function(){
 	toShow();
 	backButton();
 
+
 });
 
 
@@ -113,3 +114,14 @@ function hideDisplay() {
 
 
 	}
+
+	// function menu(){
+	// 	$(".button-menu").click(function(){
+	// 			$(".button-menu").fadeIn().css({top:1000,position:'absolute'}).animate({top:275}, 800, function() {
+	// 	    //callback
+	// 			});
+	// 	});
+	//
+
+
+	// }

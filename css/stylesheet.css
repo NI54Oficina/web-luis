@@ -161,10 +161,17 @@ h1 span {
 .selected{
   border-bottom: 2px solid #68d3a9;
 }
+
+/*.button-menu:hover{
+  transition: tranform 1s;
+
+}*/
+
+
 /*********************** HOME ********************/
 
 section{
-  padding: 50px !important;
+  padding: 100px !important;
 }
 
 .home{
@@ -179,7 +186,7 @@ section{
 
 
 .container-home{
-  padding: 30vh 0px;
+  padding: 35vh 0px;
   text-align: center;
   vertical-align: middle;
 }
@@ -288,7 +295,7 @@ padding-left: 10%;
   margin-bottom:150px;
 }
 
-.portfolio-2{
+.portfolio-2, #portfolio{
   background: white;
 }
 
@@ -331,9 +338,9 @@ padding-left: 10%;
 
 }
 
-.contact-header, .portfolio-header{
-  padding:0px 50px 50px 50px;
-}
+/*.contact-header, .portfolio-header{
+  padding:0px 50px 50px 0px;
+}*/
 
 .contact-header h1, .portfolio-header h1{
   font-size: 2.5em;
@@ -357,8 +364,8 @@ padding-left: 10%;
 }
 
 .right-box-contact,.left-box-contact{
-  padding: 50px 80px;
-  height: 60%;
+  padding: 50px 100px;
+  height: auto;
 }
 
 .left-box-contact input{
@@ -380,6 +387,7 @@ padding-left: 10%;
 
 .right-box-contact p{
   color: black;
+  font-size: .9em;
 
 }
 
@@ -423,6 +431,7 @@ padding-left: 10%;
 
 .contacto-2{
   padding: 0 !important;
+  max-height: 50vh;
 }
 
 .left-box-contact form input{
@@ -444,7 +453,8 @@ padding-left: 10%;
   .image{
     background: white;
     display: none;
-
+    position: fixed;
+    top:0;
 
   }
 
@@ -502,3 +512,40 @@ padding-left: 10%;
     font-weight: lighter;
 
   }
+
+
+
+////////////////////////
+.button-menu .show-menu-text{
+visibility: visible;
+zoom: 1;
+filter: alpha(opacity=100);
+-webkit-opacity: 1;
+-moz-opacity: 1;
+opacity: 1;
+-webkit-transition-delay: .1s;
+-moz-transition-delay: .1s;
+-o-transition-delay: .1s;
+transition-delay: .1s;
+-webkit-transform: translateY(0);
+-moz-transform: translateY(0);
+-ms-transform: translateY(0);
+-o-transform: translateY(0);
+transform: translateY(0);
+}
+
+.button-menu:hover .hide-menu-text{
+
+  /*visibility: hidden;*/
+    zoom: 1;
+    filter: alpha(opacity=0);
+    /*-webkit-opacity: 0;
+    -moz-opacity: 0;
+    opacity: 0;*/
+    /*-webkit-transform: translateY(15px);
+    -moz-transform: translateY(15px);
+    -ms-transform: translateY(15px);
+    -o-transform: translateY(15px);*/
+    transform: rotateY(150deg);
+    transition: transform 1s;
+}

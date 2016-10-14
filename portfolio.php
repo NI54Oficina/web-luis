@@ -1,4 +1,4 @@
-<body>
+<body id="portfolio">
 <?php include_once("header.php") ?>
 
 <section class="col-lg-12 col-sm-12 col-md-12 col-xs-12 portfolio">
@@ -36,15 +36,17 @@
 
 </section>
 
+<ul class="col-lg-12 col-sm-12 col-md-12 col-xs-12 nav-porfolio">
+  <li id="todos" class="selected">Todos</li>
+  <li id="motion">Motion</li>
+  <li id="arquitectura">Arquitectura</li>
+  <li id="render">Render</li>
+</ul>
+
 <section class="col-lg-12 col-sm-12 col-md-12 col-xs-12 portfolio-2">
 
 
-  <ul class="col-lg-12 col-sm-12 col-md-12 col-xs-12 nav-porfolio">
-    <li id="todos" class="selected">Todos</li>
-    <li id="motion">Motion</li>
-    <li id="arquitectura">Arquitectura</li>
-    <li id="render">Render</li>
-  </ul>
+
 
   <h2><span>A</span>nima tu <span>K</span>i</h2>
 

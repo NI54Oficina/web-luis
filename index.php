@@ -6,10 +6,12 @@
 
 <header class="col-lg-12 col-sm-12 col-md-12 col-xs-12 header-home">
 
-  <a href="home.php">
+  <a >
 
-      <p class="center-to-parent border">
-        Menu
+      <p class="center-to-parent border button-menu ">
+        <!-- <span class="show-menu-text ">MENU</span> -->
+        <span class="hide-menu-text">CLOSE</span>
+
       </p>
   </a>
 
@@ -29,5 +31,8 @@
 </footer>
 
 </section>
+
+
+
 </body>
 </html>
