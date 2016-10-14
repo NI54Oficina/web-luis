@@ -6,7 +6,7 @@
 
 <header class="col-lg-12 col-sm-12 col-md-12 col-xs-12 header-home">
 
-  <a >
+  <a href="home.php">
 
       <p class="center-to-parent border button-menu ">
         <span class="show-menu-text icon-hide">MENU</span>
