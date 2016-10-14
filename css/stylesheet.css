@@ -168,7 +168,7 @@ section{
 }
 
 .home{
-  max-height: 100vh;
+  height: 100vh;
 }
 .header-home a {
   text-align: center;
@@ -179,7 +179,7 @@ section{
 
 
 .container-home{
-  padding: 30% 0px;
+  padding: 30vh 0px;
   text-align: center;
   vertical-align: middle;
 }
@@ -215,7 +215,7 @@ section{
   background-repeat:no-repeat,repeat,no-repeat;
   background-size:100% 100% ,10%, 100% 100%;
   background-color: white;
-  max-height: 100vh;
+  height: 100vh;
 }
 
 
