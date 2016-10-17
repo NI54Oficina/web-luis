@@ -2,7 +2,7 @@
 <?php include_once("header.php") ?>
 <body id="home">
 
-  <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12 header-home" style="position:absolute; z-index:99999999">
+  <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12 header-home" style="z-index:99999999">
 
     <a id="btn-menu" >
 
