@@ -186,6 +186,14 @@ section{
     color: white;
 }
 
+.color-menu a {
+  text-align: center;
+  position: absolute;
+  right:0;
+  line-height: 70%;
+    color: #ffb60a;
+}
+
 
 .container-home{
   padding: 35vh 0px;

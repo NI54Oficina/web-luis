@@ -1,6 +1,8 @@
 <?php include_once("header.php") ?>
 <body id="portfolio ">
 
+<?php include_once("menu.php") ?>
+
   <?php include_once("home.php") ?>
 
 
@@ -8,13 +10,15 @@
 
   <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12 portfolio-header">
 
-    <a id="btn-menu" >
+    <!-- <a id="btn-menu" >
 
           <p class="center-to-parent border button-menu ">
-            <span class="show-menu-text icon-hide">MENU</span>
+
+            <span class="show-menu-text icon-hide">CLOSE</span>
+            <span class="hide-menu-text icon-hide">MENU</span>
 
           </p>
-      </a>
+      </a> -->
 
       <img class="img-logo" src="img/logo-interno.svg" alt="" /> <br>
 
