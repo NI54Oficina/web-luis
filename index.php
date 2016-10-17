@@ -1,18 +1,29 @@
-<body id="home">
-<?php include_once("header.php") ?>
 
-<section class="col-lg-12 col-sm-12 col-md-12 col-xs-12 home">
+<?php include_once("header.php") ?>
+<body id="home">
+
+  <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12 header-home" style="position:absolute; z-index:99999999">
+
+    <a id="btn-menu" >
+
+          <p class="center-to-parent border button-menu ">
+
+            <span class="show-menu-text icon-hide">CLOSE</span>
+            <span class="hide-menu-text icon-hide">MENU</span>
+
+          </p>
+      </a>
+  </div>
+
+
+<?php include_once("home.php") ?>
+
+<section class="col-lg-12 col-sm-12 col-md-12 col-xs-12 home pantalla">
 
 
 <header class="col-lg-12 col-sm-12 col-md-12 col-xs-12 header-home">
 
-  <a href="home.php">
 
-      <p class="center-to-parent border button-menu ">
-        <span class="show-menu-text icon-hide">MENU</span>
-
-      </p>
-  </a>
 
 </header>
 

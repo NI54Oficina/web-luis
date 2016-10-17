@@ -1,17 +1,16 @@
-  <body id="inicio">
-	<?php include_once("header.php") ?>
-
-	<section class="col-lg-12 col-sm-12 col-md-12 col-xs-12 inicio">
 
 
-  <header class="col-lg-12 col-sm-12 col-md-12 col-xs-12 header-inicio">
+	<section id="inicio" class="col-lg-12 col-sm-12 col-md-12 col-xs-12 inicio">
+
+
+  <!-- <header class="col-lg-12 col-sm-12 col-md-12 col-xs-12 header-inicio">
 		<a id="backButton">
 			<p>
 			Close
 		</p>
 	</a>
 
-  </header>
+  </header> -->
 
 	<div class="col-lg-12 col-sm-12 col-md-12 col-xs-12 container-inicio">
 
@@ -59,7 +58,7 @@
 			Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del
 			 texto de un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una
 			 distribución más o menos normal de las letras, al contrario de usar textos como por ejemplo "
-			 Contenido aquí, contenido aquí". 
+			 Contenido aquí, contenido aquí".
 
 
 		</p>
@@ -70,5 +69,3 @@
 <div id="div2" /> -->
 
 	</section>
-  </body>
-</html>

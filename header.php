@@ -26,6 +26,7 @@
       <!--JS-->
       <script type="text/javascript" src="js/jquery.min.js"></script>
       <script type="text/javascript" src="js/jquery.mobile-events.min.js"></script>
+      <script type="text/javascript" src="js/jquery-ui.js"></script>
 
 
 
@@ -40,6 +41,7 @@
       <link type="text/css" rel="stylesheet" href="css/sm.css"> <!-- sm -->
       <link type="text/css" rel="stylesheet" href="css/xs.css"> <!-- xs -->
       <link type="text/css" rel="stylesheet" href="css/sp.css"> <!-- sp -->
+      <link type="text/css" rel="stylesheet" href="css/jquery-ui.css"> <!-- ux-->
 
 
     <title></title>

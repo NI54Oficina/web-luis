@@ -1,15 +1,20 @@
-<body id="portfolio">
 <?php include_once("header.php") ?>
+<body id="portfolio ">
 
-<section class="col-lg-12 col-sm-12 col-md-12 col-xs-12 portfolio">
+  <?php include_once("home.php") ?>
+
+
+<section class="col-lg-12 col-sm-12 col-md-12 col-xs-12 portfolio pantalla">
 
   <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12 portfolio-header">
-    <a href="home.php">
 
-        <p class="center-to-parent border">
-          Menu
-        </p>
-    </a>
+    <a id="btn-menu" >
+
+          <p class="center-to-parent border button-menu ">
+            <span class="show-menu-text icon-hide">MENU</span>
+
+          </p>
+      </a>
 
       <img class="img-logo" src="img/logo-interno.svg" alt="" /> <br>
 
@@ -43,7 +48,7 @@
   <li id="render">Render</li>
 </ul>
 
-<section class="col-lg-12 col-sm-12 col-md-12 col-xs-12 portfolio-2">
+<section class="col-lg-12 col-sm-12 col-md-12 col-xs-12 portfolio-2 pantalla">
 
 
 
