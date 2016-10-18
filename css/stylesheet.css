@@ -309,7 +309,7 @@ padding-left: 10%;
 }
 
 .portfolio-2, #portfolio{
-background: radial-gradient(ellipse at center, rgba(255,255,255,0.20) 0%, rgba(255,255,255,0.20) 100%),url('../img/rombo-textura-menu-portfolio.svg');
+background: radial-gradient(ellipse at center, rgba(255,255,255,0.10) 0%, rgba(255,255,255,0.10) 100%),url('../img/rombo-textura-menu-portfolio.svg');
 /
 }
 
@@ -328,7 +328,10 @@ background: radial-gradient(ellipse at center, rgba(255,255,255,0.20) 0%, rgba(2
 }
 .nav-porfolio {
   text-align: center;
-  cursor: pointer
+  cursor: pointer;
+  border-bottom: 2px solid rgba(104,211,169,.3);
+  padding: 4px;
+  margin-bottom: 4px;
 }
 
 .container-portfolio div img{
