@@ -55,10 +55,10 @@
 		</p>
 
 		<p class="col-lg-12 col-sm-12 col-md-12 col-xs-12 second-p" >
-			Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del
-			 texto de un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una
-			 distribución más o menos normal de las letras, al contrario de usar textos como por ejemplo "
-			 Contenido aquí, contenido aquí".
+			It is a long established fact that a reader will be distracted by the readable content of
+			a page when looking at its layout. The point of using Lorem Ipsum is that it has a
+			more-or-less normal distribution of letters, as opposed to using 'Content here, content here',
+			making it look like readable English.
 
 
 		</p>
