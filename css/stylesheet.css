@@ -374,9 +374,6 @@ background: radial-gradient(ellipse at center, rgba(255,255,255,0.20) 0%, rgba(2
   background-color: white;
 }
 
-.contacto .left-box-contact{
-  background-color:#498d66;
-}
 
 .right-box-contact,.left-box-contact{
   padding: 50px 100px;
@@ -446,7 +443,7 @@ background: radial-gradient(ellipse at center, rgba(255,255,255,0.20) 0%, rgba(2
 
 .contacto-2{
   padding: 0 !important;
-  max-height: 50vh;
+  background: url('../img/cuadrado-textura-contacto.svg');
 }
 
 .left-box-contact form input{
