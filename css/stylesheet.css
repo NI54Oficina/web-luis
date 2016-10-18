@@ -162,11 +162,14 @@ h1 span {
   border-bottom: 2px solid #68d3a9;
 }
 
-.button-menu{
+/*.button-menu{
+
+position: absolute;
+z-index: 9999999;
+right: 20;
 
 
-
-}
+}*/
 
 
 /*********************** HOME ********************/
@@ -180,8 +183,8 @@ section{
 }
 .header-home a {
   text-align: center;
-  position: absolute;
-  right:0;
+  /*position: absolute;
+  right:0;*/
   line-height: 70%;
     color: white;
 }
