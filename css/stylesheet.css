@@ -244,8 +244,8 @@ section{
   background: -webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,0.27) 0%, rgba(0,0,0,0.62) 100%);
   background: -o-radial-gradient(center, ellipse cover, rgba(255,255,255,0.27) 0%, rgba(0,0,0,0.62) 100%);*/
   /*background: -ms-radial-gradient(center, ellipse cover, rgba(255,255,255,0.27) 0%, rgba(0,0,0,0.62) 100%);*/
-  background: url('../img/rombo-textura-menu-portfolio.svg'),radial-gradient(ellipse at center, rgba(255,255,255,0.27) 0%, rgba(60,133,90,0.62) 100%);
-  background-repeat: repeat;
+  background: url('../img/rombo-textura-menu-portfolio.svg'),radial-gradient(ellipse at center, rgba(233,241,236,1) 0%, rgba(60,133,90,1) 100%);
+
   height: 100vh;
   display: none;
   position: fixed;
@@ -309,7 +309,8 @@ padding-left: 10%;
 }
 
 .portfolio-2, #portfolio{
-  background: white;
+background: radial-gradient(ellipse at center, rgba(255,255,255,0.20) 0%, rgba(255,255,255,0.20) 100%),url('../img/rombo-textura-menu-portfolio.svg');
+/
 }
 
  .portfolio-2 h2{
@@ -467,7 +468,6 @@ padding-left: 10%;
   .image{
     background: white;
     display: none;
-    position: fixed;
     top:0;
 
   }
@@ -542,7 +542,7 @@ display: block;
 .hide-menu-text{
 
 visibility: visible;
-transform: matrix(1, 0, 0, 1, 0, -10);
+transform: matrix(1, 0, 0, 1, 0, -5);
 transition-delay: .25s;
 transition-duration: .25s;
 display: block;
@@ -550,7 +550,7 @@ display: block;
 
 .prueba-visible{
   visibility: visible;
-  transform: matrix(1, 0, 0, 1, 0, 15);
+  transform: matrix(1, 0, 0, 1, 0, 8);
   transition-delay: .25s;
   transition-duration: .25s;
   display: block;

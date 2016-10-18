@@ -45,7 +45,7 @@
 
 </section>
 
-<ul class="col-lg-12 col-sm-12 col-md-12 col-xs-12 nav-porfolio">
+<ul class="col-lg-12 col-sm-12 col-md-12 col-xs-12 nav-porfolio pantalla">
   <li id="todos" class="selected">Todos</li>
   <li id="motion">Motion</li>
   <li id="arquitectura">Arquitectura</li>
