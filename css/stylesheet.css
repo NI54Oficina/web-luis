@@ -484,6 +484,7 @@ background: radial-gradient(ellipse at center, rgba(255,255,255,0.10) 0%, rgba(2
   .img-description{
     background-color: #7daba1;
     z-index: 2;
+
   }
   .img-description p:first-child{
     color: white;
@@ -500,8 +501,7 @@ background: radial-gradient(ellipse at center, rgba(255,255,255,0.10) 0%, rgba(2
   }
 
   .img-remain{
-    margin-top: -70px;
-    z-index: 0;
+
   }
 
   .img-screen button{

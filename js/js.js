@@ -5,6 +5,7 @@ $(document).on("ready",function(){
 	CenterToParent();
 	toShow();
 	backButton();
+
 	menuDisplay();
 
 
@@ -77,6 +78,8 @@ function toShow(){
 			$("#img-to-display").attr("src", src);
 			$('.image').fadeIn(500);
 
+			setMargin();
+
 
 		})
 
@@ -89,16 +92,18 @@ function closeGallery(){
 }
 
 function hideDisplay() {
-	var height= $('.img-remain').height();
+	var height= $('.img-description').height();
 
 	if(hidden){
-			$(".img-remain").animate({marginTop:(height/3)+'px'}, 1000);
+			$(".img-description").animate({marginTop:0}, 1000);
+			setMargin();
 			$('#button-display').text('-')
 			hidden=false;
 	}else{
 
 
-			$(".img-remain").animate({marginTop: -height+'px'}, 1000);
+			$(".img-description").animate({marginTop:'-'+height+'px'}, 1000);
+			$(".img-remain").animate({marginTop:0}, 1000);
 			$('#button-display').text('+')
 			hidden=true;
 	}
@@ -124,16 +129,12 @@ function hideDisplay() {
 
 	}
 
-	// function menu(){
-	// 	$(".button-menu").click(function(){
-	// 			$(".button-menu").fadeIn().css({top:1000,position:'absolute'}).animate({top:275}, 800, function() {
-	// 	    //callback
-	// 			});
-	// 	});
-	//
+function setMargin(){
+	var height= $('.img-remain').outerHeight();
+	$('.img-description').css('min-height',height);
+	$('.img-remain').css('margin-top','-'+height+'px');
 
-
-	// }
+}
 
 
 	function menuDisplay(){
