@@ -1,5 +1,6 @@
 var hidden=true;
 var menu=false;
+var marginGetter;
 
 $(document).on("ready",function(){
 	CenterToParent();
@@ -75,10 +76,11 @@ function toShow(){
 			var src = $(this).attr('src');
 			$('.portfolio').fadeOut(300);
 			$('.portfolio-2').fadeOut(300);
+			$('.nav-porfolio').fadeOut(300);
 			$("#img-to-display").attr("src", src);
 			$('.image').fadeIn(500);
 
-			setMargin();
+ setMargin();
 
 
 		})
@@ -91,19 +93,21 @@ function closeGallery(){
 	$('.portfolio-2').fadeIn(500);
 }
 
+
 function hideDisplay() {
-	var height= $('.img-description').height();
+	 height= $('.img-remain').outerHeight();
+
+	 realMargin =parseInt($('.img-description').css('margin-top'));
 
 	if(hidden){
-			$(".img-description").animate({marginTop:0}, 1000);
-			setMargin();
-			$('#button-display').text('-')
+
+		console.log(-height);
+			$(".img-description").animate({marginTop:(realMargin-height-15)+'px'}, 1000);
+			$('#button-display').text('-');
 			hidden=false;
 	}else{
 
-
-			$(".img-description").animate({marginTop:'-'+height+'px'}, 1000);
-			$(".img-remain").animate({marginTop:0}, 1000);
+			$(".img-description").animate({marginTop:-height+'px'}, 1000);
 			$('#button-display').text('+')
 			hidden=true;
 	}
@@ -132,10 +136,9 @@ function hideDisplay() {
 function setMargin(){
 	var height= $('.img-remain').outerHeight();
 	$('.img-description').css('min-height',height);
-	$('.img-remain').css('margin-top','-'+height+'px');
+	$('.img-description').css('margin-top','-'+height+'px');
 
 }
-
 
 	function menuDisplay(){
 
