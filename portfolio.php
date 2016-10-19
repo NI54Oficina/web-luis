@@ -61,6 +61,9 @@
 
   <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12  container-portfolio">
 
+    <?php include_once("proyecto.php") ?>
+
+
         <div class="col-lg-4 col-sm-12 col-md-4 col-xs-12 ">
           <img class="to-show"src="img/test.png" alt="" />
         </div>
@@ -68,7 +71,7 @@
           <img class="to-show" src="img/test.png" alt="" />
         </div>
         <div class="col-lg-4 col-sm-12 col-md-4 col-xs-12 ">
-          <img class="to-show" src="img/test2.png" alt="" />
+          <img class="to-show" src="img/test.png" alt="" />
         </div>
         <div class="col-lg-4 col-sm-12 col-md-4 col-xs-12 ">
           <img class="to-show" src="img/test.png" alt="" />
@@ -80,10 +83,10 @@
           <img class="to-show" src="img/test.png" alt="" />
         </div>
 
-        <div class="col-lg-6 col-sm-12 col-md-6 col-xs-12 ">
+        <div class="col-lg-4 col-sm-12 col-md-4 col-xs-12 ">
           <img class="to-show" src="img/test.png" alt="" />
         </div>
-        <div class="col-lg-6 col-sm-12 col-md-6 col-xs-12 ">
+        <div class="col-lg-4 col-sm-12 col-md-4 col-xs-12 ">
           <img class="to-show" src="img/header.jpg" alt="" />
         </div>
 
@@ -101,14 +104,18 @@
   <img id="img-to-display"src="" alt="" />
 </div>
 
-
+<!-- <script>
+<?php // foreach($imagenes as $imagen){ ?>
+  miArrayJs.push(" <?php// $echo $imagen; ?>");
+  <?php // } ?>
+</script> -->
 
 <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12 img-remain">
-    <img class="col-lg-1 col-sm-3 col-md-1 col-xs-3" src="img/test.png" alt="" />
-    <img class="col-lg-1 col-sm-3 col-md-1 col-xs-3" src="img/test.png" alt="" />
-    <img class="col-lg-1 col-sm-3 col-md-1 col-xs-3" src="img/test.png" alt="" />
-    <img class="col-lg-1 col-sm-3 col-md-1 col-xs-3" src="img/test.png" alt="" />
-    <img class="col-lg-1 col-sm-3 col-md-1 col-xs-3" src="img/test.png" alt="" />
+    <img class="col-lg-1 col-sm-3 col-md-1 col-xs-3 remain-show" src="img/test.png" alt="" />
+    <img class="col-lg-1 col-sm-3 col-md-1 col-xs-3 remain-show " src="img/test.png" alt="" />
+    <img class="col-lg-1 col-sm-3 col-md-1 col-xs-3 remain-show" src="img/test.png" alt="" />
+    <img class="col-lg-1 col-sm-3 col-md-1 col-xs-3 remain-show" src="img/test.png" alt="" />
+    <img class="col-lg-1 col-sm-3 col-md-1 col-xs-3 remain-show" src="img/test.png" alt="" />
 </div>
 
 <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12 img-description">

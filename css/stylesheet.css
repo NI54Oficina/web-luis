@@ -175,7 +175,7 @@ right: 20;
 /*********************** HOME ********************/
 
 section{
-  padding: 100px !important;
+  padding: 50px 100px !important;
 }
 
 .home{
@@ -472,6 +472,7 @@ background: radial-gradient(ellipse at center, rgba(255,255,255,0.10) 0%, rgba(2
     background: white;
     display: none;
     top:0;
+    padding-top: 50px !important;
 
   }
 
@@ -497,11 +498,12 @@ background: radial-gradient(ellipse at center, rgba(255,255,255,0.10) 0%, rgba(2
   }
 
   .img-remain img{
-    padding: 10px 5px;;
+    padding: 10px 5px;
+    cursor: pointer;
   }
 
   .img-remain{
-margin-top: 0;
+    margin-top: 0;
 
   }
 

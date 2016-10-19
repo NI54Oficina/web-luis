@@ -5,9 +5,8 @@ var marginGetter;
 $(document).on("ready",function(){
 	CenterToParent();
 	toShow();
-	backButton();
-
 	menuDisplay();
+	remainings();
 
 
 });
@@ -79,6 +78,7 @@ function toShow(){
 			$('.nav-porfolio').fadeOut(300);
 			$("#img-to-display").attr("src", src);
 			$('.image').fadeIn(500);
+			// $('#btn-menu').css('visibility','hidden');
 
  setMargin();
 
@@ -91,8 +91,8 @@ function closeGallery(){
 	$('.image').fadeOut(500);
 	$('.portfolio').fadeIn(500);
 	$('.portfolio-2').fadeIn(500);
+	// $('.button-menu').css('visibility','visible');
 }
-
 
 function hideDisplay() {
 	 height= $('.img-remain').outerHeight();
@@ -104,6 +104,7 @@ function hideDisplay() {
 		console.log(-height);
 			$(".img-description").animate({marginTop:(realMargin-height-15)+'px'}, 1000);
 			$('#button-display').text('-');
+
 			hidden=false;
 	}else{
 
@@ -116,23 +117,6 @@ function hideDisplay() {
 	}
 
 
-
-	function backButton(){
-
-			$('#backButton').click(function(){
-
-								$("#inicio").fadeOut( "slow");
-									$(".pantalla").fadeIn( "slow");
-
-
-					console.log("melnia was here");
-			//
-			// 	history.back();
-		});
-			//
-
-	}
-
 function setMargin(){
 	var height= $('.img-remain').outerHeight();
 	$('.img-description').css('min-height',height);
@@ -140,7 +124,7 @@ function setMargin(){
 
 }
 
-	function menuDisplay(){
+function menuDisplay(){
 
 		$("#btn-menu").click(function(){
 
@@ -171,4 +155,12 @@ function setMargin(){
 
 		});
 
+	}
+
+
+function remainings(){
+		$('.remain-show').click(function(){
+			var src = $(this).attr('src');
+			$("#img-to-display").attr("src", src);
+		});
 	}
