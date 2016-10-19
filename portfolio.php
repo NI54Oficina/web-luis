@@ -46,10 +46,10 @@
 </section>
 
 <ul class="col-lg-12 col-sm-12 col-md-12 col-xs-12 nav-porfolio pantalla">
-  <li id="todos" class="selected">Todos</li>
-  <li id="motion">Motion</li>
-  <li id="arquitectura">Arquitectura</li>
-  <li id="render">Render</li>
+  <li id="todos" class="">Todos <div class="selected"></div></li>
+  <li id="motion">Motion  <div class="not-selected"></div></li>
+  <li id="arquitectura">Arquitectura  <div class="not-selected"></div></li>
+  <li id="render">Render  <div class="not-selected"></div></li>
 </ul>
 
 <section class="col-lg-12 col-sm-12 col-md-12 col-xs-12 portfolio-2 pantalla">

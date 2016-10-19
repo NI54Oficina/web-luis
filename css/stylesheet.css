@@ -165,7 +165,9 @@ h1 span {
 }
 
 .selected{
-  border-bottom: 2px solid #68d3a9;
+  background: #68d3a9;
+  height: 2px;
+  width: 100%;
 }
 
 /*.button-menu{
@@ -279,6 +281,7 @@ section{
   font-size: 2.6em;
 }
 
+
 .nav-inicio{
 padding-left: 10%;
 }
@@ -340,10 +343,24 @@ background: radial-gradient(ellipse at center, rgba(255,255,255,0.10) 0%, rgba(2
 }
 
 .nav-porfolio li{
-  display: inline;
+  display: inline-block;
   margin: 10px 20px;
   padding-bottom: 5px;
 }
+
+.nav-porfolio li .not-selected{
+ background: #68d3a9;
+ width: 0%;
+
+}
+
+.nav-porfolio li:hover .not-selected{
+ width: 100%;
+ height: 2px;
+transition: all ease 1s;
+
+}
+
 .nav-porfolio {
   text-align: center;
   cursor: pointer;

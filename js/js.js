@@ -91,6 +91,7 @@ function closeGallery(){
 	$('.image').fadeOut(500);
 	$('.portfolio').fadeIn(500);
 	$('.portfolio-2').fadeIn(500);
+	$('.nav-porfolio').fadeIn(300);
 	// $('.button-menu').css('visibility','visible');
 }
 
