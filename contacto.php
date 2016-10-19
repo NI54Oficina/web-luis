@@ -29,9 +29,9 @@
     <span>C</span>ontacta tu <span>K</span>i
   </h2>
   <div class="links">
-    <img src="img/fb.svg" alt="" />
-    <img src="img/ytube.svg" alt="" />
-    <img src="img/linkedin.svg" alt="" />
+    <a href="#"><img src="img/fb.svg" alt="" /></a>
+    <a href="#"><img src="img/ytube.svg" alt="" /></a>
+    <a href="#"><img src="img/linkedin.svg" alt="" /></a>
   </div>
 </div>
 

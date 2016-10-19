@@ -134,8 +134,8 @@ p{
 }
 
 .border{
-  border: 10px solid #000000;
-  border-image: url('../img/border.png') 34% repeat;
+  border: 5px solid #000000;
+  border-image: url('../img/border.png') 29% ;
   box-sizing: border-box;
 }
 
@@ -149,13 +149,19 @@ h1 span {
   color: #68d3a9;
 }
 
-.links img{
+.links a img{
   width: 15px ;
   height: 15px;
   margin-right: 10px;
+  opacity: 0.5;
 }
 .links{
   padding: 10px 10px;
+
+}
+
+.links  a img:hover{
+  opacity: 1;
 }
 
 .selected{
@@ -218,15 +224,24 @@ section{
 }
 
 .footer-home{
-  width: auto;
+
+  padding-bottom: 100px;
+    position: absolute;
+    bottom: 0;
 }
 
 .footer-home a img{
   width: 15px;
   height: 15px;
   margin-right:20px;
+  opacity: .5;
 }
 
+
+.footer-home a img:hover{
+
+  opacity:1;
+}
 
 #home{
   background-image:radial-gradient(ellipse at center, rgba(255,255,255,0.27) 0%, rgba(0,0,0,0.62) 100%),url('../img/linea-textura-home.svg'),url('../img/simulacion-video.jpg');
@@ -335,6 +350,7 @@ background: radial-gradient(ellipse at center, rgba(255,255,255,0.10) 0%, rgba(2
   border-bottom: 2px solid rgba(104,211,169,.3);
   padding: 4px;
   margin-bottom: 4px;
+  padding-top: 50px;
 }
 
 .container-portfolio div img{
@@ -368,11 +384,11 @@ background: radial-gradient(ellipse at center, rgba(255,255,255,0.10) 0%, rgba(2
   margin:0 auto 3em auto;
 }
 
-.contact-header a, .portfolio-header a{
+/*.contact-header a, .portfolio-header a{
   position: absolute;
   right: 0;
   color:#ffb60a;
-}
+}*/
 
 
 
