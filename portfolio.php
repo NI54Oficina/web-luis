@@ -10,15 +10,6 @@
 
   <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12 portfolio-header">
 
-    <!-- <a id="btn-menu" >
-
-          <p class="center-to-parent border button-menu ">
-
-            <span class="show-menu-text icon-hide">CLOSE</span>
-            <span class="hide-menu-text icon-hide">MENU</span>
-
-          </p>
-      </a> -->
 
       <img class="img-logo" src="img/logo-interno.svg" alt="" /> <br>
 
@@ -46,10 +37,10 @@
 </section>
 
 <ul class="col-lg-12 col-sm-12 col-md-12 col-xs-12 nav-porfolio pantalla">
-  <li id="todos" class="">Todos <div class="selected"></div></li>
-  <li id="motion">Motion  <div class="not-selected"></div></li>
-  <li id="arquitectura">Arquitectura  <div class="not-selected"></div></li>
-  <li id="render">Render  <div class="not-selected"></div></li>
+  <li id="todos" class="selected">Todos <div ></div></li>
+  <li id="motion" class="not-selected">Motion  <div ></div></li>
+  <li id="arquitectura" class="not-selected">Arquitectura  <div ></div></li>
+  <li id="render" class="not-selected">Render  <div ></div></li>
 </ul>
 
 <section class="col-lg-12 col-sm-12 col-md-12 col-xs-12 portfolio-2 pantalla">
@@ -63,36 +54,64 @@
 
     <?php include_once("proyecto.php") ?>
 
+            <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12 todos solapa">
 
-        <div class="col-lg-4 col-sm-12 col-md-4 col-xs-12 ">
-          <img class="to-show"src="img/test.png" alt="" />
-        </div>
-        <div class="col-lg-4 col-sm-12 col-md-4 col-xs-12 ">
-          <img class="to-show" src="img/test.png" alt="" />
-        </div>
-        <div class="col-lg-4 col-sm-12 col-md-4 col-xs-12 ">
-          <img class="to-show" src="img/test.png" alt="" />
-        </div>
-        <div class="col-lg-4 col-sm-12 col-md-4 col-xs-12 ">
-          <img class="to-show" src="img/test.png" alt="" />
-        </div>
-        <div class="col-lg-4 col-sm-12 col-md-4 col-xs-12 ">
-          <img  class="to-show"src="img/test.png" alt="" />
-        </div>
-        <div class="col-lg-4 col-sm-12 col-md-4 col-xs-12 ">
-          <img class="to-show" src="img/test.png" alt="" />
-        </div>
+                <?php foreach($listadoVideos as $videos){ ?>
 
-        <div class="col-lg-4 col-sm-12 col-md-4 col-xs-12 ">
-          <img class="to-show" src="img/test.png" alt="" />
-        </div>
-        <div class="col-lg-4 col-sm-12 col-md-4 col-xs-12 ">
-          <img class="to-show" src="img/header.jpg" alt="" />
-        </div>
+                <div class="col-lg-4 col-sm-12 col-md-4 col-xs-12 ">
+                      <iframe width="100%" height="100%" src=<?php echo $videos[2]; ?> frameborder="0" allowfullscreen></iframe>
+                </div>
 
-    </div>
+                <?php }  ?>
+
+            </div>
 
 
+            <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12 motion solapa">
+
+                <?php foreach($listadoVideos as $videos){
+
+                  if($videos[0]==2){?>
+
+                    <div class="col-lg-4 col-sm-12 col-md-4 col-xs-12 ">
+                          <iframe width="100%" height="100%" src=<?php echo $videos[2]; ?> frameborder="0" allowfullscreen></iframe>
+                    </div>
+
+                <?php }}  ?>
+
+            </div>
+
+            <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12 arquitectura solapa">
+
+                <?php foreach($listadoVideos as $videos){
+
+                  if($videos[0]==3){?>
+
+
+                <div class="col-lg-4 col-sm-12 col-md-4 col-xs-12 ">
+                      <iframe width="100%" height="100%" src=<?php echo $videos[2]; ?> frameborder="0" allowfullscreen></iframe>
+                </div>
+
+                <?php }}  ?>
+
+            </div>
+
+            <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12 render solapa">
+
+                <?php foreach($listadoVideos as $videos){
+
+                  if($videos[0]==1){?>
+
+                <div class="col-lg-4 col-sm-12 col-md-4 col-xs-12 ">
+                      <iframe width="100%" height="100%" src=<?php echo $videos[2]; ?> frameborder="0" allowfullscreen></iframe>
+                </div>
+
+                <?php }}  ?>
+
+            </div>
+
+
+  </div>
 
 </section>
 

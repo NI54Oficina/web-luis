@@ -7,6 +7,7 @@ $(document).on("ready",function(){
 	toShow();
 	menuDisplay();
 	remainings();
+	changeProject();
 
 
 });
@@ -165,3 +166,24 @@ function remainings(){
 			$("#img-to-display").attr("src", src);
 		});
 	}
+
+
+function changeProject(){
+
+
+	$('.nav-porfolio  li').click(function(){
+
+			var currentSolapa=$(this);
+
+
+			$('.solapa').each(function(){	$(this).fadeOut(0, function(){ }); });
+			$('.container-portfolio > .'+currentSolapa.prop('id')).fadeIn(300);
+
+
+			$('.selected').each(function(){$(this).switchClass('selected', 'not-selected', 0, "linear" ) });
+			currentSolapa.switchClass('not-selected', 'selected', 0, "linear" );
+
+
+
+	});
+}
