@@ -11,9 +11,7 @@
   <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12 portfolio-header">
 
 
-      <img class="img-logo" src="img/logo-interno.svg" alt="" /> <br>
-
-
+      <a href="index.php">  <img class="img-logo" src="img/logo-interno.svg" alt="" /></a> <br>
 
 
 
@@ -60,6 +58,9 @@
 
                 <div class="col-lg-4 col-sm-12 col-md-4 col-xs-12 ">
                       <iframe width="100%" height="100%" src=<?php echo $videos[2]; ?> frameborder="0" allowfullscreen></iframe>
+                      <div class="covered">
+
+                      </div>
                 </div>
 
                 <?php }  ?>
@@ -75,6 +76,9 @@
 
                     <div class="col-lg-4 col-sm-12 col-md-4 col-xs-12 ">
                           <iframe width="100%" height="100%" src=<?php echo $videos[2]; ?> frameborder="0" allowfullscreen></iframe>
+                          <div class="covered">
+
+                          </div>
                     </div>
 
                 <?php }}  ?>
@@ -90,9 +94,15 @@
 
                 <div class="col-lg-4 col-sm-12 col-md-4 col-xs-12 ">
                       <iframe width="100%" height="100%" src=<?php echo $videos[2]; ?> frameborder="0" allowfullscreen></iframe>
+
+                      <div class="covered">
+
+                      </div>
                 </div>
 
                 <?php }}  ?>
+
+
 
             </div>
 
@@ -104,6 +114,9 @@
 
                 <div class="col-lg-4 col-sm-12 col-md-4 col-xs-12 ">
                       <iframe width="100%" height="100%" src=<?php echo $videos[2]; ?> frameborder="0" allowfullscreen></iframe>
+                      <div class="covered">
+
+                      </div>
                 </div>
 
                 <?php }}  ?>
