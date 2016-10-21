@@ -371,7 +371,7 @@ transition: all ease .8s;
   padding-top: 50px;
 }
 
-.container-portfolio div img{
+.container-portfolio .solapa div img{
   width: 100%;
   position: relative;
 }
@@ -387,16 +387,28 @@ transition: all ease .8s;
 
 .covered{
   height:100%;
-  background:#7daba1;
+  background:rgba(125,171,161,.8);
+  /*#7daba1*/
   opacity: 0;
   position: absolute;
   top: 0;
   width: 100%;
 }
 
+.covered h1{
+  font-size: 1.5em;
+  color:white;
+  margin-top: 30%;;
+}
+.covered p{
+  font-size: 1em;
+  color:black;
+}
+
+
 .covered:hover{
-  opacity: .6;
-  transition: all 1s;
+  opacity: 1;
+  transition: all .7s;
 }
 /*********************** CONTACTO ********************/
 

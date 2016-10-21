@@ -73,7 +73,7 @@ function CenterToParent(){
 function toShow(){
 
 	$('.to-show').on('click', function(){
-			var src = $(this).attr('src');
+			var src = $(this).find('img').attr('src');
 			$('.portfolio').fadeOut(300);
 			$('.portfolio-2').fadeOut(300);
 			$('.nav-porfolio').fadeOut(300);

@@ -1,9 +1,10 @@
 <?php include_once("header.php") ?>
+
 <body id="portfolio ">
 
 <?php include_once("menu.php") ?>
 
-  <?php include_once("home.php") ?>
+<?php include_once("home.php") ?>
 
 
 <section class="col-lg-12 col-sm-12 col-md-12 col-xs-12 portfolio pantalla">
@@ -54,14 +55,15 @@
 
             <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12 todos solapa">
 
-                <?php foreach($listadoVideos as $videos){ ?>
+                <?php foreach($listadoProject as $project){ ?>
 
-                <div class="col-lg-4 col-sm-12 col-md-4 col-xs-12 ">
-                      <iframe width="100%" height="100%" src=<?php echo $videos[2]; ?> frameborder="0" allowfullscreen></iframe>
-                      <div class="covered">
-
-                      </div>
-                </div>
+                  <div class="col-lg-4 col-sm-12 col-md-4 col-xs-12 to-show">
+                        <img class="" src='img/<?php echo $project[2][0] ?>.jpg' alt="" />
+                        <div class="covered">
+                            <h1><?php echo $project[1] ?></h1>
+                            <p>Año</p>
+                        </div>
+                  </div>
 
                 <?php }  ?>
 
@@ -70,14 +72,15 @@
 
             <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12 motion solapa">
 
-                <?php foreach($listadoVideos as $videos){
+                <?php foreach($listadoProject as $project){
 
-                  if($videos[0]==2){?>
+                  if($project[0]==2){?>
 
-                    <div class="col-lg-4 col-sm-12 col-md-4 col-xs-12 ">
-                          <iframe width="100%" height="100%" src=<?php echo $videos[2]; ?> frameborder="0" allowfullscreen></iframe>
+                    <div class="col-lg-4 col-sm-12 col-md-4 col-xs-12 to-show">
+                          <img class="" src='img/<?php echo $project[2][0] ?>.jpg' alt="" />
                           <div class="covered">
-
+                            <h1><?php echo $project[1] ?></h1>
+                            <p>Año</p>
                           </div>
                     </div>
 
@@ -87,18 +90,18 @@
 
             <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12 arquitectura solapa">
 
-                <?php foreach($listadoVideos as $videos){
+                <?php foreach($listadoProject as $project){
 
-                  if($videos[0]==3){?>
+                  if($project[0]==3){?>
 
 
-                <div class="col-lg-4 col-sm-12 col-md-4 col-xs-12 ">
-                      <iframe width="100%" height="100%" src=<?php echo $videos[2]; ?> frameborder="0" allowfullscreen></iframe>
-
-                      <div class="covered">
-
-                      </div>
-                </div>
+                    <div class="col-lg-4 col-sm-12 col-md-4 col-xs-12 to-show">
+                          <img class="" src='img/<?php echo $project[2][0] ?>.jpg' alt="" />
+                          <div class="covered">
+                            <h1><?php echo $project[1] ?></h1>
+                            <p>Año</p>
+                          </div>
+                    </div>
 
                 <?php }}  ?>
 
@@ -108,16 +111,17 @@
 
             <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12 render solapa">
 
-                <?php foreach($listadoVideos as $videos){
+                <?php foreach($listadoProject as $project){
 
-                  if($videos[0]==1){?>
+                  if($project[0]==1){?>
 
-                <div class="col-lg-4 col-sm-12 col-md-4 col-xs-12 ">
-                      <iframe width="100%" height="100%" src=<?php echo $videos[2]; ?> frameborder="0" allowfullscreen></iframe>
-                      <div class="covered">
-
-                      </div>
-                </div>
+                    <div class="col-lg-4 col-sm-12 col-md-4 col-xs-12 to-show">
+                          <img class=" " src='img/<?php echo $project[2][0] ?>.jpg' alt="" />
+                          <div class="covered">
+                            <h1><?php echo $project[1] ?></h1>
+                            <p>Año</p>
+                          </div>
+                    </div>
 
                 <?php }}  ?>
 
