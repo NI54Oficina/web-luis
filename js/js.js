@@ -103,7 +103,6 @@ function hideDisplay() {
 
 	if(hidden){
 
-		console.log(-height);
 			$(".img-description").animate({marginTop:(realMargin-height-15)+'px'}, 1000);
 			$('#button-display').text('-');
 

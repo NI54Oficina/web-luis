@@ -50,22 +50,36 @@
   <h2><span>A</span>nima tu <span>K</span>i</h2>
 
   <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12  container-portfolio">
-
+    <script>
+    var imagenes=new Array();
+    var auxArray;
+    </script>
     <?php include_once("proyecto.php") ?>
 
             <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12 todos solapa">
 
-                <?php foreach($listadoProject as $project){ ?>
+                <?php
+                $projectIndex=0;
+                foreach($listadoProject as $project){
+                   ?>
 
                   <div class="col-lg-4 col-sm-12 col-md-4 col-xs-12 to-show">
-                        <img class="" src='img/<?php echo $project[2][0] ?>.jpg' alt="" />
+                        <img class="" src='img/<?php echo $project[2][0] ?>.jpg' subgrupo="<?php echo $projectIndex; ?>" cantidad="" alt="" />
                         <div class="covered">
-                            <h1><?php echo $project[1] ?></h1>
-                            <p>Año</p>
+                            <h1><?php echo $project[1]; ?></h1>
+                            <p><?php echo $project[3]; ?></p>
                         </div>
                   </div>
-
-                <?php }  ?>
+                  <script>
+                  auxArray=new Array();
+                  <?php foreach($project[2] as $projec){ ?>
+                      auxArray.push('<?php echo $projec; ?>');
+                    <?php } ?>
+                    imagenes.push(auxArray);
+                  </script>
+                <?php
+                  $projectIndex++;
+              }  ?>
 
             </div>
 
@@ -80,7 +94,7 @@
                           <img class="" src='img/<?php echo $project[2][0] ?>.jpg' alt="" />
                           <div class="covered">
                             <h1><?php echo $project[1] ?></h1>
-                            <p>Año</p>
+                            <p><?php echo $project[3] ?></p>
                           </div>
                     </div>
 
@@ -99,7 +113,7 @@
                           <img class="" src='img/<?php echo $project[2][0] ?>.jpg' alt="" />
                           <div class="covered">
                             <h1><?php echo $project[1] ?></h1>
-                            <p>Año</p>
+                            <p><?php echo $project[3] ?></p>
                           </div>
                     </div>
 
@@ -119,7 +133,7 @@
                           <img class=" " src='img/<?php echo $project[2][0] ?>.jpg' alt="" />
                           <div class="covered">
                             <h1><?php echo $project[1] ?></h1>
-                            <p>Año</p>
+                            <p><?php echo $project[3] ?></p>
                           </div>
                     </div>
 
@@ -138,20 +152,18 @@
 <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12 img-screen">
   <button class="border" type="button" name="button" onclick="closeGallery()">X</button>
   <img id="img-to-display"src="" alt="" />
+
 </div>
 
-<!-- <script>
-<?php // foreach($imagenes as $imagen){ ?>
-  miArrayJs.push(" <?php// $echo $imagen; ?>");
-  <?php // } ?>
-</script> -->
 
 <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12 img-remain">
+
     <img class="col-lg-1 col-sm-3 col-md-1 col-xs-3 remain-show" src="img/test.png" alt="" />
     <img class="col-lg-1 col-sm-3 col-md-1 col-xs-3 remain-show " src="img/test.png" alt="" />
     <img class="col-lg-1 col-sm-3 col-md-1 col-xs-3 remain-show" src="img/test.png" alt="" />
     <img class="col-lg-1 col-sm-3 col-md-1 col-xs-3 remain-show" src="img/test.png" alt="" />
     <img class="col-lg-1 col-sm-3 col-md-1 col-xs-3 remain-show" src="img/test.png" alt="" />
+
 </div>
 
 <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12 img-description">

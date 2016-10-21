@@ -393,6 +393,7 @@ transition: all ease .8s;
   position: absolute;
   top: 0;
   width: 100%;
+  padding: 20px !important;
 }
 
 .covered h1{
@@ -400,6 +401,7 @@ transition: all ease .8s;
   color:white;
   margin-top: 30%;;
 }
+
 .covered p{
   font-size: 1em;
   color:black;
