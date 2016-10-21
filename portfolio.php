@@ -54,6 +54,7 @@
     var imagenes=new Array();
     var auxArray;
     </script>
+
     <?php include_once("proyecto.php") ?>
 
             <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12 todos solapa">
@@ -64,7 +65,8 @@
                    ?>
 
                   <div class="col-lg-4 col-sm-12 col-md-4 col-xs-12 to-show">
-                        <img class="" src='img/<?php echo $project[2][0] ?>.jpg' subgrupo="<?php echo $projectIndex; ?>" cantidad="" alt="" />
+
+                        <img class="" src='img/<?php echo $project[2][0] ?>.jpg' subgrupo="<?php echo $projectIndex; ?>"  alt="" />
                         <div class="covered">
                             <h1><?php echo $project[1]; ?></h1>
                             <p><?php echo $project[3]; ?></p>
@@ -86,38 +88,57 @@
 
             <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12 motion solapa">
 
-                <?php foreach($listadoProject as $project){
+                <?php
+                $projectIndex=0;
+                foreach($listadoProject as $project){
 
                   if($project[0]==2){?>
 
                     <div class="col-lg-4 col-sm-12 col-md-4 col-xs-12 to-show">
-                          <img class="" src='img/<?php echo $project[2][0] ?>.jpg' alt="" />
+                          <img class="" src='img/<?php echo $project[2][0] ?>.jpg'  subgrupo="<?php echo $projectIndex; ?>"  alt="" />
                           <div class="covered">
                             <h1><?php echo $project[1] ?></h1>
                             <p><?php echo $project[3] ?></p>
                           </div>
                     </div>
+                    <script>
+                    auxArray=new Array();
+                    <?php foreach($project[2] as $projec){ ?>
+                        auxArray.push('<?php echo $projec; ?>');
+                      <?php } ?>
+                      imagenes.push(auxArray);
+                    </script>
 
-                <?php }}  ?>
+                <?php
+                $projectIndex++;}}  ?>
 
             </div>
 
             <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12 arquitectura solapa">
 
-                <?php foreach($listadoProject as $project){
+                <?php
+                  $projectIndex=0;
+                  foreach($listadoProject as $project){
 
                   if($project[0]==3){?>
 
 
                     <div class="col-lg-4 col-sm-12 col-md-4 col-xs-12 to-show">
-                          <img class="" src='img/<?php echo $project[2][0] ?>.jpg' alt="" />
+                          <img class="" src='img/<?php echo $project[2][0] ?>.jpg'  subgrupo="<?php echo $projectIndex; ?>"  alt="" />
                           <div class="covered">
                             <h1><?php echo $project[1] ?></h1>
                             <p><?php echo $project[3] ?></p>
                           </div>
                     </div>
+                    <script>
+                    auxArray=new Array();
+                    <?php foreach($project[2] as $projec){ ?>
+                        auxArray.push('<?php echo $projec; ?>');
+                      <?php } ?>
+                      imagenes.push(auxArray);
+                    </script>
 
-                <?php }}  ?>
+                <?php   $projectIndex++; }}  ?>
 
 
 
@@ -130,14 +151,21 @@
                   if($project[0]==1){?>
 
                     <div class="col-lg-4 col-sm-12 col-md-4 col-xs-12 to-show">
-                          <img class=" " src='img/<?php echo $project[2][0] ?>.jpg' alt="" />
+                          <img class=" " src='img/<?php echo $project[2][0] ?>.jpg' subgrupo="<?php echo $projectIndex; ?>"  alt="" />
                           <div class="covered">
                             <h1><?php echo $project[1] ?></h1>
                             <p><?php echo $project[3] ?></p>
                           </div>
                     </div>
+                    <script>
+                    auxArray=new Array();
+                    <?php foreach($project[2] as $projec){ ?>
+                        auxArray.push('<?php echo $projec; ?>');
+                      <?php } ?>
+                      imagenes.push(auxArray);
+                    </script>
 
-                <?php }}  ?>
+                <?php   $projectIndex++; }}  ?>
 
             </div>
 
@@ -158,11 +186,8 @@
 
 <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12 img-remain">
 
-    <img class="col-lg-1 col-sm-3 col-md-1 col-xs-3 remain-show" src="img/test.png" alt="" />
-    <img class="col-lg-1 col-sm-3 col-md-1 col-xs-3 remain-show " src="img/test.png" alt="" />
-    <img class="col-lg-1 col-sm-3 col-md-1 col-xs-3 remain-show" src="img/test.png" alt="" />
-    <img class="col-lg-1 col-sm-3 col-md-1 col-xs-3 remain-show" src="img/test.png" alt="" />
-    <img class="col-lg-1 col-sm-3 col-md-1 col-xs-3 remain-show" src="img/test.png" alt="" />
+
+    <!-- <img class="col-lg-1 col-sm-3 col-md-1 col-xs-3 remain-show" src="img/test.png" alt="" /> -->
 
 </div>
 

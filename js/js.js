@@ -74,14 +74,29 @@ function toShow(){
 
 	$('.to-show').on('click', function(){
 			var src = $(this).find('img').attr('src');
+			var grupo = $(this).find('img').attr('subgrupo');
+
 			$('.portfolio').fadeOut(300);
 			$('.portfolio-2').fadeOut(300);
 			$('.nav-porfolio').fadeOut(300);
 			$("#img-to-display").attr("src", src);
 			$('.image').fadeIn(500);
-			// $('#btn-menu').css('visibility','hidden');
 
- setMargin();
+			if(imagenes[grupo].length <=1){
+				hidden=null;
+				$(".img-description").css('margin-top','0px');
+				$('#button-display').text('-');
+				
+			}else{
+				hidden=true;
+					for(var i=0; i < imagenes[grupo].length; i++){
+							$('.img-remain').append( '<img class="col-lg-1 col-sm-3 col-md-1 col-xs-3 remain-show" src="img/'+imagenes[grupo][i]+'.jpg" alt="" />' );
+							remainings();
+					}
+					setMargin();
+			}
+
+
 
 
 		})
@@ -93,6 +108,8 @@ function closeGallery(){
 	$('.portfolio').fadeIn(500);
 	$('.portfolio-2').fadeIn(500);
 	$('.nav-porfolio').fadeIn(300);
+		$('.img-remain').empty();
+		$('#button-display').text('+');
 	// $('.button-menu').css('visibility','visible');
 }
 
@@ -101,17 +118,19 @@ function hideDisplay() {
 
 	 realMargin =parseInt($('.img-description').css('margin-top'));
 
-	if(hidden){
+	if(hidden==true){
 
 			$(".img-description").animate({marginTop:(realMargin-height-15)+'px'}, 1000);
 			$('#button-display').text('-');
 
 			hidden=false;
-	}else{
+	}else if(hidden==false){
 
 			$(".img-description").animate({marginTop:-height+'px'}, 1000);
 			$('#button-display').text('+')
 			hidden=true;
+	}else{
+			$(".img-description").css('margin-top','0px');
 	}
 
 
@@ -163,6 +182,7 @@ function remainings(){
 		$('.remain-show').click(function(){
 			var src = $(this).attr('src');
 			$("#img-to-display").attr("src", src);
+			console.log("entrando");
 		});
 	}
 
