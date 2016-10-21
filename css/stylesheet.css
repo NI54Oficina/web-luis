@@ -589,6 +589,10 @@ transition: all ease .8s;
 
   }
 
+  iframe.remain-show {
+  border:none;
+  }
+
   .img-screen button{
     background: none;
     border-image: url('../img/border-b.png') 34% repeat;

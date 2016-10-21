@@ -86,11 +86,11 @@ function toShow(){
 				hidden=null;
 				$(".img-description").css('margin-top','0px');
 				$('#button-display').text('-');
-				
+
 			}else{
 				hidden=true;
 					for(var i=0; i < imagenes[grupo].length; i++){
-							$('.img-remain').append( '<img class="col-lg-1 col-sm-3 col-md-1 col-xs-3 remain-show" src="img/'+imagenes[grupo][i]+'.jpg" alt="" />' );
+							$('.img-remain').append( '<iframe class="col-lg-1 col-sm-3 col-md-1 col-xs-3 remain-show" scrolling="no"  src="img/'+imagenes[grupo][i]+'.jpg"  /></iframe>' );
 							remainings();
 					}
 					setMargin();
