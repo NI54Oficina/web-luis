@@ -10,8 +10,8 @@ array_push($listadoProject, ['1', "Pm Pepsi 2010",[0,'41-img-1','https://www.you
 array_push($listadoProject, ['1', "Elind",[0, '2-img-1','https://www.youtube.com/embed/oeANZyZWTto'],'2016', 'https://www.youtube.com/embed/oeANZyZWTto']);
 array_push($listadoProject, ['1', "Lamp",[0,'26-img-1','https://www.youtube.com/embed/W6ymFuUv5fk'],'2016', 'https://www.youtube.com/embed/W6ymFuUv5fk']);
 
-array_push($listadoProject, ['1', "Wine",[0,'52-img-1','https://www.behance.net/gallery/43598597/Wine'],'2016', 'https://www.behance.net/gallery/43598597/Wine']);
-array_push($listadoProject, ['1', "Vid",[0,'50-img-1',  'https://www.behance.net/gallery/16307085/GLAZED-PROPERTY-DREAM'],'2016', 'https://www.behance.net/gallery/16307085/GLAZED-PROPERTY-DREAM']);
+array_push($listadoProject, ['1', "Wine",[1,'52-img-1','52-img-2','52-img-3','52-img-4','52-img-5'],'2016', 'https://www.behance.net/gallery/43598597/Wine']);
+array_push($listadoProject, ['1', "Vid",[1,'50-img-1', '50-img-2', '50-img-3', '50-img-4', '50-img-5', '50-img-6', '50-img-7', '50-img-8', '50-img-9', '50-img-10', '50-img-11', '50-img-12', '50-img-13' ],'2016', 'https://www.behance.net/gallery/16307085/GLAZED-PROPERTY-DREAM']);
 
 
 array_push($listadoProject, ['2', "Pm Caen", [0,'39-img-1', 'https://www.youtube.com/embed/O7oHORxXsTg'],'2016', 'https://www.youtube.com/embed/O7oHORxXsTg']);
@@ -58,8 +58,8 @@ array_push($listadoProject, ['2', "Terraza",[0,'49-img-1', 'https://www.youtube.
 array_push($listadoProject, ['2', "Lecajete",[0,'27-img-1', 'https://www.youtube.com/embed/mrJNBCmY03M'],'2016', 'https://www.youtube.com/embed/mrJNBCmY03M']);
 
 array_push($listadoProject, ['3', "Grandvision",[0,'21-img-1', 'https://www.youtube.com/embed/aMnsly-BB40'],'2016', 'https://www.youtube.com/embed/aMnsly-BB40']);
-array_push($listadoProject, ['3', "Cocina",[0,'13-img-1', 'https://www.behance.net/gallery/43584663/Kitchen-render'],'2016', 'https://www.behance.net/gallery/43584663/Kitchen-render']);
-array_push($listadoProject, ['3', "Int",[0,'24-img-1',  'https://www.behance.net/gallery/16764109/interior'],'2016', 'https://www.behance.net/gallery/16764109/interior']);
+array_push($listadoProject, ['3', "Cocina",[1,'13-img-1', '13-img-2', '13-img-3', '13-img-4'],'2016', 'https://www.behance.net/gallery/43584663/Kitchen-render']);
+array_push($listadoProject, ['3', "Int",[1,'24-img-1','24-img-2','24-img-3','24-img-4','24-img-5','24-img-6','24-img-7','24-img-8','24-img-9'],'2016', 'https://www.behance.net/gallery/16764109/interior']);
 // array_push($listadoProject, ['3', "Arcor",[''], 'https://www.behance.net/gallery/15762179/Propuesta-vidrieras-Arcorcenter']);
 // array_push($listadoProject, ['3', "Stands",[''], 'https://www.behance.net/gallery/13287757/Stands']);
 

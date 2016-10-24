@@ -90,8 +90,8 @@ function toShow(){
 
 			}else{
 				hidden=true;
-				$("#img-to-display").append( '<img src="'+src+'" alt="" />' );
-					for(var i=1; i < imagenes[grupo].length; i++){
+				$("#img-to-display").append( '<img src="img/'+imagenes[grupo][2]+'.jpg" alt="" />' );
+					for(var i=2; i < imagenes[grupo].length; i++){
 
 							$('.img-remain').append( '<img class="col-lg-2 col-sm-3 col-md-1 col-xs-3 remain-show" src="img/'+imagenes[grupo][i]+'.jpg" alt="" />' );
 							remainings();
