@@ -537,11 +537,14 @@ transition: all ease .8s;
 }
 
 .right-box-contact button{
-  border: 10px solid #000000;
-  border-image: url('../img/border-b.png') 34% repeat;
-  box-sizing: border-box;
+  border:none;
   background-color: transparent;
+  color: black;
+
+}
+.right-box-contact button:hover{
   color: #ffb60a;
+  transition: all .5s;
 
 }
 
@@ -584,7 +587,7 @@ transition: all ease .8s;
 }
 
 .right-box-contact button{
-  margin-top: 20px;
+  margin-top: 10px;
   float:right;
 }
 
