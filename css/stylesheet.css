@@ -291,9 +291,30 @@ section{
 }
 
 
+.nav-inicio li:hover{
+/*padding: 0px;
+transition: all 1s;*/
+animation: expand 2s ;
+}
+
+.nav-inicio li:hover a p{
+   animation: ixpand 2s ;
+/*padding: 20px !important;
+transition: all 1s;*/
+}
+
+@keyframes expand { 0% {padding:0px} 25% {padding: 20px} 50% {padding:5px;}  100% {padding: 20px;} }
+
+@keyframes ixpand {  0% {padding: 20px} 25% {padding:0px} 50% {padding:15px ;}  100% {padding:0px;} }
+;
 .nav-inicio{
 padding-left: 10%;
 margin-bottom: 50px;
+}
+
+
+.nav-inicio li{
+padding: 20px;
 }
 
 

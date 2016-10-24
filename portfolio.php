@@ -69,7 +69,7 @@
 
                   <div class="col-lg-4 col-sm-12 col-md-4 col-xs-12 to-show">
 
-                        <img class="" src='img/<?php echo $project[2][0] ?>.jpg' subgrupo="<?php echo $projectIndex; ?>"  alt="" />
+                        <img class="" src='img/<?php echo $project[2][1] ?>.jpg' subgrupo="<?php echo $projectIndex; ?>"  alt="" />
                         <div class="covered">
                             <h1><?php echo $project[1]; ?></h1>
                             <p><?php echo $project[3]; ?></p>
@@ -98,7 +98,7 @@
                   if($project[0]==2){?>
 
                     <div class="col-lg-4 col-sm-12 col-md-4 col-xs-12 to-show">
-                          <img class="" src='img/<?php echo $project[2][0] ?>.jpg'  subgrupo="<?php echo $projectIndex; ?>"  alt="" />
+                          <img class="" src='img/<?php echo $project[2][1] ?>.jpg'  subgrupo="<?php echo $projectIndex; ?>"  alt="" />
                           <div class="covered">
                             <h1><?php echo $project[1] ?></h1>
                             <p><?php echo $project[3] ?></p>
@@ -127,7 +127,7 @@
 
 
                     <div class="col-lg-4 col-sm-12 col-md-4 col-xs-12 to-show">
-                          <img class="" src='img/<?php echo $project[2][0] ?>.jpg'  subgrupo="<?php echo $projectIndex; ?>"  alt="" />
+                          <img class="" src='img/<?php echo $project[2][1] ?>.jpg'  subgrupo="<?php echo $projectIndex; ?>"  alt="" />
                           <div class="covered">
                             <h1><?php echo $project[1] ?></h1>
                             <p><?php echo $project[3] ?></p>
@@ -154,7 +154,7 @@
                   if($project[0]==1){?>
 
                     <div class="col-lg-4 col-sm-12 col-md-4 col-xs-12 to-show">
-                          <img class=" " src='img/<?php echo $project[2][0] ?>.jpg' subgrupo="<?php echo $projectIndex; ?>"  alt="" />
+                          <img class=" " src='img/<?php echo $project[2][1] ?>.jpg' subgrupo="<?php echo $projectIndex; ?>"  alt="" />
                           <div class="covered">
                             <h1><?php echo $project[1] ?></h1>
                             <p><?php echo $project[3] ?></p>

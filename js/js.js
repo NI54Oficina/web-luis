@@ -82,16 +82,16 @@ function toShow(){
 
 
 
-			if(imagenes[grupo].length <=2){
+			if(imagenes[grupo][0]==0){
 				hidden=null;
-				$("#img-to-display").append( '<iframe width="1080" height="579" src="'+imagenes[grupo][1]+'" frameborder="0" allowfullscreen></iframe>' );
+				$("#img-to-display").append( '<iframe width="1080" height="579" src="'+imagenes[grupo][2]+'" frameborder="0" allowfullscreen></iframe>' );
 				$(".img-description").css('margin-top','0px');
 				$('#button-display').text('');
 
 			}else{
 				hidden=true;
 				$("#img-to-display").append( '<img src="'+src+'" alt="" />' );
-					for(var i=0; i < imagenes[grupo].length; i++){
+					for(var i=1; i < imagenes[grupo].length; i++){
 
 							$('.img-remain').append( '<img class="col-lg-2 col-sm-3 col-md-1 col-xs-3 remain-show" src="img/'+imagenes[grupo][i]+'.jpg" alt="" />' );
 							remainings();
