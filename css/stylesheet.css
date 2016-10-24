@@ -564,7 +564,7 @@ transition: all ease .8s;
     display: none;
     top:0;
     padding-top: 50px !important;
-    z-index: 11;
+    z-index: 999999999999;
 
   }
 

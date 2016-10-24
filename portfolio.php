@@ -178,6 +178,7 @@
 </section>
 
 
+<section class="col-lg-12 col-sm-12 col-md-12 col-xs-12 image" >
 
 <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12 img-screen">
   <button class="border" type="button" name="button" onclick="closeGallery()">X</button>
