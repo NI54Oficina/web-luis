@@ -289,7 +289,9 @@ section{
    right:0;
 }
 
-
+.nav-inicio {
+  padding: 0 120px;
+}
 
 .nav-inicio li a{
   text-align: center;
