@@ -100,8 +100,10 @@ function toShow(){
 
 			}
 
+			$('.image').fadeIn(500);
+
 		})
-		$('.image').fadeIn(500);
+
 
 
 }
