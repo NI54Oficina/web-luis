@@ -140,6 +140,13 @@ p{
 }
 
 
+.border-b{
+  border: 5px solid #000000;
+  border-image: url('../img/border-b.png') 29% ;
+  box-sizing: border-box;
+}
+
+
  h1 {
   font-size: 80px;
   color: #ffb60a;
@@ -581,11 +588,15 @@ transition: all ease .8s;
 
 /*********************** IMAGEN GALERIA ********************/
   .image{
-    background: white;
+    background: #1d1d1b;
     display: none;
     top:0;
-    padding-top: 50px !important;
+
+
+    /*padding-top: 50px !important;*/
     z-index: 999999999999;
+
+    padding: 0 !important;
 
   }
 
@@ -594,7 +605,9 @@ transition: all ease .8s;
     height: 100%;
     position: relative;
   }
-
+ .image .img-screen{
+   padding: 100px !important;
+ }
   .img-description{
     background-color: #7daba1;
     z-index: 2;
@@ -626,7 +639,7 @@ transition: all ease .8s;
 
   .img-screen button{
     background: none;
-    border-image: url('../img/border-b.png') 34% repeat;
+    border-image: url('../img/border.png') 34% repeat;
     font-size: 2em;
     color:#ffb60a;
     padding: 0;
@@ -634,8 +647,16 @@ transition: all ease .8s;
     position: absolute;
     z-index:2;
     right: 0;
-    margin: 10px;
+    margin-right: 50px;
+    top: 40px;
 
+  }
+
+  .img-screen button p{
+    font-family: arial;
+    font-weight: lighter;
+    margin-top: -20px;
+    margin-bottom: -15px;
   }
 
   .img-description button{
