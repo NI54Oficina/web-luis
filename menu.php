@@ -1,6 +1,6 @@
-<div class="header-home"style="position:absolute; width:auto ; padding:50px 100px; right:0" >
+<div id="btn-inicio"class="header-home"style="" >
 
-  <a id="btn-menu" class="col-lg-12 col-sm-12 col-md-12 col-xs-12" style="z-index:99999999">
+  <a id="btn-menu" class="col-lg-12 col-sm-12 col-md-12 col-xs-12" style="z-index:10">
 
         <p class="center-to-parent border button-menu ">
 

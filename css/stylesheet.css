@@ -275,6 +275,15 @@ section{
 
 }
 
+#btn-inicio{
+  position:absolute;
+   width:auto ;
+   padding:50px 100px;
+   right:0;
+}
+
+
+
 .nav-inicio li a{
   text-align: center;
   color: white;
@@ -555,6 +564,7 @@ transition: all ease .8s;
     display: none;
     top:0;
     padding-top: 50px !important;
+    z-index: 11;
 
   }
 

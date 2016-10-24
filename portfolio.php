@@ -40,6 +40,9 @@
   <li id="motion" class="not-selected">Motion  <div ></div></li>
   <li id="arquitectura" class="not-selected">Arquitectura  <div ></div></li>
   <li id="render" class="not-selected">Render  <div ></div></li>
+
+  <div class="" style="width:100%; background-color:rgba(104,211,169,.5); position:relative; height:1px; margin-top: -16.5px; z-index: -1;"> </div>
+
 </ul>
 
 <section class="col-lg-12 col-sm-12 col-md-12 col-xs-12 portfolio-2 pantalla">
@@ -175,11 +178,13 @@
 </section>
 
 
-<section class="col-lg-12 col-sm-12 col-md-12 col-xs-12 image" style="z-index: 999999999;">
 
 <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12 img-screen">
   <button class="border" type="button" name="button" onclick="closeGallery()">X</button>
-  <img id="img-to-display"src="" alt="" />
+      <div id="img-to-display" class="">
+
+      </div>
+
 
 </div>
 

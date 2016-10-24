@@ -4,24 +4,24 @@
 // <iframe width="640" height="360" src="https://www.youtube.com/embed/HkcfDotc6cA?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 $listadoProject=array();
 
-array_push($listadoProject, ['1', "Winter 2010",['53-img-1',"48-img-1"] ,'2016','https://www.youtube.com/embed/HkcfDotc6cA']);
-array_push($listadoProject, ['1', "Stand Coca-Cola 2010",['48-img-1'],'2016', 'https://www.youtube.com/embed/50uaC7JWpyA']);
-array_push($listadoProject, ['1', "Pm Pepsi 2010",['41-img-1'],'2016', 'https://www.youtube.com/embed/TfFTOEPNpec5']);
-array_push($listadoProject, ['1', "Elind",[ '2-img-1'],'2016', 'https://www.youtube.com/embed/oeANZyZWTto']);
-array_push($listadoProject, ['1', "Lamp",['26-img-1'],'2016', 'https://www.youtube.com/embed/W6ymFuUv5fk']);
+array_push($listadoProject, ['1', "Winter 2010",['53-img-1','https://www.youtube.com/embed/HkcfDotc6cA'] ,'2016','https://www.youtube.com/embed/HkcfDotc6cA']);
+array_push($listadoProject, ['1', "Stand Coca-Cola 2010",['48-img-1','https://www.youtube.com/embed/50uaC7JWpyA'],'2016', 'https://www.youtube.com/embed/50uaC7JWpyA']);
+array_push($listadoProject, ['1', "Pm Pepsi 2010",['41-img-1','https://www.youtube.com/embed/TfFTOEPNpec5'],'2016', 'https://www.youtube.com/embed/TfFTOEPNpec5']);
+array_push($listadoProject, ['1', "Elind",[ '2-img-1','https://www.youtube.com/embed/oeANZyZWTto'],'2016', 'https://www.youtube.com/embed/oeANZyZWTto']);
+array_push($listadoProject, ['1', "Lamp",['26-img-1','https://www.youtube.com/embed/W6ymFuUv5fk'],'2016', 'https://www.youtube.com/embed/W6ymFuUv5fk']);
 
-array_push($listadoProject, ['1', "Wine",['52-img-1'],'2016', 'https://www.behance.net/gallery/43598597/Wine']);
-array_push($listadoProject, ['1', "Vid",['50-img-1'],'2016', 'https://www.behance.net/gallery/16307085/GLAZED-PROPERTY-DREAM']);
+array_push($listadoProject, ['1', "Wine",['52-img-1','https://www.behance.net/gallery/43598597/Wine'],'2016', 'https://www.behance.net/gallery/43598597/Wine']);
+array_push($listadoProject, ['1', "Vid",['50-img-1',  'https://www.behance.net/gallery/16307085/GLAZED-PROPERTY-DREAM'],'2016', 'https://www.behance.net/gallery/16307085/GLAZED-PROPERTY-DREAM']);
 
 
-array_push($listadoProject, ['2', "Pm Caen", ['39-img-1'],'2016', 'https://www.youtube.com/embed/O7oHORxXsTg']);
-array_push($listadoProject, ['2', "Parliament",['37-img-1'],'2016', 'https://www.youtube.com/embed/fLeanWWEtEE']);
-array_push($listadoProject, ['2', "Pm Kreter",['40-img-1'],'2016', 'https://www.youtube.com/embed/SbTxbUt2dws']);
-array_push($listadoProject, ['2', "Next",['35-img-1'],'2016', 'https://www.youtube.com/embed/SwDbagFAh8g']);
-array_push($listadoProject, ['2', "Camioneta",['10-img-1'],'2016', 'https://www.youtube.com/embed/V4DfhP-Xirk']);
-array_push($listadoProject, ['2', "Sixno",['47-img-1'],'2016', 'https://www.youtube.com/embed/7cM4l9zPuOY']);
-array_push($listadoProject, ['2', "Visualc",['51-img-1'],'2016', 'https://www.youtube.com/embed/884hHJD2mfo']);
-array_push($listadoProject, ['2', "Bemlbr",[ '9-img-1'],'2016',  'https://www.youtube.com/embed/HilfgCSycKI']);
+array_push($listadoProject, ['2', "Pm Caen", ['39-img-1', 'https://www.youtube.com/embed/O7oHORxXsTg'],'2016', 'https://www.youtube.com/embed/O7oHORxXsTg']);
+array_push($listadoProject, ['2', "Parliament",['37-img-1', 'https://www.youtube.com/embed/fLeanWWEtEE'],'2016', 'https://www.youtube.com/embed/fLeanWWEtEE']);
+array_push($listadoProject, ['2', "Pm Kreter",['40-img-1', 'https://www.youtube.com/embed/SbTxbUt2dws'],'2016', 'https://www.youtube.com/embed/SbTxbUt2dws']);
+array_push($listadoProject, ['2', "Next",['35-img-1', 'https://www.youtube.com/embed/SwDbagFAh8g'],'2016', 'https://www.youtube.com/embed/SwDbagFAh8g']);
+array_push($listadoProject, ['2', "Camioneta",['10-img-1', 'https://www.youtube.com/embed/V4DfhP-Xirk'],'2016', 'https://www.youtube.com/embed/V4DfhP-Xirk']);
+array_push($listadoProject, ['2', "Sixno",['47-img-1', 'https://www.youtube.com/embed/7cM4l9zPuOY'],'2016', 'https://www.youtube.com/embed/7cM4l9zPuOY']);
+array_push($listadoProject, ['2', "Visualc",['51-img-1',  'https://www.youtube.com/embed/884hHJD2mfo'],'2016', 'https://www.youtube.com/embed/884hHJD2mfo']);
+array_push($listadoProject, ['2', "Bemlbr",[ '9-img-1',  'https://www.youtube.com/embed/HilfgCSycKI'],'2016',  'https://www.youtube.com/embed/HilfgCSycKI']);
 array_push($listadoProject, ['2', "Pmalf",['43-img-1'],'2016', 'https://www.youtube.com/embed/z-eW5ou9LVk']);
 array_push($listadoProject, ['2', "Pmbolas",['44-img-1'],'2016', 'https://www.youtube.com/embed/nMkQJj5k4Ew']);
 array_push($listadoProject, ['2', "Pmcaps",['45-img-1'],'2016', 'https://www.youtube.com/embed/nMkQJj5k4Ew']);
