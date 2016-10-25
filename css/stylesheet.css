@@ -635,15 +635,19 @@ transition: all ease .8s;
   .img-remain img{
     padding: 10px 5px;
     cursor: pointer;
+    max-height: 150px;
+    width: auto;
   }
 
   .img-remain{
     margin-top: 0;
+  
 
   }
 
   iframe.remain-show {
   border:none;
+
   }
 
   .img-screen button{

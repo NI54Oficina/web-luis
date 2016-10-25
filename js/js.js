@@ -73,36 +73,54 @@ function CenterToParent(){
 function toShow(){
 
 	$('.to-show').on('click', function(){
+
 			var src = $(this).find('img').attr('src');
 			var grupo = $(this).find('img').attr('subgrupo');
+			var titulo = $(this).find('h1').text();
+			var subtitulo = $(this).find('p').text();
 
 			$('.portfolio').fadeOut(300);
 			$('.portfolio-2').fadeOut(300);
 			$('.nav-porfolio').fadeOut(300);
 
 
-
 			if(imagenes[grupo][0]==0){
 				hidden=null;
-				$("#img-to-display").append( '<iframe width="1080" height="579" src="'+imagenes[grupo][2]+'" frameborder="0" allowfullscreen></iframe>' );
+
+				$("#img-to-display").prepend( '<iframe width="1080" height="579" src="'+imagenes[grupo][2]+'" frameborder="0" allowfullscreen></iframe>' );
 				$(".img-description").css('margin-top','0px');
 				$('#button-display').text('');
 
 			}else{
 				hidden=true;
-				$("#img-to-display").append( '<img src="img/'+imagenes[grupo][2]+'.jpg" alt="" />' );
+
+				$("#img-to-display").prepend( '<img src="img/'+imagenes[grupo][2]+'.jpg" alt="" style="max-height:inherit; width:auto; max-width:inherit" /> ' );
+
+
+
+
 					for(var i=2; i < imagenes[grupo].length; i++){
 
-							$('.img-remain').append( '<img class="col-lg-2 col-sm-3 col-md-1 col-xs-3 remain-show" src="img/'+imagenes[grupo][i]+'.jpg" alt="" />' );
+							$('.img-remain').prepend( '<img class="col-lg-2 col-sm-3 col-md-1 col-xs-3 remain-show" src="img/'+imagenes[grupo][i]+'.jpg" alt="" />' );
 							remainings();
-							setMargin();
+
 					}
+
+
 
 			}
 
+			$(".img-description > p:first-child").text(titulo);
+			$(".img-description > p:last-child").text(subtitulo);
+
+
 			$('.image').fadeIn(500);
+			setMargin();
+			AlignCenter();
+
 
 		})
+
 
 
 
@@ -144,11 +162,20 @@ function hideDisplay() {
 
 
 function setMargin(){
+
 	var height= $('.img-remain').outerHeight();
 
+	console.log($('.img-remain').outerHeight());
 	$('.img-description').css('min-height',height);
 	$('.img-description').css('margin-top','-'+height+'px');
 
+
+}
+
+function AlignCenter(){
+	var a= $("#img-to-display").width();
+	var b =$("#img-to-display").children().width();
+	$("#img-to-display").children().css('margin-left', (a/2 - b/2)+'px');
 }
 
 function menuDisplay(){
@@ -188,8 +215,11 @@ function menuDisplay(){
 function remainings(){
 		$('.remain-show').click(function(){
 			var src = $(this).attr('src');
-			$("#img-to-display").attr("src", src);
-			console.log("entrando");
+			$("#img-to-display > img").attr("src", src);
+
+			AlignCenter();
+			// console.log((a/2 - b/2));
+
 		});
 	}
 

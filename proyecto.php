@@ -130,6 +130,3 @@ array_push($listadoVideos, ['3', "Grandvision", 'https://www.youtube.com/embed/a
 
 
  ?>
- <script>
-     console.log(<?php echo json_encode($listadoProject); ?>);
- </script>
