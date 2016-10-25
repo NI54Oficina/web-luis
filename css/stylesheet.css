@@ -613,6 +613,7 @@ transition: all ease .8s;
     position: relative;
   }
  .image .img-screen{
+   background: #1d1d1b;
    padding: 50px 110px !important;
  }
   .img-description{
@@ -641,8 +642,7 @@ transition: all ease .8s;
 
   .img-remain{
     margin-top: 0;
-
-
+    background: #1d1d1b;
   }
 
   iframe.remain-show {
