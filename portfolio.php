@@ -81,6 +81,7 @@
                       auxArray.push('<?php echo $projec; ?>');
                     <?php } ?>
                     imagenes.push(auxArray);
+                    console.log(imagenes);
                   </script>
                 <?php
                   $projectIndex++;
@@ -92,7 +93,7 @@
             <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12 motion solapa">
 
                 <?php
-                $projectIndex=0;
+                $projectIndex=7;
                 foreach($listadoProject as $project){
 
                   if($project[0]==2){?>
@@ -110,6 +111,7 @@
                         auxArray.push('<?php echo $projec; ?>');
                       <?php } ?>
                       imagenes.push(auxArray);
+                      console.log(imagenes);
                     </script>
 
                 <?php
@@ -120,7 +122,7 @@
             <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12 arquitectura solapa">
 
                 <?php
-                  $projectIndex=0;
+                  $projectIndex=49;
                   foreach($listadoProject as $project){
 
                   if($project[0]==3){?>
@@ -139,6 +141,7 @@
                         auxArray.push('<?php echo $projec; ?>');
                       <?php } ?>
                       imagenes.push(auxArray);
+                      console.log(imagenes);
                     </script>
 
                 <?php   $projectIndex++; }}  ?>

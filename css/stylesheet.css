@@ -303,18 +303,18 @@ section{
 .nav-inicio li:hover{
 /*padding: 0px;
 transition: all 1s;*/
-animation: expand 2s ;
+animation: expand 1s ;
 }
 
 .nav-inicio li:hover a p{
-   animation: ixpand 2s ;
+   animation: ixpand 1s ;
 /*padding: 20px !important;
 transition: all 1s;*/
 }
 
-@keyframes expand { 0% {padding:0px} 25% {padding: 20px} 50% {padding:5px;}  100% {padding: 20px;} }
+@keyframes expand { 0% {padding:0px} 50% {padding: 20px} 75% {padding:5px;}  100% {padding: 20px;} }
 
-@keyframes ixpand {  0% {padding: 20px} 25% {padding:0px} 50% {padding:15px ;}  100% {padding:0px;} }
+@keyframes ixpand {  0% {padding: 20px} 50% {padding:0px} 75% {padding:15px ;}  100% {padding:0px;} }
 ;
 .nav-inicio{
 padding-left: 10%;
@@ -469,7 +469,7 @@ transition: all ease .8s;
 /*********************** CONTACTO ********************/
 
 #contacto{
-  height: 100vh;
+  max-height: 100vh;
   background-color:#6bcea3;
 }
 .contacto, .portfolio{
@@ -641,7 +641,7 @@ transition: all ease .8s;
 
   .img-remain{
     margin-top: 0;
-  
+
 
   }
 
