@@ -56,7 +56,7 @@ function CenterToParent(){
 		$(this).css("padding-bottom",0);
 		$(this).css("padding-top",0);
 		var parent= $(this).parent();
-		console.log($(this).outerHeight());
+		// console.log($(this).outerHeight());
 		var paddingTop= ($(parent).innerHeight()/2)-($(this).outerHeight()/2);
 		$(this).css("display","inline-block");
 		$(this).css("position","relative");
@@ -69,7 +69,7 @@ function CenterToParent(){
 		$(this).css("padding-bottom",0);
 		$(this).css("padding-top",0);
 		var parent= $(this).parent();
-		console.log($(this).outerHeight());
+		// console.log($(this).outerHeight());
 		var paddingTop= ($(parent).innerHeight()/2)-($(this).outerHeight()/2);
 		$(this).css("display","inline-block");
 		$(this).css("position","relative");
@@ -174,7 +174,7 @@ function setMargin(){
 
 	var height= $('.img-remain').outerHeight();
 
-	console.log($('.img-remain').outerHeight());
+	// console.log($('.img-remain').outerHeight());
 	$('.img-description').css('min-height',height);
 	$('.img-description').css('margin-top','-'+height+'px');
 

@@ -184,8 +184,13 @@
 <section class="col-lg-12 col-sm-12 col-md-12 col-xs-12 image" >
 
 <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12 img-screen">
+
+<img id="prev-img" src="img/anterior-portfolio.svg" alt="">
+  <img id="next-img" src="img/posterior-portfolio.svg" alt="">
+  
   <button class="border-b" type="button" name="button" onclick="closeGallery()"><p>x</p></button>
       <div id="img-to-display" style="max-height:500px; max-width:90vw"class="">
+
 
       </div>
 
