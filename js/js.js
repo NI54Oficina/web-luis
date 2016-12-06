@@ -3,6 +3,8 @@ var menu=false;
 var marginGetter;
 
 $(document).on("ready",function(){
+
+
 	CenterToParent();
 	toShow();
 	menuDisplay();
@@ -10,6 +12,13 @@ $(document).on("ready",function(){
 	changeProject();
 	centerNav();
 
+
+
+});
+
+
+$( window ).resize(function() {
+  centerNav();
 });
 
 
@@ -199,13 +208,12 @@ function menuDisplay(){
 				$('.show-menu-text').switchClass( "show-menu-text", "prueba-visible",0, "easeInOutQuad" );
 				$('.hide-menu-text').switchClass( "hide-menu-text", "prueba-invisible", 0, "easeInOutQuad" );
 
-
 				menu=true;
 			}
 
 
 
-
+centerNav();
 
 		});
 
@@ -245,21 +253,30 @@ function changeProject(){
 }
 
 function centerNav(){
-	$('.li-min').each(function(){
-	 var parentWidth= $(this).parent().parent().width();
-	 var parentPad=parseInt($(this).parent().parent().css('padding-left'),10);
-	 var thisWidth = $(this).outerWidth();
 
-	 $(this).parent().parent().css('padding-left', parentWidth/2 - thisWidth/2+parentPad+'px');
+		$('.li-min').each(function(){
+		 var parentWidth= $(this).parent().parent().width();
+		 var thisWidth = $(this).outerWidth();
+		 $(this).css('margin-left', parentWidth/2 - thisWidth/2+'px');
 
-	 console.log( parentWidth/2 - thisWidth/2);
-	 console.log(  $(this).parent().parent().css('width'));
-	 console.log(  $('.container-inicio').css('width'));
+		});
 
-	 console.log("fede se la come");
-	});
 
-	// $('.li-max').each(function(){
-	//  console.log(	$(this).innerWidth());
-	// });
+
+
+
+
+		// var parentWidth= ($(window).width()-100)/3;
+		//
+		// $('.li-min').each(function(){
+		//
+		//
+		//  var thisWidth = parentWidth/2 -;
+		//
+		//  $(this).parent().parent().css('width', parentWidth+'px');
+		//  $(this).css('margin-left', )
+		//
+		//  console.log( parentWidth/2 - thisWidth/2);
+		//  console.log(  $(this).parent().parent());
+		//  console.log(  $('.container-inicio').css('width'));
 }

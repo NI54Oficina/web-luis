@@ -16,7 +16,7 @@
 
 		<ul class="col-lg-12 col-sm-12 col-md-12 col-xs-12 nav-inicio">
 
-			<li  class="col-lg-4 col-sm-4 col-md-4 col-xs-12 li-1 li-max">
+			<li  class="col-lg-4 col-sm-4 col-md-4 col-xs-4 li-1 li-max">
 				<a href="index.php">
 						<p class="center-to-parent border li-min">
 							Inicio
@@ -25,7 +25,7 @@
 				</a>
 			</li>
 
-			<li  class="col-lg-4 col-sm-4 col-md-4 col-xs-12 li-2 li-max">
+			<li  class="col-lg-4 col-sm-4 col-md-4 col-xs-4 li-2 li-max">
 				<a href="portfolio.php">
 						<p class="center-to-parent border li-min">
 							Portfolio
@@ -34,7 +34,7 @@
 			</li>
 
 
-				<li  class="col-lg-4 col-sm-4 col-md-4 col-xs-12 li-2 li-max">
+				<li  class="col-lg-4 col-sm-4 col-md-4 col-xs-4 li-2 li-max">
 					<a href="contacto.php">
 
 							<p class="center-to-parent border li-min">

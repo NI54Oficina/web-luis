@@ -39,7 +39,7 @@ section {
 /*MENU*/
 
 .container-inicio {
-    padding: 20px;
+    padding: 40px 20px;
 }
 
 .nav-inicio {
@@ -58,6 +58,7 @@ section {
 .li-min{
 	     font-size: .4em !important;
 }
+
 
 .container-inicio p {
 

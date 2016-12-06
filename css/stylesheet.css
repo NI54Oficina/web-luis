@@ -253,11 +253,10 @@ section{
   opacity:1;
 }
 
-#home{
-  background-image:radial-gradient(ellipse at center, rgba(255,255,255,0.27) 0%, rgba(0,0,0,0.62) 100%),url('../img/linea-textura-home.svg'),url('../img/simulacion-video.jpg');
-  background-repeat:no-repeat,repeat,no-repeat;
-  background-size:100% 100% ,5%, 100% 100%;
-  background-color: white;
+#home, .test{
+  background-image:radial-gradient(ellipse at center, rgba(255,255,255,0.27) 0%, rgba(0,0,0,0.62) 100%),url('../img/linea-textura-home.svg');
+  background-repeat:no-repeat,repeat;
+  background-size:100% 100% ,5%;
   height: 100vh;
 }
 
@@ -354,13 +353,13 @@ padding: 20px;
   opacity: .5;
 }
 
-.li-1{
+/*.li-1{
   max-width: 28%;
 }
 
 .li-2{
   max-width: 35%;
-}
+}*/
 
 
 /*********************** PORTFOLIO ********************/
