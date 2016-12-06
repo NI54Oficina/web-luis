@@ -5,12 +5,20 @@
 		padding:20px 2px;
 	}
 
+	.portfolio-header .img-logo, .contact-header .img-logo {
+		margin-bottom: 20px;
+	}
 	.col-xs-5{
 		width: 20%;
 	}
 
 	.col-xs-2-7 {
 	width: 14.28%;
+}
+
+.contact-box h2, .portfolio-box h2 {
+    font-size: 2em;
+
 }
 
 
@@ -34,17 +42,39 @@ section {
     padding: 20px;
 }
 
+.nav-inicio {
+  padding: 0;
+}
+
+.nav-inicio li {
+  padding: 0;
+}
 /*PORTFOLIO*/
 
 .nav-porfolio li {
     margin: 10px 10px;
 }
 
+.li-min{
+	     font-size: .4em !important;
+}
+
+.container-inicio p {
+
+    font-size: 0.8em;
+}
+
+.second-p, .first-p {
+    padding: 20px 5%;
+}
+
 /*CONTACTO*/
 
 .right-box-contact, .left-box-contact {
-    padding: 50px 30px;
+    padding: 20px 30px;
+		height: auto;
 }
+
 
 /*CIERRE DE LLAVES PRINCIPALES*/
 }

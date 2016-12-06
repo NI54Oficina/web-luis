@@ -8,7 +8,7 @@ $(document).on("ready",function(){
 	menuDisplay();
 	remainings();
 	changeProject();
-
+	centerNav();
 
 });
 
@@ -242,4 +242,24 @@ function changeProject(){
 
 
 	});
+}
+
+function centerNav(){
+	$('.li-min').each(function(){
+	 var parentWidth= $(this).parent().parent().width();
+	 var parentPad=parseInt($(this).parent().parent().css('padding-left'),10);
+	 var thisWidth = $(this).outerWidth();
+
+	 $(this).parent().parent().css('padding-left', parentWidth/2 - thisWidth/2+parentPad+'px');
+
+	 console.log( parentWidth/2 - thisWidth/2);
+	 console.log(  $(this).parent().parent().css('width'));
+	 console.log(  $('.container-inicio').css('width'));
+
+	 console.log("fede se la come");
+	});
+
+	// $('.li-max').each(function(){
+	//  console.log(	$(this).innerWidth());
+	// });
 }
