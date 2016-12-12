@@ -49,16 +49,13 @@
 
 
 		<p class="col-lg-12 col-sm-12 col-md-12 col-xs-12 first-p">
-		Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.
-		 Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500,
-		 cuando un impresor.
+			Kimenastd esta formado por un grupo de profesionales con años de experiencia en brindar soluciones para todo tipo de necesidades de imágenes fijas o en movimiento.
+	Nos desempeñamos en: Motion grapics - Animación 2d y 3d - Modelado para video juegos - Renders arquitectónicos y de Stands - Realización integral audiovisual - Edición y Post producción de video - CgVfx.
 		</p>
 
 		<p class="col-lg-12 col-sm-12 col-md-12 col-xs-12 second-p" >
-			It is a long established fact that a reader will be distracted by the readable content of
-			a page when looking at its layout. The point of using Lorem Ipsum is that it has a
-			more-or-less normal distribution of letters, as opposed to using 'Content here, content here',
-			making it look like readable English.
+			Kimenastd is formed by a group of professionals with years of experience in providing solutions for all types needs in stills or moving images.
+We develop: Motion grapics - Animation 2d and 3d - Modeling for video games - Renders Archviz and Stands - Audiovisual integral realization - Video Editing and Post production - CgVfx
 
 
 		</p>
