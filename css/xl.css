@@ -1,7 +1,18 @@
 @media screen and (min-width: 1500px){
 
 
- 
+
+  .nav-inicio li:hover{
+  /*padding: 0px;
+  transition: all 1s;*/
+  animation: expand 2s ;
+  }
+
+  .nav-inicio li:hover a p{
+     animation: ixpand 2s ;
+  /*padding: 20px !important;
+  transition: all 1s;*/
+  }
 .col-xl-7 {
 	width: 14%;
 }
@@ -42,4 +53,3 @@
 
 /*CIERRE DE LLLAVE*/
 }
-

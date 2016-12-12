@@ -238,6 +238,7 @@ section{
     position: absolute;
     bottom: 0;
     width: auto;
+    padding-left: 3%;
 }
 
 .footer-home a img{
@@ -285,7 +286,7 @@ section{
 #btn-inicio{
   position:absolute;
    width:auto ;
-   padding:50px 100px;
+   padding:50px 8%;
    right:0;
 }
 
@@ -300,17 +301,6 @@ section{
 }
 
 
-.nav-inicio li:hover{
-/*padding: 0px;
-transition: all 1s;*/
-animation: expand 2s ;
-}
-
-.nav-inicio li:hover a p{
-   animation: ixpand 2s ;
-/*padding: 20px !important;
-transition: all 1s;*/
-}
 
 @keyframes expand { 15% {padding:0px} 50% {padding: 20px} 75% {padding:5px;}  100% {padding: 20px;} }
 
