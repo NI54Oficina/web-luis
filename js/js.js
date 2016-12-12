@@ -14,6 +14,7 @@ $(document).on("ready",function(){
 
 
 
+
 });
 
 
@@ -126,6 +127,7 @@ function toShow(){
 			$('.image').fadeIn(500);
 			setMargin();
 			AlignCenter();
+			slider();
 
 
 		})
@@ -279,4 +281,55 @@ function centerNav(){
 		//  console.log( parentWidth/2 - thisWidth/2);
 		//  console.log(  $(this).parent().parent());
 		//  console.log(  $('.container-inicio').css('width'));
+}
+
+
+function slider(){
+
+	console.log("entra slider");
+
+var currentIndex = 0,
+  items = $('.remain-show');
+  itemAmt = items.length;
+	//items.css("display","none");
+	items.eq(currentIndex).attr('src');
+	// multiplicateDotNav(itemAmt);
+
+function cycleItems() {
+  var item = $('.remain-show');
+	var src = item.eq(currentIndex).attr('src');
+	$("#img-to-display > img").attr("src", src);
+	AlignCenter();
+
+}
+
+
+$('#next-img').click(function() {
+
+	 currentIndex += 1;
+
+
+  if (currentIndex > itemAmt - 1) {
+
+    currentIndex = 0;
+
+  }
+  cycleItems();
+});
+
+$('#prev-img').click(function() {
+
+  currentIndex -= 1;
+
+
+  if (currentIndex < 0) {
+
+    currentIndex = itemAmt - 1;
+  }
+  cycleItems();
+});
+
+
+
+// console.log("sale slider");
 }

@@ -674,7 +674,9 @@ cursor: pointer;
   }
 
   .img-screen button{
-    background: none;
+    background: url('../img/cerrar-portfolio.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
     border-image: url('../img/border.png') 34% repeat;
     font-size: 2em;
     color:#ffb60a;
@@ -685,6 +687,8 @@ cursor: pointer;
     right: 0;
     margin-right: 50px;
     top: 55px;
+    height: 30px;
+    width: 30px;
 
   }
 
