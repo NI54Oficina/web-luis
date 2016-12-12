@@ -33,9 +33,10 @@
 <section class="col-lg-12 col-sm-12 col-md-12 col-xs-12 contacto-2 pantalla">
 <div class="col-lg-6 col-sm-12 col-md-6 col-xs-12 left-box-contact">
   <form class="" action="index.html" method="post">
-    <input type="text" name="name" value="" placeholder="Nombre"> <br>
-    <input type="text" name="name" value="" placeholder="Email"><br>
-    <input type="text" name="name" value="" placeholder="Asunto"><br>
+    <div id="mail-status"></div>
+    <input id="nombre" type="text" name="nombre" value="" placeholder="Nombre"> <br>
+    <input id="email" type="text" name="email" value="" placeholder="Email"><br>
+    <input id="asunto" type="text" name="asunto" value="" placeholder="Asunto"><br>
   </form>
 </div>
 
@@ -43,9 +44,9 @@
   <p>
     Mensaje
   </p>
-  <textarea name="name" rows="8" cols="40"></textarea> <br>
+  <textarea id="mensaje" name="mensaje" rows="8" cols="40"></textarea> <br>
 
-  <button type="button" name="button">Enviar</button>
+  <button id="submitMail" type="button" name="button">Enviar</button>
 
 </div>
 

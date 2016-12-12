@@ -333,3 +333,59 @@ $('#prev-img').click(function() {
 
 // console.log("sale slider");
 }
+
+function mailing(){
+		$('#submitMail').click( function(){
+			var valid;
+			valid = validateContact();
+			if(valid) {
+					jQuery.ajax({
+							url: "mail.php",
+							data:'nombre='+$("#nombre").val()+'&email='+
+							$("#email").val()+'&asunto='+
+							$("#asunto").val()+'&mensaje='+
+							$("#mensaje").val(),
+							type: "POST",
+							success:function(data){
+									$("#mail-status").html(data);
+							},
+							error:function (){}
+			});
+	}
+
+
+		});
+
+}
+
+function validateContact() {
+    var valid = true;
+    // $(".demoInputBox").css('background-color','');
+    // $(".info").html('');
+    if(!$("#nombre").val()) {
+        $("#nombre").html("(required)");
+        $("#nombre").css('background-color','#ffb60a');
+        valid = false;
+    }
+    if(!$("#email").val()) {
+        $("#email").html("(required)");
+        $("#email").css('background-color','#ffb60a');
+        valid = false;
+    }
+    if(!$("#userEmail").val().match(/^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/)) {
+        $("#userEmail-info").html("(invalid)");
+        $("#userEmail").css('background-color','#ffb60a');
+        valid = false;
+    }
+    if(!$("#asunto").val()) {
+        $("#asunto").html("(required)");
+        $("#asunto").css('background-color','#ffb60a');
+        valid = false;
+    }
+    if(!$("#mensaje").val()) {
+        $("#mensaje").html("(required)");
+        $("#mensaje").css('background-color','#FFFFDF');
+        valid = false;
+    }
+    return valid;
+}
