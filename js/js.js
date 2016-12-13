@@ -11,7 +11,7 @@ $(document).on("ready",function(){
 	remainings();
 	changeProject();
 	centerNav();
-
+	setHeightContacto();
 
 
 
@@ -20,6 +20,7 @@ $(document).on("ready",function(){
 
 $( window ).resize(function() {
   centerNav();
+	setHeightContacto();
 });
 
 
@@ -388,4 +389,13 @@ function validateContact() {
         valid = false;
     }
     return valid;
+}
+
+
+function setHeightContacto(){
+ var height= parseInt($('.contacto').css('height'));
+ var heighWs= parseInt($(window).height());
+
+ $('.right-box-contact').css('min-height', heighWs-height+'px');
+ console.log("entra alto de contacto");
 }

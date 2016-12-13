@@ -234,11 +234,12 @@ section{
 
 .footer-home{
 
-  padding-bottom: 100px;
+  /*padding-bottom: 100px;*/
     position: absolute;
     bottom: 0;
     width: auto;
-    padding-left: 3%;
+    padding: 50px 10%;
+
 }
 
 .footer-home a img{
@@ -286,12 +287,13 @@ section{
 #btn-inicio{
   position:absolute;
    width:auto ;
-   padding:50px 8%;
+   padding:50px 10%;
    right:0;
 }
 
 .nav-inicio {
   padding: 0 120px;
+  padding-left: 90px;
 }
 
 .nav-inicio li a{
@@ -302,15 +304,20 @@ section{
 
 
 
-@keyframes expand { 15% {padding:0px} 50% {padding: 20px} 75% {padding:5px;}  100% {padding: 20px;} }
+@keyframes expand { 15% {padding:0px } 50% {padding: 20px} 75% {padding:5px;}  100% {padding: 20px;} }
 
-@keyframes ixpand {  15% {padding: 20px} 50% {padding:0px} 75% {padding:15px ;}  100% {padding:0px;} }
+@keyframes ixpand {  15% {padding: 20px } 50% {padding:0px} 75% {padding:15px ;}  100% {padding:0px;} }
 ;
 .nav-inicio{
 padding-left: 10%;
 margin-bottom: 50px;
 }
+/*
+.container-inicio a p {
 
+    font-size: 0.7em;
+}
+*/
 
 .nav-inicio li{
 padding: 20px;
@@ -467,12 +474,12 @@ cursor: pointer;
 
 #prev-img{
   left:0;
-  margin-left: 15%;
+  margin-left: 10%;
 }
 
 #next-img{
   right:0;
-  margin-right: 15%;
+  margin-right: 10%;
 }
 
 /*********************** CONTACTO ********************/
@@ -485,7 +492,7 @@ cursor: pointer;
   background: url('../img/header.jpg');
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  height: 50vh;
+  min-height: 50vh;
 
 }
 
@@ -513,7 +520,6 @@ cursor: pointer;
 
 .right-box-contact,.left-box-contact{
   padding: 50px 100px;
-  height: 50vh;
   padding-bottom: 100px;
 }
 

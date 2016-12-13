@@ -191,7 +191,7 @@
   <button class="border-b" type="button" name="button" onclick="closeGallery()"><p> </p></button>
 
       <div id="img-to-display" style="max-height:500px; max-width:90vw"class="">
-//cerrar-portfolio.svg
+
 
       </div>
 

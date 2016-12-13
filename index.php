@@ -37,14 +37,16 @@
 
 <!-- <div id="div1" />
 <div id="div2" /> -->
+
+
+</section>
+
 <footer  class="col-lg-12 col-sm-12 col-md-12 col-xs-12 footer-home">
 
     <a href="#"><img src="img/fb.svg" alt="" /></a>
     <a href="#"><img src="img/linkedin.svg" alt="" /></a>
     <a href="#"><img src="img/ytube.svg" alt="" /></a>
 </footer>
-
-</section>
 
 <!-- <script>
 var myVideo =  iframe.getElementById('video');
