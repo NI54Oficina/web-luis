@@ -256,7 +256,7 @@ section{
 }
 
 #home, .test{
-  background-image:radial-gradient(ellipse at center, rgba(255,255,255,0.27) 0%, rgba(0,0,0,0.62) 100%),url('../img/linea-textura-home.svg');
+  background-image:radial-gradient(ellipse at center, rgba(255,255,255,0.27) 0%, rgba(0,0,0,0.62) 100%),url('../img/textura-home.png');
   background-repeat:no-repeat,repeat;
   background-size:100% 100% ,5%;
   height: 100vh;
@@ -312,12 +312,8 @@ section{
 padding-left: 10%;
 margin-bottom: 50px;
 }
-/*
-.container-inicio a p {
 
-    font-size: 0.7em;
-}
-*/
+
 
 .nav-inicio li{
 padding: 20px;

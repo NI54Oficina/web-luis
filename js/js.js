@@ -4,9 +4,10 @@ var marginGetter;
 
 $(document).on("ready",function(){
 
-
+	AlignCenter();
 	CenterToParent();
 	toShow();
+	setMargin();
 	menuDisplay();
 	remainings();
 	changeProject();
@@ -19,6 +20,10 @@ $(document).on("ready",function(){
 
 
 $( window ).resize(function() {
+	CenterToParent();
+	AlignCenter();
+	setMargin();
+
   centerNav();
 	setHeightContacto();
 });
@@ -101,12 +106,16 @@ function toShow(){
 				$("#img-to-display").prepend( '<iframe width="1080" height="579" src="'+imagenes[grupo][2]+'" frameborder="0" allowfullscreen></iframe>' );
 				$(".img-description").css('margin-top','0px');
 				$('#button-display').text('');
+				$('#next-img').css('display', 'none');
+				$('#prev-img').css('display', 'none');
+
 
 			}else{
 				hidden=true;
 
 				$("#img-to-display").prepend( '<img src="img/'+imagenes[grupo][2]+'.jpg" alt="" style="max-height:inherit; width:auto; max-width:inherit" /> ' );
-
+				$('#next-img').css('display', 'block');
+				$('#prev-img').css('display', 'block');
 
 
 
@@ -125,7 +134,7 @@ function toShow(){
 			$(".img-description > p:last-child").text(subtitulo);
 
 
-			$('.image').fadeIn(500);
+			$('.image').fadeIn(300);
 			setMargin();
 			AlignCenter();
 			slider();
@@ -172,7 +181,7 @@ function hideDisplay() {
 
 	}
 
-
+///settea margen superior para las imagenes de remaining
 function setMargin(){
 
 	var height= $('.img-remain').outerHeight();
@@ -220,7 +229,7 @@ centerNav();
 
 		});
 
-	}
+}
 
 
 function remainings(){

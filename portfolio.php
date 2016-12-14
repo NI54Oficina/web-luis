@@ -152,7 +152,9 @@
 
             <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12 render solapa">
 
-                <?php foreach($listadoProject as $project){
+                <?php
+                $projectIndex=0;
+                 foreach($listadoProject as $project){
 
                   if($project[0]==1){?>
 
