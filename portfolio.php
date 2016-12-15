@@ -81,7 +81,7 @@
                       auxArray.push('<?php echo $projec; ?>');
                     <?php } ?>
                     imagenes.push(auxArray);
-                    console.log(imagenes);
+                    //console.log(imagenes);
                   </script>
                 <?php
                   $projectIndex++;
@@ -111,7 +111,7 @@
                         auxArray.push('<?php echo $projec; ?>');
                       <?php } ?>
                       imagenes.push(auxArray);
-                      console.log(imagenes);
+                      //console.log(imagenes);
                     </script>
 
                 <?php
@@ -141,7 +141,7 @@
                         auxArray.push('<?php echo $projec; ?>');
                       <?php } ?>
                       imagenes.push(auxArray);
-                      console.log(imagenes);
+                    //  console.log(imagenes);
                     </script>
 
                 <?php   $projectIndex++; }}  ?>
@@ -192,7 +192,7 @@
 
   <button class="border-b" type="button" name="button" onclick="closeGallery()"><p> </p></button>
 
-      <div id="img-to-display" style="max-height:500px; max-width:90vw"class="">
+      <div id="img-to-display" style="max-width:90vw;max-height:65vh">
 
 
       </div>

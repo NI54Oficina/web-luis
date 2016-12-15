@@ -641,6 +641,7 @@ cursor: pointer;
     color: white;
     font-size:1em;
     margin-bottom: 0;
+    margin-top: 20px;
   }
 
   .img-description p:nth-child(2){
