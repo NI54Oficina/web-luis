@@ -142,7 +142,8 @@ function toShow(){
 
 			$('.image').fadeIn(300,function(){setMargin();
 			AlignCenter();
-			slider();});
+			slider();
+			setHeightPorfolioiFrame();});
 
 
 

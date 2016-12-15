@@ -16,6 +16,17 @@ and (orientation : portrait) {
 
 
 
+  .container-inicio {
+      padding: 100px 100px;
+      padding-left: 0;
+      padding-right: 0;
+  }
+
+
+  .container-inicio a p {
+
+      font-size: 0.5em;
+  }
 /*IPAD portrait*/
 }
 
