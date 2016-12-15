@@ -112,6 +112,7 @@ function toShow(){
 				$('#button-display').text('');
 				$('#next-img').css('display', 'none');
 				$('#prev-img').css('display', 'none');
+				$('.img-remain').css('margin-top','30px');
 				setHeightPorfolioiFrame();
 
 
