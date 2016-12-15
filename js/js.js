@@ -106,7 +106,7 @@ function toShow(){
 
 			if(imagenes[grupo][0]==0){
 				hidden=null;
-				console.log("entra 1");
+
 				$("#img-to-display").prepend( '<iframe width="1080" height="450" src="'+imagenes[grupo][2]+'" frameborder="0" allowfullscreen></iframe>' );
 				$(".img-description").css('margin-top','0px');
 				$('#button-display').text('');
@@ -118,7 +118,7 @@ function toShow(){
 
 			}else{
 				hidden=true;
-				console.log("entra 1");
+
 				$("#img-to-display").prepend( '<img src="img/'+imagenes[grupo][2]+'.jpg" alt="" style="max-height:inherit; width:auto; max-width:inherit" /> ' );
 				$('#next-img').css('display', 'block');
 				$('#prev-img').css('display', 'block');
@@ -190,10 +190,10 @@ function hideDisplay() {
 
 ///settea margen superior para las imagenes de remaining
 function setMargin(){
-	console.log("entra margin");
+
 	var height= $('.img-remain').outerHeight();
 
-	console.log(height);
+
 	$('.img-description').css('min-height',height);
 	$('.img-description').css('margin-top','-'+height+'px');
 
