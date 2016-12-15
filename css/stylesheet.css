@@ -644,6 +644,13 @@ cursor: pointer;
     margin-top: 20px;
   }
 
+  .border-2 {
+    border: 7px solid #000000;
+    border-image: url(../img/border.png) 15%;
+    box-sizing: border-box;
+}
+.
+
   .img-description p:nth-child(2){
     color:black;
     font-size:.8em;
@@ -652,7 +659,7 @@ cursor: pointer;
   .img-remain img{
     padding: 10px 5px;
     cursor: pointer;
-    max-height: 150px;
+    max-height: 90px;
     width: auto;
   }
 

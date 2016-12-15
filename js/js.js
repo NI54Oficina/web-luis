@@ -107,7 +107,7 @@ function toShow(){
 			if(imagenes[grupo][0]==0){
 				hidden=null;
 				console.log("entra 1");
-				$("#img-to-display").prepend( '<iframe width="1080" height="500" src="'+imagenes[grupo][2]+'" frameborder="0" allowfullscreen></iframe>' );
+				$("#img-to-display").prepend( '<iframe width="1080" height="450" src="'+imagenes[grupo][2]+'" frameborder="0" allowfullscreen></iframe>' );
 				$(".img-description").css('margin-top','0px');
 				$('#button-display').text('');
 				$('#next-img').css('display', 'none');
