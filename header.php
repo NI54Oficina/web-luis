@@ -10,7 +10,7 @@
       <!--CSS-->
       <link type="text/css"  rel="stylesheet" href="css/bootstrap.min.css">
       <link type="text/css"  rel="stylesheet" href="css/custom-icons.css">
-
+      <link rel="shortcut icon" href="img/fav_icon.png" type="image/png">
 
       <!--JS-->
       <script type="text/javascript" src="js/jquery.js"></script>

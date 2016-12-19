@@ -59,7 +59,13 @@ and (max-device-width : 1024px)  {
 /*media query resoluciones 360x240 portrait*/
 @media only screen and (max-width: 370px) and (orientation: portrait)
 {
+.nav-porfolio li,#btn-menu p{
+  font-size: .8em;
+}
 
+.contact-box h2, .portfolio-box h2 {
+  font-size: 1em;
+}
 
 }
 

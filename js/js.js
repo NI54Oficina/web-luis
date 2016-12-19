@@ -15,6 +15,7 @@ $(document).on("ready",function(){
 	setHeightContacto();
 	setHeightPorfolioImage();
 	setHeightPorfolioiFrame();
+	mailing();
 
 
 
@@ -107,19 +108,19 @@ function toShow(){
 			if(imagenes[grupo][0]==0){
 				hidden=null;
 
-				$("#img-to-display").prepend( '<iframe width="1080" height="450" src="'+imagenes[grupo][2]+'" frameborder="0" allowfullscreen></iframe>' );
+				$("#img-to-display").prepend( '<iframe id="video-mostrado" style="max-width:90vw; width:1080px; height:454px; max-height:50vh;"src="'+imagenes[grupo][2]+'" frameborder="0" allowfullscreen></iframe>' );
 				$(".img-description").css('margin-top','0px');
 				$('#button-display').text('');
 				$('#next-img').css('display', 'none');
 				$('#prev-img').css('display', 'none');
 				$('.img-remain').css('margin-top','30px');
-				setHeightPorfolioiFrame();
+				// setHeightPorfolioiFrame();
 
 
 			}else{
 				hidden=true;
 
-				$("#img-to-display").prepend( '<img src="img/'+imagenes[grupo][2]+'.jpg" alt="" style="max-height:inherit; width:auto; max-width:inherit" /> ' );
+				$("#img-to-display").prepend( '<img id="imagen-mostrada" src="img/'+imagenes[grupo][2]+'.jpg" alt="" style="max-height:inherit;" /> ' );
 				$('#next-img').css('display', 'block');
 				$('#prev-img').css('display', 'block');
 
@@ -132,7 +133,7 @@ function toShow(){
 
 					}
 
-					setHeightPorfolioImage();
+					// setHeightPorfolioImage();
 
 			}
 
@@ -140,7 +141,8 @@ function toShow(){
 			$(".img-description > p:last-child").text(subtitulo);
 
 
-			$('.image').fadeIn(300,function(){setMargin();
+			$('.image').fadeIn(300,function(){
+				setMargin();
 			AlignCenter();
 			slider();
 			setHeightPorfolioiFrame();});
@@ -356,19 +358,17 @@ function mailing(){
 		$('#submitMail').click( function(){
 			var valid;
 			valid = validateContact();
+			var miObjeto={};
+			miObjeto.nombre=$("#nombre").val();
+			miObjeto.email=$("#email").val();
+			miObjeto.asunto=$("#asunto").val();
+			miObjeto.mensaje=$("#mensaje").val();
+
+
 			if(valid) {
-					jQuery.ajax({
-							url: "mail.php",
-							data:'nombre='+$("#nombre").val()+'&email='+
-							$("#email").val()+'&asunto='+
-							$("#asunto").val()+'&mensaje='+
-							$("#mensaje").val(),
-							type: "POST",
-							success:function(data){
-									$("#mail-status").html(data);
-							},
-							error:function (){}
-			});
+				$.post("mail2.php",miObjeto,function(data){
+
+				});
 	}
 
 
@@ -381,30 +381,38 @@ function validateContact() {
     // $(".demoInputBox").css('background-color','');
     // $(".info").html('');
     if(!$("#nombre").val()) {
-        $("#nombre").html("(required)");
-        $("#nombre").css('background-color','#ffb60a');
+        $("#nombre").html("Este campo no debe estar vacio");
+        // $("#nombre").css('background-color','#ffb60a');
         valid = false;
-    }
+    }else{
+			  $("#nombre").css('background-color','#6bcea3');
+		}
     if(!$("#email").val()) {
-        $("#email").html("(required)");
-        $("#email").css('background-color','#ffb60a');
+        $("#email").html("Este campo no debe estar vacio");
+        // $("#email").css('background-color','#ffb60a');
         valid = false;
-    }
-    if(!$("#userEmail").val().match(/^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/)) {
-        $("#userEmail-info").html("(invalid)");
-        $("#userEmail").css('background-color','#ffb60a');
-        valid = false;
-    }
+    }else{
+			  $("#email").css('background-color','#6bcea3');
+		}
+    // if(!$("#userEmail").val().match(/^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/)) {
+    //     $("#userEmail-info").html("(invalid)");
+    //     $("#userEmail").css('background-color','#ffb60a');
+    //     valid = false;
+    // }
     if(!$("#asunto").val()) {
-        $("#asunto").html("(required)");
-        $("#asunto").css('background-color','#ffb60a');
+        $("#asunto").html("Este campo no debe estar vacio");
+        // $("#asunto").css('background-color','#ffb60a');
         valid = false;
-    }
+    }else{
+			  $("#asunto").css('background-color','#6bcea3');
+		}
     if(!$("#mensaje").val()) {
-        $("#mensaje").html("(required)");
-        $("#mensaje").css('background-color','#FFFFDF');
+        $("#mensaje").html("Este campo no debe estar vacio");
+        // $("#mensaje").css('background-color','#FFFFDF');
         valid = false;
-    }
+    }else{
+			  $("#mensaje").css('background-color','#6bcea3');
+		}
     return valid;
 }
 
@@ -414,6 +422,7 @@ function setHeightContacto(){
  var heighWs= parseInt($(window).height());
 
  $('.right-box-contact').css('min-height', heighWs-height+'px');
+ $('.left-box-contact').css('min-height', heighWs-height+'px');
 
 }
 

@@ -18,7 +18,7 @@ $mail = new PHPMailer;
 $mail->setFrom('no-replay@kimenastd.com', 'usuarioDemo');
 $mail->addAddress('melania.smc@hotmail.com', 'Melania Miranda');     // Add a recipient
 //$mail->addAddress('ellen@example.com');               // Name is optional
-//$mail->addReplyTo('info@example.com', 'Information');
+$mail->addReplyTo(  $_POST["email"], 'info');
 // $mail->addCC('cc@example.com');
 // $mail->addBCC('bcc@example.com');
 
@@ -26,9 +26,9 @@ $mail->addAddress('melania.smc@hotmail.com', 'Melania Miranda');     // Add a re
 // $mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
 $mail->isHTML(true);                                  // Set email format to HTML
 
-$mail->Subject = 'PRUEBA';
-$mail->Body    = 'MENSAJE DE PRUEBA';
-$mail->AltBody = 'PROBANDO RECEPCION MENSAJE';
+$mail->Subject = $_POST["asunto"];
+$mail->Body    = $_POST["mensaje"];
+// $mail->AltBody = 'PROBANDO RECEPCION MENSAJE';
 
 if(!$mail->send()) {
     echo 'Message could not be sent.';

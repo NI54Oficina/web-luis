@@ -8,6 +8,11 @@
     zoom: 1.0;
 }
 
+iframe #video-mostrado{
+  width: 300px;
+  height: 800px;
+}
+
 /**{
 transition:0.5s;
 }*/
@@ -105,6 +110,11 @@ p{
   height:50px;
   width:70px;
 }
+.image .img-screen #imagen-mostrada{
+	max-width:inherit;
+  width: auto;
+}
+
 
 .div1 {
   /*position:absolute;
@@ -277,7 +287,7 @@ section{
 
   height: 100vh;
   display: none;
-  position: fixed;
+  position: absolute;
   z-index:1;
   /*opacity: 0;*/
 
@@ -325,7 +335,7 @@ padding: 20px;
 }
 
 .container-inicio p{
-  text-align: justify;
+
   color: white;
   font-size: 0.9em;
 }
@@ -605,6 +615,12 @@ cursor: pointer;
   float:right;
   font-size: .9em;
 }
+
+.left-box-contact {
+background: url('../img/cuadrado-textura-contacto.svg');
+}
+
+
 
 /*********************** IMAGEN GALERIA ********************/
   .image{

@@ -32,7 +32,7 @@
 
 <section class="col-lg-12 col-sm-12 col-md-12 col-xs-12 contacto-2 pantalla">
 <div class="col-lg-6 col-sm-12 col-md-6 col-xs-12 left-box-contact">
-  <form class="" action="index.html" method="post">
+  <form id="miForm"class="" action="index.html" method="post">
     <div id="mail-status"></div>
     <input id="nombre" type="text" name="nombre" value="" placeholder="Nombre"> <br>
     <input id="email" type="text" name="email" value="" placeholder="Email"><br>
