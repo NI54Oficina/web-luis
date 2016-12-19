@@ -141,14 +141,11 @@ function toShow(){
 			$(".img-description > p:last-child").text(subtitulo);
 
 
-			$('.image').fadeIn(300,function(){
+			$('.image').fadeIn(600,function(){
 				setMargin();
 			AlignCenter();
 			slider();
 			setHeightPorfolioiFrame();});
-
-
-
 
 		})
 
@@ -419,10 +416,11 @@ function validateContact() {
 
 function setHeightContacto(){
  var height= parseInt($('.contacto').css('height'));
- var heighWs= parseInt($(window).height());
+ var heighWs= parseInt($(document).height());
 
  $('.right-box-contact').css('min-height', heighWs-height+'px');
  $('.left-box-contact').css('min-height', heighWs-height+'px');
+ console.log("se ejecuta conta");
 
 }
 

@@ -314,9 +314,9 @@ section{
 
 
 
-@keyframes expand { 15% {padding:0px } 50% {padding: 20px} 75% {padding:5px;}  100% {padding: 20px;} }
+@keyframes expand { 15% {padding:0px } 50% {padding: 20px} 90% {padding:5px;}  100% {padding: 20px;} }
 
-@keyframes ixpand {  15% {padding: 20px } 50% {padding:0px} 75% {padding:15px ;}  100% {padding:0px;} }
+@keyframes ixpand {  15% {padding: 20px } 50% {padding:0px} 90% {padding:15px ;}  100% {padding:0px;} }
 ;
 .nav-inicio{
 padding-left: 10%;
@@ -596,8 +596,8 @@ cursor: pointer;
 
 .contacto-2{
   padding: 0 !important;
-  background: url('../img/cuadrado-textura-contacto.svg');
-  height: 50vh;
+  /*background: url('../img/cuadrado-textura-contacto.svg');*/
+  max-height: 50vh;
 }
 
 .left-box-contact form input{
@@ -618,6 +618,7 @@ cursor: pointer;
 
 .left-box-contact {
 background: url('../img/cuadrado-textura-contacto.svg');
+background-repeat: repeat;
 }
 
 

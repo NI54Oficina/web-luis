@@ -5,11 +5,11 @@
   .nav-inicio li:hover{
   /*padding: 0px;
   transition: all 1s;*/
-  animation: expand 2s ;
+  animation: expand 1.5s ;
   }
 
   .nav-inicio li:hover a p{
-     animation: ixpand 2s ;
+     animation: ixpand 1.5s ;
   /*padding: 20px !important;
   transition: all 1s;*/
   }
