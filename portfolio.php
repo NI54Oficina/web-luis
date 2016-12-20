@@ -201,7 +201,7 @@
 </div>
 
 
-<div class="col-lg-12 col-sm-12 col-md-12 col-xs-12 img-remain">
+<div class="col-lg-12 col-sm-12 col-md-12 col-xs-12 img-remain your-class">
 
 
     <!-- <img class="col-lg-1 col-sm-3 col-md-1 col-xs-3 remain-show" src="img/test.png" alt="" /> -->

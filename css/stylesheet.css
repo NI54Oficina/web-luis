@@ -674,7 +674,7 @@ background-repeat: repeat;
     font-size:.8em;
   }
 
-  .img-remain img{
+  .img-remain div img{
     padding: 10px 5px;
     cursor: pointer;
     max-height: 90px;

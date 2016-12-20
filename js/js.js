@@ -5,6 +5,7 @@ var mobile=false;
 
 $(document).on("ready",function(){
 	isMobile();
+	caserrousel();
 
 	AlignCenter();
 	CenterToParent();
@@ -132,7 +133,7 @@ function toShow(){
 
 					for(var i=2; i < imagenes[grupo].length; i++){
 
-							$('.img-remain').prepend( '<img class="col-lg-2 col-sm-3 col-md-1 col-xs-3 remain-show" src="img/'+imagenes[grupo][i]+'.jpg" alt="" />' );
+							$('.img-remain').prepend( '	<div><img class="col-lg-2 col-sm-3 col-md-1 col-xs-3 remain-show" src="img/'+imagenes[grupo][i]+'.jpg" alt="" /></div>' );
 							remainings();
 
 					}
@@ -150,6 +151,7 @@ function toShow(){
 			AlignCenter();
 			slider();
 			setHeightPorfolioiFrame();
+			caserrousel();
 
 
 
@@ -478,4 +480,18 @@ function isMobile(){
 	if($(window).width() < 767){
 		mobile=true;
 	}
+}
+
+function caserrousel(){
+
+	$('.your-class').slick({
+		dots: false,
+		infinite: true,
+		speed: 300,
+		slidesToShow: 5,
+		centerMode: true,
+		variableWidth: true
+
+		 });
+
 }

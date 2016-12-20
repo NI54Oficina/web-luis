@@ -26,7 +26,12 @@
       <!--JS-->
       <script type="text/javascript" src="js/jquery.min.js"></script>
       <script type="text/javascript" src="js/jquery.mobile-events.min.js"></script>
+
+      <script type="text/javascript" src="js/slick/migrate.js"></script>
       <script type="text/javascript" src="js/jquery-ui.js"></script>
+      <link rel="stylesheet" type="text/css" href="js/slick/slick.css"/>
+      <link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css"/>
+        <script type="text/javascript" src="js/slick/slick.min.js"></script>
 
     <!-- JS PROPIO -->
       <script type="text/javascript" src="js/js.js "></script>
