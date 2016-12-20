@@ -1,8 +1,10 @@
 var hidden=true;
 var menu=false;
 var marginGetter;
+var mobile=false;
 
 $(document).on("ready",function(){
+	isMobile();
 
 	AlignCenter();
 	CenterToParent();
@@ -23,6 +25,8 @@ $(document).on("ready",function(){
 
 
 $( window ).resize(function() {
+	isMobile();
+
 	CenterToParent();
 	AlignCenter();
 	setMargin();
@@ -108,7 +112,7 @@ function toShow(){
 			if(imagenes[grupo][0]==0){
 				hidden=null;
 
-				$("#img-to-display").prepend( '<iframe id="video-mostrado" style="max-width:90vw; width:1080px; height:454px; max-height:50vh;"src="'+imagenes[grupo][2]+'" frameborder="0" allowfullscreen></iframe>' );
+				$("#img-to-display").prepend( '<iframe id="video-mostrado" style="max-width:90vw; width:1080px; height:454px;"src="'+imagenes[grupo][2]+'" frameborder="0" allowfullscreen></iframe>' );
 				$(".img-description").css('margin-top','0px');
 				$('#button-display').text('');
 				$('#next-img').css('display', 'none');
@@ -142,10 +146,17 @@ function toShow(){
 
 
 			$('.image').fadeIn(600,function(){
-				setMargin();
+			setMargin();
 			AlignCenter();
 			slider();
-			setHeightPorfolioiFrame();});
+			setHeightPorfolioiFrame();
+
+
+
+		});
+
+
+
 
 		})
 
@@ -245,7 +256,9 @@ function remainings(){
 			$("#img-to-display > img").attr("src", src);
 
 			AlignCenter();
-			// console.log((a/2 - b/2));
+
+			AlignVertical();
+
 
 		});
 	}
@@ -317,6 +330,8 @@ function cycleItems() {
 	var src = item.eq(currentIndex).attr('src');
 	$("#img-to-display > img").attr("src", src);
 	AlignCenter();
+	AlignVertical();
+	console.log("que onda loco");
 
 }
 
@@ -444,3 +459,23 @@ function setHeightPorfolioImage(){
 	$('#img-to-display > img').css('max-height',heighWs-height+'px');
 
 };
+
+function AlignVertical(){
+
+	if(mobile){
+		var altura=$('.img-screen').outerHeight() ;
+
+		var alturaElem= parseInt($('#imagen-mostrada').height());
+
+		$('.image .img-screen #imagen-mostrada').css('bottom',altura/2 - alturaElem/2 -40+'px' );
+		 console.log("entra algo");
+	}
+
+
+}
+
+function isMobile(){
+	if($(window).width() < 767){
+		mobile=true;
+	}
+}

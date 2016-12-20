@@ -662,12 +662,12 @@ background-repeat: repeat;
     margin-top: 20px;
   }
 
-  .border-2 {
+  .border-2{
     border: 7px solid #000000;
-    border-image: url(../img/border.png) 15%;
+    border-image: url('../img/border.png') 15% ;
     box-sizing: border-box;
-}
-.
+  }
+
 
   .img-description p:nth-child(2){
     color:black;
