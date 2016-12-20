@@ -9,10 +9,6 @@
 		padding:20px 2px;
 	}
 
-	#inicio{
-		position: fixed;
-	}
-
 	.portfolio-header .img-logo, .contact-header .img-logo {
 		margin-bottom: 20%;
 	}
@@ -44,6 +40,9 @@ section {
 
 }
 
+#inicio{
+	height: auto;
+}
 
 #img-to-display iframe{
 	max-width: 100vw;
@@ -119,7 +118,7 @@ section {
 
 .right-box-contact, .left-box-contact {
     padding: 20px 30px;
-		height: auto;
+		min-height: auto !important;
 }
 
 .portfolio-header  .img-logo, .contact-header  .img-logo{
@@ -168,9 +167,5 @@ section {
 
 @media screen and (max-width: 767px) and (orientation:portrait){
 
-	#inicio{
-		max-height: 100vh;
-		position: fixed;
-	}
 
 }
