@@ -62,14 +62,14 @@ array_push($listadoProject, ['3', "Grandvision",[0,'21-img-1', 'https://www.yout
 array_push($listadoProject, ['3', "Cocina",[1,'13-img-1', '13-img-2', '13-img-3', '13-img-4'],'2016', 'https://www.behance.net/gallery/43584663/Kitchen-render']);
 array_push($listadoProject, ['3', "Int",[1,'24-img-1','24-img-2','24-img-3','24-img-4','24-img-5','24-img-6','24-img-7','24-img-8','24-img-9'],'2016', 'https://www.behance.net/gallery/16764109/interior']);
 // array_push($listadoProject, ['3', "Arcor",[''], 'https://www.behance.net/gallery/15762179/Propuesta-vidrieras-Arcorcenter']);
-// array_push($listadoProject, ['3', "Stands",[''], 'https://www.behance.net/gallery/13287757/Stands']);
+array_push($listadoProject, ['3', "Stands",[1,'55-img-1','55-img-2','55-img-3','55-img-4','55-img-5','55-img-6','55-img-7','55-img-8','55-img-9','55-img-10','55-img-11','55-img-12','55-img-13','55-img-14','55-img-15','55-img-16','55-img-17','55-img-18','55-img-19','55-img-20','55-img-20','55-img-21','55-img-22','55-img-23','55-img-24','55-img-25','55-img-26','55-img-27','55-img-28','55-img-29','55-img-30','55-img-31','55-img-32'], '2016','https://www.behance.net/gallery/13287757/Stands']);
 
 
 
 
 $listadoVideos=array();
 
-array_push($listadoVideos, ['1', "Winter 2010", 'https://www.youtube.com/embed/HkcfDotc6cA']);
+// array_push($listadoVideos, ['1', "Winter 2010", 'https://www.youtube.com/embed/HkcfDotc6cA']);
 // array_push($listadoVideos, ['1', "Stand Coca-Cola 2010", 'https://www.youtube.com/embed/50uaC7JWpyA']);
 // array_push($listadoVideos, ['1', "Pm Pepsi 2010", 'https://www.youtube.com/embed/TfFTOEPNpec5']);
 // array_push($listadoVideos, ['1', "Elind", 'https://www.youtube.com/embed/oeANZyZWTto']);
@@ -79,7 +79,7 @@ array_push($listadoVideos, ['1', "Winter 2010", 'https://www.youtube.com/embed/H
 // array_push($listadoVideos, ['1', "Vid", 'https://www.behance.net/gallery/16307085/GLAZED-PROPERTY-DREAM']);
 
 
-array_push($listadoVideos, ['2', "Pm Caen", 'https://www.youtube.com/embed/O7oHORxXsTg']);
+// array_push($listadoVideos, ['2', "Pm Caen", 'https://www.youtube.com/embed/O7oHORxXsTg']);
 // array_push($listadoVideos, ['2', "Parliament", 'https://www.youtube.com/embed/fLeanWWEtEE']);
 // array_push($listadoVideos, ['2', "Pm Kreter", 'https://www.youtube.com/embed/SbTxbUt2dws']);
 // array_push($listadoVideos, ['2', "Next", 'https://www.youtube.com/embed/SwDbagFAh8g']);
@@ -122,7 +122,7 @@ array_push($listadoVideos, ['2', "Pm Caen", 'https://www.youtube.com/embed/O7oHO
 // array_push($listadoVideos, ['2', "Terraza", 'https://www.youtube.com/embed/2rgdezLXPYY']);
 // array_push($listadoVideos, ['2', "Lecajete", 'https://www.youtube.com/embed/mrJNBCmY03M']);
 
-array_push($listadoVideos, ['3', "Grandvision", 'https://www.youtube.com/embed/aMnsly-BB40']);
+// array_push($listadoVideos, ['3', "Grandvision", 'https://www.youtube.com/embed/aMnsly-BB40']);
 // array_push($listadoVideos, ['3', "Cocina", 'https://www.behance.net/gallery/43584663/Kitchen-render']);
 // array_push($listadoVideos, ['3', "Int", 'https://www.behance.net/gallery/16764109/interior']);
 // array_push($listadoVideos, ['3', "Arcor", 'https://www.behance.net/gallery/15762179/Propuesta-vidrieras-Arcorcenter']);

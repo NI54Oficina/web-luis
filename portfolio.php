@@ -33,7 +33,22 @@
 
 
 
+
 </section>
+<div class="carousel carousel--show-several carousel--selected-cell" data-flickity="{ &quot;groupCells&quot;: true }" >
+
+
+      <div class="carousel-cell"><img style="width:80px; height:auto" src="http://i.imgur.com/bwy74ok.jpg" alt=""></div>
+      <div class="carousel-cell"><img style="width:80px; height:auto" src="http://i.imgur.com/bwy74ok.jpg" alt=""></div>
+      <div class="carousel-cell"><img style="width:80px; height:auto" src="http://i.imgur.com/bwy74ok.jpg" alt=""></div>
+
+      <div class="carousel-cell"><img style="width:80px; height:auto" src="http://i.imgur.com/bwy74ok.jpg" alt=""></div>
+      <div class="carousel-cell"><img style="width:80px; height:auto" src="http://i.imgur.com/bwy74ok.jpg" alt=""></div>
+      <div class="carousel-cell"><img style="width:80px; height:auto" src="http://i.imgur.com/bwy74ok.jpg" alt=""></div>
+
+      <div class="carousel-cell"><img style="width:80px; height:auto" src="http://i.imgur.com/bwy74ok.jpg" alt=""></div>
+      <div class="carousel-cell"><img style="width:80px; height:auto" src="http://i.imgur.com/bwy74ok.jpg" alt=""></div>
+    </div>
 
 <ul class="col-lg-12 col-sm-12 col-md-12 col-xs-12 nav-porfolio pantalla">
   <li id="todos" class="selected">Todos <div ></div></li>
@@ -201,12 +216,14 @@
 </div>
 
 
-<div class="col-lg-12 col-sm-12 col-md-12 col-xs-12 img-remain your-class">
+<div class=" img-remain carousel carousel--show-several carousel--selected-cell" data-flickity="{ &quot;groupCells&quot;: true }">
 
 
     <!-- <img class="col-lg-1 col-sm-3 col-md-1 col-xs-3 remain-show" src="img/test.png" alt="" /> -->
 
 </div>
+
+
 
 <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12 img-description">
 

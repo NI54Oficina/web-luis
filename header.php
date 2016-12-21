@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html >
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=no">
@@ -27,11 +27,14 @@
       <script type="text/javascript" src="js/jquery.min.js"></script>
       <script type="text/javascript" src="js/jquery.mobile-events.min.js"></script>
 
-      <script type="text/javascript" src="js/slick/migrate.js"></script>
+
+
+
       <script type="text/javascript" src="js/jquery-ui.js"></script>
-      <link rel="stylesheet" type="text/css" href="js/slick/slick.css"/>
-      <link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css"/>
-        <script type="text/javascript" src="js/slick/slick.min.js"></script>
+
+      <!-- <script type="text/javascript" src="js/flickity.pkgd.js"></script> -->
+      <script type="text/javascript" src="js/flickity-docs.min.js"></script>
+
 
     <!-- JS PROPIO -->
       <script type="text/javascript" src="js/js.js "></script>
@@ -45,6 +48,10 @@
       <link type="text/css" rel="stylesheet" href="css/xs.css"> <!-- xs -->
       <link type="text/css" rel="stylesheet" href="css/sp.css"> <!-- sp -->
       <link type="text/css" rel="stylesheet" href="css/jquery-ui.css"> <!-- ux-->
+
+      <link rel="stylesheet" href="css/flickity-docs.css" media="screen"> <!-- slider -->
+      <!-- <link rel="stylesheet" href="css/flickity.min.css" media="screen"> slider -->
+
 
 
 
