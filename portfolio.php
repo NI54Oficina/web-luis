@@ -35,20 +35,7 @@
 
 
 </section>
-<div class="carousel carousel--show-several carousel--selected-cell" data-flickity="{ &quot;groupCells&quot;: true }" >
 
-
-      <div class="carousel-cell"><img style="width:80px; height:auto" src="http://i.imgur.com/bwy74ok.jpg" alt=""></div>
-      <div class="carousel-cell"><img style="width:80px; height:auto" src="http://i.imgur.com/bwy74ok.jpg" alt=""></div>
-      <div class="carousel-cell"><img style="width:80px; height:auto" src="http://i.imgur.com/bwy74ok.jpg" alt=""></div>
-
-      <div class="carousel-cell"><img style="width:80px; height:auto" src="http://i.imgur.com/bwy74ok.jpg" alt=""></div>
-      <div class="carousel-cell"><img style="width:80px; height:auto" src="http://i.imgur.com/bwy74ok.jpg" alt=""></div>
-      <div class="carousel-cell"><img style="width:80px; height:auto" src="http://i.imgur.com/bwy74ok.jpg" alt=""></div>
-
-      <div class="carousel-cell"><img style="width:80px; height:auto" src="http://i.imgur.com/bwy74ok.jpg" alt=""></div>
-      <div class="carousel-cell"><img style="width:80px; height:auto" src="http://i.imgur.com/bwy74ok.jpg" alt=""></div>
-    </div>
 
 <ul class="col-lg-12 col-sm-12 col-md-12 col-xs-12 nav-porfolio pantalla">
   <li id="todos" class="selected">Todos <div ></div></li>
@@ -61,9 +48,6 @@
 </ul>
 
 <section class="col-lg-12 col-sm-12 col-md-12 col-xs-12 portfolio-2 pantalla">
-
-
-
 
   <h2><span>A</span>nima tu <span>K</span>i</h2>
 
