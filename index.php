@@ -4,11 +4,13 @@
 
 <body id="home">
 
-  <div style="position: fixed; z-index: -1; width: 100vw; height: 100vh; margin:0">
+  <div    class="back-transition" style="position: fixed; z-index: -1; width: 100vw; height: 100vh; margin:0">
 
-  <iframe  id="video"frameborder="0" height="100%" width="100%"
-    src="https://www.youtube.com/embed/f2AfDmcl_7o?loop=1&amp;autoplay=1&amp;rel=0&amp;controls=0&amp;showinfo=0&amp;modestbranding=1&amp;iv_load_policy=3" volume="0">
+  <iframe  id="video"frameborder="0" height="100%" width="100%" class="hidden-xs hidden-sm"
+    src="https://www.youtube.com/embed/f2AfDmcl_7o?loop=1&amp;playlist=f2AfDmcl_7o&amp;autoplay=1&amp;rel=0&amp;controls=0&amp;showinfo=0&amp;modestbranding=1&amp;iv_load_policy=3" volume="0">
   </iframe>
+
+
   </div>
 
 <div class="test" style="position: fixed; z-index: -1; width: 100%; height: 100%">

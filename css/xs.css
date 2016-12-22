@@ -1,5 +1,13 @@
 @media screen and (max-width: 767px){
 
+	.back-transition{
+	  background-image: url('../img/01.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+	  animation: backimg 7s infinite ;
+	}
+
 	.border{
 	  border:none;
 	  border-image: none ;
@@ -43,6 +51,7 @@ section {
 #inicio{
 	height: auto;
 	min-height: 100vh;
+	position: absolute;
 }
 
 #img-to-display iframe{
@@ -52,14 +61,26 @@ section {
 
 #prev-img {
     margin-left: 5%;
+
 }
 
 #next-img,.img-screen button {
     margin-right: 5%;
+
+}
+
+#prev-img,#next-img{
+		z-index: 2;
+		opacity: .7;
+}
+
+
+.img-screen button{
+	top: 30px;
 }
 
 .image .img-screen #imagen-mostrada{
-	max-width:30vh;
+	max-width:80vw;
 	height: auto;
 	position: absolute;
 	bottom: 20px;
@@ -108,7 +129,7 @@ section {
 
 .container-inicio p {
 
-    font-size: 0.8em;
+    /*font-size: 0.8em !important;*/
 }
 
 .second-p, .first-p {

@@ -287,7 +287,7 @@ section{
 
   height: 100vh;
   display: none;
-  position: absolute;
+  position: fixed;
   z-index:1;
   /*opacity: 0;*/
 
@@ -317,7 +317,9 @@ section{
 @keyframes expand { 15% {padding:0px } 50% {padding: 20px} 90% {padding:5px;}  100% {padding: 20px;} }
 
 @keyframes ixpand {  15% {padding: 20px } 50% {padding:0px} 90% {padding:15px ;}  100% {padding:0px;} }
-;
+
+@keyframes backimg {10%{ background-image: url('../img/02.jpg')} 30%{background-image: url('../img/03.jpg')} 50%{background-image: url('../img/04.jpg')} 70%{background-image: url('../img/05.jpg')} 100{background-image: url('../img/06.jpg')} }
+
 .nav-inicio{
 padding-left: 10%;
 margin-bottom: 50px;
@@ -354,7 +356,7 @@ padding: 20px;
 }
 
 .second-p{
-
+padding-top: 0;
 }
 
 /*.li-1{
@@ -680,6 +682,8 @@ background-repeat: repeat;
     cursor: pointer;
     max-height: 90px;
     width: auto;
+    max-width: 100%;
+    position: relative;
   }
 
   .img-remain{
@@ -766,4 +770,29 @@ transform: matrix(1, 0, 0, 1, 0, 0);
 transition-delay: .1s;
 transition-duration: .25s;
 display: block;
+}
+
+
+.contenedor-inferior, .img-description{
+  position: absolute;
+  bottom: 0;
+}
+
+.cover-hover{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #333;
+  opacity: .5;
+  top: 0;
+  margin: 50% 0%;
+  max-height: 80px;
+}
+
+.cover-hover:hover{
+  opacity: 0;
+}
+
+.cover-hover:active{
+  opacity: 0;
 }

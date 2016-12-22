@@ -225,11 +225,10 @@
 
 </div>
 
-<div class="col-lg-12 col-sm-12 col-md-12 col-xs-12">
+<div class=" contenedor-inferior col-lg-12 col-sm-12 col-md-12 col-xs-12">
 <div class="img-remain poyo">
 
 
-    <!-- <img class="col-lg-1 col-sm-3 col-md-1 col-xs-3 remain-show" src="img/test.png" alt="" /> -->
 
 </div>
 </div>
