@@ -133,13 +133,21 @@ function toShow(){
 
 					for(var i=2; i < imagenes[grupo].length; i++){
 
-							$('.img-remain').prepend( '	<div class=" carousel-cell"><img class=" remain-show" src="img/'+imagenes[grupo][i]+'.jpg" alt="" /></div>' );
+							$('.img-remain').prepend( '	<div class="carousel-cell"><img class=" remain-show" src="img/'+imagenes[grupo][i]+'.jpg" alt="" /></div>' );
 							remainings();
 
 					}
 
 					// setHeightPorfolioImage();
-
+					setTimeout(function(){
+				var elem = document.querySelector('.poyo');
+				var flkty = new Flickity( elem, {
+				  // options
+				  cellAlign: 'left',
+				groupCells: true,
+				  contain: true
+				});
+					},1000);
 			}
 
 			$(".img-description > p:first-child").text(titulo);

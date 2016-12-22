@@ -1,5 +1,28 @@
 <?php include_once("header.php") ?>
 
+
+<section style="display:none;">
+<div class="col-md-8">
+<div class="col-md-8">
+    <div class="col-md-8 poyo2">
+      <div class="carousel-cell"></div>
+      <div class="carousel-cell"></div>
+      <div class="carousel-cell"></div>
+
+      <div class="carousel-cell"><img style="width:80px; height:auto" src="http://i.imgur.com/bwy74ok.jpg" alt=""></div>
+      <div class="carousel-cell"><img style="width:80px; height:auto" src="http://i.imgur.com/bwy74ok.jpg" alt=""></div>
+      <div class="carousel-cell"><img style="width:80px; height:auto" src="http://i.imgur.com/bwy74ok.jpg" alt=""></div>
+
+      <div class="carousel-cell"><img style="width:80px; height:auto" src="http://i.imgur.com/bwy74ok.jpg" alt=""></div>
+      <div class="carousel-cell"><img style="width:80px; height:auto" src="http://i.imgur.com/bwy74ok.jpg" alt=""></div>
+      <div class="carousel-cell"><img style="width:80px; height:auto" src="http://i.imgur.com/bwy74ok.jpg" alt=""></div>
+
+      <div class="carousel-cell"><img style="width:80px; height:auto" src="http://i.imgur.com/bwy74ok.jpg" alt=""></div>
+      <div class="carousel-cell"><img style="width:80px; height:auto" src="http://i.imgur.com/bwy74ok.jpg" alt=""></div>
+    </div>
+    </div>
+    </div>
+</section>
 <body id="portfolio ">
 
 <?php include_once("menu.php") ?>
@@ -7,7 +30,10 @@
 <?php include_once("home.php") ?>
 
 
+
 <section class="col-lg-12 col-sm-12 col-md-12 col-xs-12 portfolio pantalla">
+
+
 
   <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12 portfolio-header">
 
@@ -199,12 +225,13 @@
 
 </div>
 
-
-<div class=" img-remain carousel carousel--show-several carousel--selected-cell" data-flickity="{ &quot;groupCells&quot;: true }">
+<div class="col-lg-12 col-sm-12 col-md-12 col-xs-12">
+<div class="img-remain poyo">
 
 
     <!-- <img class="col-lg-1 col-sm-3 col-md-1 col-xs-3 remain-show" src="img/test.png" alt="" /> -->
 
+</div>
 </div>
 
 
