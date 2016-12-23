@@ -38,6 +38,8 @@
     <input id="email" type="text" name="email" value="" placeholder="Email"><br>
     <input id="asunto" type="text" name="asunto" value="" placeholder="Asunto"><br>
   </form>
+
+  <p id="error-mail"></p>
 </div>
 
 <div class="col-lg-6 col-sm-12 col-md-6 col-xs-12 right-box-contact">

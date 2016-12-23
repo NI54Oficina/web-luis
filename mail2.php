@@ -15,10 +15,10 @@ $mail = new PHPMailer;
 //
 // $mail->Port = 465;
 
-$mail->setFrom('no-replay@kimenastd.com', 'usuarioDemo');
-$mail->addAddress('melania.smc@hotmail.com', 'Melania Miranda');     // Add a recipient
+$mail->setFrom('no-replay@kimenastd.com', $_POST["nombre"]);
+$mail->addAddress('mel@ni54.com', 'Melania Miranda');     // Add a recipient
 //$mail->addAddress('ellen@example.com');               // Name is optional
-$mail->addReplyTo(  $_POST["email"], 'info');
+// $mail->addReplyTo(  , 'info');
 // $mail->addCC('cc@example.com');
 // $mail->addBCC('bcc@example.com');
 
@@ -27,14 +27,16 @@ $mail->addReplyTo(  $_POST["email"], 'info');
 $mail->isHTML(true);                                  // Set email format to HTML
 
 $mail->Subject = $_POST["asunto"];
-$mail->Body    = $_POST["mensaje"];
+$mail->Body    = $_POST["mensaje"]."\n Departe de: ".$_POST["email"];
 // $mail->AltBody = 'PROBANDO RECEPCION MENSAJE';
 
 if(!$mail->send()) {
-    echo 'Message could not be sent.';
-    echo 'Mailer Error: ' . $mail->ErrorInfo;
+    echo 'El mensaje no pudo ser enviado. Intente nuevamente';
+    echo 'El error ocurrio fué el siguiente: ' . $mail->ErrorInfo;
+
 } else {
-    echo 'Message has been sent';
+    echo 'El mensaje ha sido enviado !';
+
 }
 
 ?>

@@ -1,9 +1,41 @@
+
 <?php
-    $toEmail = "melania.smc@hotmail.com";
-    $mailHeaders = "From: " . $_POST["nombre"] . "<". $_POST["email"] .">\r\n";
-    if(mail($toEmail, $_POST["asunto"], $_POST["mensaje"], $mailHeaders)) {
-    //    print "<p class='success'>Mensaje Enviado</p>";
-    } else {
-  //      print "<p class='Error'>No se pudo enviar el mensaje</p>";
-    }
+
+require 'PHPMailerAutoload.php';
+
+$mail = new PHPMailer;
+
+                             // Enable verbose debug output
+
+// $mail->isSMTP();             // Set mailer to use SMTP
+// $mail->Host = "relay-hosting.secureserver.net";
+// $mail->SMTPAuth = false;
+// $mail->SMTPSecure = ssl;
+// $mail->Username = 'no-replay@kimenastd.com';
+// $mail->Password ='Kimena2016';
+//
+// $mail->Port = 465;
+
+$mail->setFrom('no-replay@kimenastd.com', 'usuarioDemo');
+$mail->addAddress('melania.smc@hotmail.com', 'Melania Miranda');     // Add a recipient
+//$mail->addAddress('ellen@example.com');               // Name is optional
+// $mail->addReplyTo( 'melania.smc@hotmail.com', 'info');
+// $mail->addCC('cc@example.com');
+// $mail->addBCC('bcc@example.com');
+
+// $mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
+// $mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
+$mail->isHTML(true);                                  // Set email format to HTML
+
+$mail->Subject ='prueba 1';
+$mail->Body    ='cuerpo prueba';
+// $mail->AltBody = 'PROBANDO RECEPCION MENSAJE';
+
+if(!$mail->send()) {
+    echo 'Message could not be sent.';
+    echo 'Mailer Error: ' . $mail->ErrorInfo;
+} else {
+    echo 'Message has been sent';
+}
+
 ?>

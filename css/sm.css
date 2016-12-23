@@ -15,8 +15,24 @@
 	}
 
 	/*FIN DE LLAVE PRINCIPAL*/
-	inicio {
-    padding: 40px 20px;
+	.container-inicio {
+	    padding: 40px 20px;
+	}
+
+	.border{
+		border: none;
+	}
+
+	.li-max a p {
+		font-size: .8em;
+	}
+
+	.back-transition{
+		background-image: url('../img/01.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		animation: backimg 7s infinite ;
 	}
 
 }

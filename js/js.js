@@ -95,15 +95,23 @@ function CenterToParent(){
 	});
 }
 
-
+var flkty;
+var flktyInit=false;
 function toShow(){
 
 	$('.to-show').on('click', function(){
 
+		if(flkty){
+			flkty.destroy();
+			$('.carousel-cell').remove();
+		}
+
+		$(".image").css('opacity','0');
 			var src = $(this).find('img').attr('src');
 			var grupo = $(this).find('img').attr('subgrupo');
 			var titulo = $(this).find('h1').text();
 			var subtitulo = $(this).find('p').text();
+
 
 			$('.portfolio').fadeOut(300);
 			$('.portfolio-2').fadeOut(300);
@@ -138,42 +146,56 @@ function toShow(){
 
 					}
 
+
+
 					// setHeightPorfolioImage();
 					setTimeout(function(){
+						//img-remain poyo flickity-enabled is-draggable
+					//	$(".poyo").removeClass("is-draggable");
+					//	$(".poyo").removeClass("flickity-enabled");
 				var elem = document.querySelector('.poyo');
-				var flkty = new Flickity( elem, {
+
+				flkty = new Flickity( elem, {
 				  // options
 				  cellAlign: 'left',
 				groupCells: true,
 				  contain: true
 				});
+				 console.log("asdasd");
 
 				setMargin();
-			},200);
+			},500);
 			setMargin();
 
 			}
 
 
+			// finish=true;
+			// console.log(finish);
+
 			$(".img-description > p:first-child").text(titulo);
 			$(".img-description > p:last-child").text(subtitulo);
 
 
-				$('.image').fadeIn(1000,function(){
+
+				$('.image').fadeIn(500,function(){
 
 						 AlignCenter();
 						 slider();
 						 setHeightPorfolioiFrame();
 						 setMargin();
 						 AlignVertical();
-
-
-
-
-
+						 $('.image').css('opacity','1');
 
 
 			});
+
+
+
+		// 	setTimeout(function(){
+		// 		 AlignCenter();
+		// 		setMargin();
+		// },1000);
 
 
 
@@ -192,10 +214,15 @@ function closeGallery(){
 	$('.portfolio').fadeIn(500);
 	$('.portfolio-2').fadeIn(500);
 	$('.nav-porfolio').fadeIn(300);
-		$('.img-remain').empty();
+		//$('.img-remain').empty();
+		if(flkty){
+			flkty.destroy();
+			$('.carousel-cell').remove();
+		}
+
 			$("#img-to-display").empty();
 		$('#button-display').text('+');
-	// $('.button-menu').css('visibility','visible');
+
 }
 
 function hideDisplay() {
@@ -227,8 +254,8 @@ function setMargin(){
 	var height= $('.img-remain').outerHeight();
 
 
-	$('.img-description').css('min-height',height);
-	// $('.img-description').css('bottom',height+'px');
+	$('.img-description').css('min-height','160px');
+
 
 
 }
@@ -322,21 +349,6 @@ function centerNav(){
 
 
 
-
-
-		// var parentWidth= ($(window).width()-100)/3;
-		//
-		// $('.li-min').each(function(){
-		//
-		//
-		//  var thisWidth = parentWidth/2 -;
-		//
-		//  $(this).parent().parent().css('width', parentWidth+'px');
-		//  $(this).css('margin-left', )
-		//
-		//  console.log( parentWidth/2 - thisWidth/2);
-		//  console.log(  $(this).parent().parent());
-		//  console.log(  $('.container-inicio').css('width'));
 }
 
 
@@ -347,9 +359,9 @@ function slider(){
 var currentIndex = 0,
   items = $('.remain-show');
   itemAmt = items.length;
-	//items.css("display","none");
+
 	items.eq(currentIndex).attr('src');
-	// multiplicateDotNav(itemAmt);
+
 
 function cycleItems() {
   var item = $('.remain-show');
@@ -389,8 +401,6 @@ $('#prev-img').click(function() {
 });
 
 
-
-// console.log("sale slider");
 }
 
 function mailing(){
@@ -407,8 +417,14 @@ function mailing(){
 			if(valid) {
 				$.post("mail2.php",miObjeto,function(data){
 
-				});
-	}
+				})
+				.fail(function(data) {
+				$('#error-mail').html("Ups! Ha ocurrido un problema intente nuevamente...");
+				})
+				.done(function(data) {
+      		$('#error-mail').html(data);
+  			});
+			}
 
 
 		});
@@ -416,41 +432,37 @@ function mailing(){
 }
 
 function validateContact() {
+
     var valid = true;
-    // $(".demoInputBox").css('background-color','');
-    // $(".info").html('');
+
     if(!$("#nombre").val()) {
-        $("#nombre").html("Este campo no debe estar vacio");
-        // $("#nombre").css('background-color','#ffb60a');
+        $("#nombre").val("Este campo no debe estar vacio").css('color','red');
+
         valid = false;
     }else{
-			  $("#nombre").css('background-color','#6bcea3');
+			$("#nombre").css('color','white');
 		}
-    if(!$("#email").val()) {
-        $("#email").html("Este campo no debe estar vacio");
-        // $("#email").css('background-color','#ffb60a');
+    if(!$("#email").val().match(/^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/)) {
+        $("#email").val("Datos invalidos").css('color','red');
+
         valid = false;
     }else{
-			  $("#email").css('background-color','#6bcea3');
+			  $("#email").css('color','white');
 		}
-    // if(!$("#userEmail").val().match(/^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/)) {
-    //     $("#userEmail-info").html("(invalid)");
-    //     $("#userEmail").css('background-color','#ffb60a');
-    //     valid = false;
-    // }
+
     if(!$("#asunto").val()) {
-        $("#asunto").html("Este campo no debe estar vacio");
-        // $("#asunto").css('background-color','#ffb60a');
+        $("#asunto").val("Este campo no debe estar vacio").css('color','red');
+
         valid = false;
     }else{
-			  $("#asunto").css('background-color','#6bcea3');
+		    $("#asunto").css('color','white');
 		}
     if(!$("#mensaje").val()) {
-        $("#mensaje").html("Este campo no debe estar vacio");
-        // $("#mensaje").css('background-color','#FFFFDF');
+        $("#mensaje").val("Este campo no debe estar vacio").css('color','red');
+
         valid = false;
     }else{
-			  $("#mensaje").css('background-color','#6bcea3');
+			  $("#mensaje").css('color','black');
 		}
     return valid;
 }
