@@ -660,6 +660,7 @@ background-repeat: repeat;
     z-index: 2;
     padding-left: 50px;
     padding-right: 50px;
+    height: 160px;
 
   }
   .img-description p:first-child{
