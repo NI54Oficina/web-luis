@@ -27,7 +27,7 @@ $mail->addAddress('mel@ni54.com', 'Melania Miranda');     // Add a recipient
 $mail->isHTML(true);                                  // Set email format to HTML
 
 $mail->Subject = $_POST["asunto"];
-$mail->Body    = $_POST["mensaje"]."\n Departe de: ".$_POST["email"];
+$mail->Body    = $_POST["mensaje"]."\n".$_POST["email"];
 // $mail->AltBody = 'PROBANDO RECEPCION MENSAJE';
 
 if(!$mail->send()) {
