@@ -69,7 +69,7 @@ We develop: Motion grapics - Animation 2d and 3d - Modeling for video games - Re
 
 <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12 video-reel">
 	<button class="border-b" type="button" name="button" style="margin-right:0;top:0;" onclick="closeReel()"><p> </p></button>
-		<iframe src="https://www.youtube.com/embed/ZNCcRSnUBf4?rel=0&amp;controls=0&amp;showinfo=0" style="width:90vw; height:70vh;" frameborder="0" allowfullscreen></iframe>
+		<iframe src="https://www.youtube.com/embed/ZNCcRSnUBf4?rel=0&amp;controls=0&amp;showinfo=0" style="width:100%; height:70vh;" frameborder="0" allowfullscreen></iframe>
 </div>
 
 
