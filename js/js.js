@@ -31,13 +31,14 @@ $( window ).resize(function() {
 	isMobile();
 
 	CenterToParent();
-	AlignCenter();
 	setMargin();
-
   centerNav();
 	setHeightContacto();
 	setHeightPorfolioImage();
 	setHeightPorfolioiFrame();
+
+	AlignCenter();
+	AlignVertical();
 });
 
 

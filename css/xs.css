@@ -162,6 +162,10 @@ section {
 		margin-top: 0%;
 	}
 
+	.video-reel iframe{
+		margin-left: 7%;
+	}
+
 .right-box-contact, .left-box-contact{
 	min-height: auto !important;
 }
