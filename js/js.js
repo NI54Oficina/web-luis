@@ -141,7 +141,7 @@ function toShow(){
 
 					for(var i=2; i < imagenes[grupo].length; i++){
 
-							$('.img-remain').prepend( '	<div class="carousel-cell"><img class=" remain-show" src="img/'+imagenes[grupo][i]+'.jpg" alt="" /><div class="cover-hover"></div></div>' );
+							$('.img-remain').prepend( '	<div class="carousel-cell"><img class=" remain-show" src="img/'+imagenes[grupo][i]+'.jpg" alt="" /><div class=""></div></div>' );
 							remainings();
 
 					}
@@ -254,7 +254,7 @@ function setMargin(){
 	var height= $('.img-remain').outerHeight();
 
 
-	$('.img-description').css('min-height','160px');
+	$('.img-description').css('min-height','60px');
 
 
 

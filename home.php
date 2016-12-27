@@ -59,7 +59,10 @@ We develop: Motion grapics - Animation 2d and 3d - Modeling for video games - Re
 
 
 		</p>
-		<p class="hidden-lg hidden-xl hidden-md col-sm-12 col-xs-12 reel-button"> Ver Reel</p>
+		<div class="hidden-lg hidden-xl hidden-md col-sm-12 col-xs-12 reel-container">
+			<p class="hidden-lg hidden-xl hidden-md col-sm-12 col-xs-12 reel-button"> Ver Reel</p>
+		</div>
+
 
 	</div>
 
