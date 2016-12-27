@@ -31,14 +31,15 @@ $( window ).resize(function() {
 	isMobile();
 
 	CenterToParent();
+	AlignCenter();
 	setMargin();
   centerNav();
 	setHeightContacto();
 	setHeightPorfolioImage();
 	setHeightPorfolioiFrame();
+AlignVertical();
 
-	AlignCenter();
-	AlignVertical();
+
 });
 
 
@@ -528,7 +529,7 @@ function verReel(){
 
 		$('.button-menu').fadeOut(100);
 
-		$('.container-inicio').fadeOut('slow',function(){ $('.video-reel').fadeIn();$('.video-reel').css('display', 'block'); });
+		$('.container-inicio').fadeOut('slow',function(){ $('.video-reel').fadeIn();$('.video-reel').css('display', 'block'); $('#inicio').css('background', 'none'); $('#inicio').css('background', '#1d1d1d')});
 
 
 
@@ -540,6 +541,7 @@ $('.video-reel').fadeOut(
 		function(){
 			$('.container-inicio').fadeIn();
 			$('.button-menu').fadeIn();
+			$('#inicio').css('background', 'url(../img/rombo-textura-menu-portfolio.svg),radial-gradient(ellipse at center, rgba(162,234,189,1) 0%, rgba(36,82,55,1) 100%)');
 		}
 );
 

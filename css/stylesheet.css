@@ -289,10 +289,11 @@ section{
   /*background: -ms-radial-gradient(center, ellipse cover, rgba(255,255,255,0.27) 0%, rgba(0,0,0,0.62) 100%);*/
   background: url('../img/rombo-textura-menu-portfolio.svg'),radial-gradient(ellipse at center, rgba(162,234,189,1) 0%, rgba(36,82,55,1) 100%);
 
-  height: 100vh;
+  min-height: 100vh;
   display: none;
-  position: fixed;
+  position: absolute;;
   z-index:1;
+  background-attachment: fixed;
   /*opacity: 0;*/
 
 
@@ -414,6 +415,7 @@ transition: all ease .8s;
 .nav-porfolio {
   text-align: center;
   cursor: pointer;
+  font-size: 1em;
   /*border-bottom: 2px solid rgba(104,211,169,.3);*/
   padding: 4px;
   margin-bottom: 4px;
@@ -435,14 +437,15 @@ transition: all ease .8s;
 }
 
 .covered{
-  height:100%;
+  height:99.3%;
   background:rgba(125,171,161,.8);
   /*#7daba1*/
   opacity: 0;
   position: absolute;
   top: 0;
-  width: 100%;
+  width: 99.5%;
   padding: 20px !important;
+  margin-top: 1px;
 }
 
 .covered h1{

@@ -14,6 +14,10 @@
 
 	}
 
+	.nav-porfolio{
+		 font-size: .9em;
+	}
+
 
 	.section { /*Disminucion de padding en mobile*/
 		padding:20px 2px;
@@ -162,9 +166,7 @@ section {
 		margin-top: 0%;
 	}
 
-	/*.video-reel iframe{
-		margin-left: 7%;
-	}*/
+
 
 .right-box-contact, .left-box-contact{
 	min-height: auto !important;
