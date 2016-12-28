@@ -686,7 +686,8 @@ background-repeat: repeat;
   }
 
   .img-remain div img{
-    padding: 10px 5px;
+    text-align: center;
+
     cursor: pointer;
     max-height: 90px;
     width: auto;
@@ -796,7 +797,7 @@ display: block;
   opacity: .5;
   top: 0;
   /*margin: 50% 0%;*/
-  max-height: 80px;
+  max-height: 90px;
 }
 
 .cover-hover:hover{

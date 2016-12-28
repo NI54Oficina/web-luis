@@ -145,10 +145,12 @@ function toShow(){
 
 					for(var i=2; i < imagenes[grupo].length; i++){
 
-							$('.img-remain').prepend( '	<div class="carousel-cell"><img class=" remain-show" src="img/'+imagenes[grupo][i]+'.jpg" alt="" /><div class="cover-hover"></div></div>' );
+							$('.img-remain').prepend( '	<div class="carousel-cell"><img class="remain-show center-to-parent" src="img/'+imagenes[grupo][i]+'.jpg" alt="" /><div class="cover-hover"></div></div>' );
 							remainings();
 
-					}
+					};
+
+
 
 
 
@@ -189,6 +191,7 @@ function toShow(){
 						 setHeightPorfolioiFrame();
 						 setMargin();
 						 AlignVertical();
+						 centrarMiniatura();
 						 $('.image').css('opacity','1');
 
 
@@ -218,6 +221,7 @@ function closeGallery(){
 	$('.portfolio').fadeIn(500);
 	$('.portfolio-2').fadeIn(500);
 	$('.nav-porfolio').fadeIn(300);
+	$('#video-mostrado').remove();
 		//$('.img-remain').empty();
 		if(flkty){
 			flkty.destroy();
@@ -542,7 +546,30 @@ $('.video-reel').fadeOut(
 			$('.container-inicio').fadeIn();
 			$('.button-menu').fadeIn();
 			$('#inicio').css('background', 'url(../img/rombo-textura-menu-portfolio.svg),radial-gradient(ellipse at center, rgba(162,234,189,1) 0%, rgba(36,82,55,1) 100%)');
+			$('#video-mostrado-reel').remove();
 		}
 );
+
+}
+
+
+function centrarMiniatura(){
+
+	$('.img-remain div img').each(function(){
+		var anchoPadre= $(this).parent().innerWidth();
+		var anchoSelf= parseInt($(this).outerWidth());
+		var altoSelf= parseInt($(this).outerHeight());
+		console.log(anchoSelf);
+		console.log(altoSelf);
+
+		var padLeft=(100/2 - anchoSelf/2)/2+5;
+		console.log(padLeft);
+		var padTop=(90/2 - altoSelf/2)/2+5;
+		console.log('padtop:'+padTop);
+
+		$(this).css('padding',padTop+'px '+padLeft+'px');
+
+	})
+
 
 }
