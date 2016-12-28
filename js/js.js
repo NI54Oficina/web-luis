@@ -221,6 +221,7 @@ function closeGallery(){
 	$('.portfolio').fadeIn(500);
 	$('.portfolio-2').fadeIn(500);
 	$('.nav-porfolio').fadeIn(300);
+	$('#video-mostrado').attr('src','');
 	$('#video-mostrado').remove();
 		//$('.img-remain').empty();
 		if(flkty){
@@ -546,6 +547,7 @@ $('.video-reel').fadeOut(
 			$('.container-inicio').fadeIn();
 			$('.button-menu').fadeIn();
 			$('#inicio').css('background', 'url(../img/rombo-textura-menu-portfolio.svg),radial-gradient(ellipse at center, rgba(162,234,189,1) 0%, rgba(36,82,55,1) 100%)');
+			$('#video-mostrado-reel').attr('src','');
 			$('#video-mostrado-reel').remove();
 		}
 );
