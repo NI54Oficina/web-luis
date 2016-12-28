@@ -167,7 +167,7 @@ function toShow(){
 				groupCells: true,
 				  contain: true
 				});
-				 console.log("asdasd");
+
 
 				setMargin();
 			},500);
@@ -223,6 +223,8 @@ function closeGallery(){
 	$('.nav-porfolio').fadeIn(300);
 	$('#video-mostrado').attr('src','');
 	$('#video-mostrado').remove();
+	$('.img-description').css('bottom','0');
+
 		//$('.img-remain').empty();
 		if(flkty){
 			flkty.destroy();
@@ -517,7 +519,8 @@ function AlignVertical(){
 
 		$('.image .img-screen #imagen-mostrada').css('bottom',altura/2 - alturaElem/2 -80+'px' );
 
-		 console.log("entra centradovertical");
+
+
 	}
 
 
@@ -561,13 +564,11 @@ function centrarMiniatura(){
 		var anchoPadre= $(this).parent().innerWidth();
 		var anchoSelf= parseInt($(this).outerWidth());
 		var altoSelf= parseInt($(this).outerHeight());
-		console.log(anchoSelf);
-		console.log(altoSelf);
 
 		var padLeft=(100/2 - anchoSelf/2)/2+5;
-		console.log(padLeft);
+
 		var padTop=(90/2 - altoSelf/2)/2+5;
-		console.log('padtop:'+padTop);
+
 
 		$(this).css('padding',padTop+'px '+padLeft+'px');
 
