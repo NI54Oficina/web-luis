@@ -16,7 +16,7 @@ $mail = new PHPMailer;
 // $mail->Port = 465;
 
 $mail->setFrom('no-replay@kimenastd.com', $_POST["nombre"]);
-$mail->addAddress('contacto@kimenastd.com', 'KimenaStd Contacto');     // Add a recipient
+$mail->addAddress('kimenastd@gmail.com', 'KimenaStd Contacto');     // Add a recipient
 //$mail->addAddress('ellen@example.com');               // Name is optional
 // $mail->addReplyTo(  , 'info');
 // $mail->addCC('cc@example.com');
