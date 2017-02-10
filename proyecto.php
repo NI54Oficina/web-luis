@@ -5,7 +5,7 @@
 // <iframe width="640" height="360" src="https://www.youtube.com/embed/HkcfDotc6cA?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 $listadoProject=array();
 
-array_push($listadoProject, ['1', "Winter 2010",[0,'53-img-1','https://www.youtube.com/embed/HkcfDotc6cA?rel=0&amp;controls=0&amp;showinfo=0&amp;modestbranding=1&amp;iv_load_policy=3'] ,'2016','https://www.youtube.com/embed/HkcfDotc6cA?rel=0']);
+/*array_push($listadoProject, ['1', "Winter 2010",[0,'53-img-1','https://www.youtube.com/embed/HkcfDotc6cA?rel=0&amp;controls=0&amp;showinfo=0&amp;modestbranding=1&amp;iv_load_policy=3'] ,'2016','https://www.youtube.com/embed/HkcfDotc6cA?rel=0']);
 array_push($listadoProject, ['1', "Stand Coca-Cola 2010",[0,'48-img-1','https://www.youtube.com/embed/50uaC7JWpyA?rel=0&amp;controls=0&amp;showinfo=0&amp;modestbranding=1&amp;iv_load_policy=3'],'2016', 'https://www.youtube.com/embed/50uaC7JWpyA?rel=0']);
 array_push($listadoProject, ['1', "Pm Pepsi 2010",[0,'41-img-1','https://www.youtube.com/embed/TfFTOEPNpec5?rel=0&amp;controls=0&amp;showinfo=0&amp;modestbranding=1&amp;iv_load_policy=3'],'2016', 'https://www.youtube.com/embed/TfFTOEPNpec5?rel=0']);
 array_push($listadoProject, ['1', "Elind",[0, '2-img-1','https://www.youtube.com/embed/oeANZyZWTto?rel=0&amp;controls=0&amp;showinfo=0&amp;modestbranding=1&amp;iv_load_policy=3'],'2016', 'https://www.youtube.com/embed/oeANZyZWTto?rel=0']);
@@ -65,7 +65,7 @@ array_push($listadoProject, ['3', "Int",[1,'24-img-1','24-img-2','24-img-3','24-
 array_push($listadoProject, ['3', "Stands",[1,'55-img-1','55-img-9','55-img-10','55-img-11','55-img-23','55-img-24','55-img-25','55-img-26','55-img-27','55-img-28','55-img-29','55-img-30','55-img-31','55-img-32'], '2016','https://www.behance.net/gallery/13287757/Stands']);
 
 
-
+*/
 
 $listadoVideos=array();
 
@@ -129,5 +129,5 @@ $listadoVideos=array();
 // array_push($listadoVideos, ['3', "Stands", 'https://www.behance.net/gallery/13287757/Stands']);
 
 
-
+$listadoProject= json_decode(file_get_contents ("json.json"));
  ?>
