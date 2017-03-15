@@ -90,6 +90,11 @@
                 <?php
                 $projectIndex=0;
                 foreach($listadoProject as $project){
+					//echo count($project)."conteooooo";
+					array_push($project,$projectIndex);
+					array_push($listadoProject[$projectIndex],$projectIndex);
+					//echo "testeoindex";
+					//echo $project[5];
                    ?>
 
                   <div class="col-lg-4 col-sm-12 col-md-4 col-xs-12 to-show">
@@ -118,13 +123,13 @@
             <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12 motion solapa">
 
                 <?php
-                $projectIndex=7;
+               
                 foreach($listadoProject as $project){
 
-                  if($project[0]==2){?>
+                  if($project[0]==2||$project[0]=='2'){?>
 
                     <div class="col-lg-4 col-sm-12 col-md-4 col-xs-12 to-show">
-                          <img class="" src='img/<?php echo $project[2][1] ?>.jpg'  subgrupo="<?php echo $projectIndex; ?>"  alt="" />
+                          <img class="" src='img/<?php echo $project[2][1] ?>.jpg'  subgrupo="<?php echo $project[5]; ?>"  alt="" />
                           <div class="covered">
                             <h1><?php echo $project[1] ?></h1>
                             <p><?php echo $project[3] ?></p>
@@ -140,21 +145,22 @@
                     </script>
 
                 <?php
-                $projectIndex++;}}  ?>
+                //$projectIndex++;
+				}}  ?>
 
             </div>
 
             <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12 arquitectura solapa">
 
                 <?php
-                  $projectIndex=49;
+                 
                   foreach($listadoProject as $project){
 
-                  if($project[0]==3){?>
+                  if($project[0]==3||$project[0]=='3'){?>
 
 
                     <div class="col-lg-4 col-sm-12 col-md-4 col-xs-12 to-show">
-                          <img class="" src='img/<?php echo $project[2][1] ?>.jpg'  subgrupo="<?php echo $projectIndex; ?>"  alt="" />
+                          <img class="" src='img/<?php echo $project[2][1] ?>.jpg'  subgrupo="<?php echo $project[5]; ?>"  alt="" />
                           <div class="covered">
                             <h1><?php echo $project[1] ?></h1>
                             <p><?php echo $project[3] ?></p>
@@ -169,7 +175,8 @@
                     //  console.log(imagenes);
                     </script>
 
-                <?php   $projectIndex++; }}  ?>
+                <?php   //$projectIndex++; 
+				}}  ?>
 
 
 
@@ -178,13 +185,13 @@
             <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12 render solapa">
 
                 <?php
-                $projectIndex=0;
+                
                  foreach($listadoProject as $project){
 
-                  if($project[0]==1){?>
+                  if($project[0]==1||$project[0]=='1'){?>
 
                     <div class="col-lg-4 col-sm-12 col-md-4 col-xs-12 to-show">
-                          <img class=" " src='img/<?php echo $project[2][1] ?>.jpg' subgrupo="<?php echo $projectIndex; ?>"  alt="" />
+                          <img class=" " src='img/<?php echo $project[2][1] ?>.jpg' subgrupo="<?php echo $project[5]; ?>"  alt="" />
                           <div class="covered">
                             <h1><?php echo $project[1] ?></h1>
                             <p><?php echo $project[3] ?></p>
@@ -198,7 +205,8 @@
                       imagenes.push(auxArray);
                     </script>
 
-                <?php   $projectIndex++; }}  ?>
+                <?php   //$projectIndex++; 
+				}}  ?>
 
             </div>
 

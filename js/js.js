@@ -180,7 +180,7 @@ function toShow(){
 			// console.log(finish);
 
 			$(".img-description > p:first-child").text(titulo);
-			$(".img-description > p:last-child").text(subtitulo);
+			$(".img-description > p:nth-child(2)").text(subtitulo);
 
 
 
